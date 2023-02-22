@@ -13,8 +13,7 @@ body {
 
 #navbar {
   background-color: rgba(255, 0, 0, 0.5);
-  height: 10%;
-  position: relative;
+  height: 10vh;
 }
 
 #siteTitle {
