@@ -1,29 +1,73 @@
+/*
+Colors based on the core image:
+#fcfbec - white
+#fff4e1 - pinkish white
+#fed8c3 - light pink
+#faa798 - pink
+#ffdc8e - gold
+#e55b68 - red
+#522e3a - brown
+*/
+
 body {
  margin: 0;
  height: 100%;
  width: 100%;
 }
 
-.vertical-center {
-  margin: 0;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 #navbar {
-  background-color: rgba(255, 0, 0, 0.5);
-  height: 10vh;
+  background-color: #fed8c3;
+  box-shadow: 0px 2px rgb(231, 221, 203);
+  margin-bottom: 2px;
+  height: 50px;
+  width: 100%;
 }
 
 #siteTitle {
   font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   margin: 0;
   display: inline-block;
+  position: relative;
+  top: 20%;
+  left: 15px;
+  cursor: pointer;
 }
 
+#search {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 30%;
+  height: 30px;
+top: -22px;
+border-radius: 30px;
+padding-left: 20px;
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+}
 
+#settings {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  top: -92px;
+  right: 20px;
+  border-radius: 30px;
+font-family: 'Montserrat', sans-serif;
+font-size: 35px;
+background-color: #faa798;
+box-shadow: 2px 2px #e99b8d;
+cursor: pointer;
+}
+
+#settings p {
+  position: relative;
+  left: 4px;
+  top: -17px;
+}
 
 #explorer {
   background-color: rgba(0, 0, 255, 0.5);
