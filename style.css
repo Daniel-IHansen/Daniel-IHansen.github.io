@@ -1,0 +1,23 @@
+.body {
+
+}
+
+#navbar {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+#explorer {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+#projectSearch {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+#projects {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+#footer {
+  background-color: rgba(255, 192, 203, 0.5);
+}
