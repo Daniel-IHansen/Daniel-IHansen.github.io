@@ -89,8 +89,9 @@ cursor: pointer;
   background-color: rgba(255, 192, 203, 0.5);
 }
 
+
 /* if screen size is lower than 600px = mobile */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   body {
  margin: 0;
  width: 100%;
