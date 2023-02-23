@@ -68,6 +68,7 @@ cursor: pointer;
 }
 
 #explorer {
+  display: inline-block;
 }
 
 #explorer img {
@@ -87,3 +88,7 @@ cursor: pointer;
   background-color: rgba(255, 192, 203, 0.5);
 }
 
+/* if screen size is lower than 600px = mobile */
+@media screen and (max-width: 300px) {
+  
+}
