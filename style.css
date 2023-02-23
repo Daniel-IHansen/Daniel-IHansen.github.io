@@ -68,10 +68,11 @@ cursor: pointer;
 }
 
 #explorer {
-  display: inline-block;
+  white-space: nowrap
 }
 
 #explorer img {
+  display: inline-block;
   width: 600px;
   border-radius: 20px;
 }
