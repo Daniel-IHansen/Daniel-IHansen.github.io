@@ -91,5 +91,83 @@ cursor: pointer;
 
 /* if screen size is lower than 600px = mobile */
 @media screen and (max-width: 300px) {
+  body {
+ margin: 0;
+ width: 100%;
+ background-color: #fed8c3;
+}
+
+#navbar {
+  margin-bottom: 2px;
+  height: 50px;
+  width: 100%;
+  }
   
+  #siteTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    top: 20%;
+    left: 20px;
+    cursor: pointer;
+  }
+  
+  #search {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 30%;
+    height: 30px;
+  top: -22px;
+  border-radius: 30px;
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  
+  }
+  
+  #settings {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    top: -92px;
+    right: 20px;
+    border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  background-color: #faa798;
+  cursor: pointer;
+  }
+  
+  #settings p {
+    position: relative;
+    left: 4px;
+    top: -17px;
+  }
+  
+  #explorer {
+    white-space: nowrap
+  }
+  
+  #explorer img {
+    display: inline-block;
+    width: 600px;
+    border-radius: 20px;
+  }
+  
+  #projectSearch {
+    background-color: rgba(0, 128, 0, 0.5);
+  }
+  
+  #projects {
+    background-color: rgba(255, 255, 0, 0.5);
+  }
+  
+  #footer {
+    background-color: rgba(255, 192, 203, 0.5);
+  }
 }
