@@ -90,8 +90,8 @@ cursor: pointer;
 }
 
 
-/* if screen size is lower than 600px = mobile */
-@media screen and (max-width: 600px) {
+/* if screen size is lower than 800px = mobile */
+@media screen and (max-width: 800px) {
   body {
  margin: 0;
  width: 100%;
