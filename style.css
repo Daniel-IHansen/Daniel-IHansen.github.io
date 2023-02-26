@@ -95,7 +95,7 @@ cursor: pointer;
   body {
  margin: 0;
  width: 100%;
- background-color: red;
+ background-color: #fed8c3;
 }
 
 #navbar {
@@ -119,6 +119,7 @@ cursor: pointer;
     display: block;
     position: relative;
     margin: auto;
+    left: 30px;
     width: 30%;
     height: 30px;
   top: -22px;
