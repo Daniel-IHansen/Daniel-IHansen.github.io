@@ -19,6 +19,7 @@ body {
   margin-bottom: 2px;
   height: 50px;
   width: 100%;
+  padding-bottom: 2px;
 }
 
 #siteTitle {
@@ -68,12 +69,48 @@ cursor: pointer;
 }
 
 #explorer {
-  white-space: nowrap
+  white-space: nowrap;
+  overflow: scroll;
+  overflow-y: hidden; 
+  overflow-x: hidden;
 }
 
-#explorer img {
+#explorerButtons {
+  position: absolute;
+  height: 340px;
+}
+
+.gradient {
   display: inline-block;
-  width: 600px;
+  width: 200px;
+  height: 100%;
+}
+
+#leftGradient {
+  background-image: linear-gradient(to right, rgb(0, 0, 0) , rgba(255, 255, 0, 0));
+  left: 0;
+}
+
+#rightGradient {
+  position: relative;
+  background-image: linear-gradient(to left, rgb(0, 0, 0) , rgba(255, 255, 0, 0));
+  right: 0;
+}
+
+.arrow {
+  height: 50px;
+  margin: auto;
+}
+
+#rightArrow {
+  transform: rotateX(180deg);
+  right: 50%;
+  top: 50%;
+}
+
+.explorerImg {
+  display: inline-block;
+  height: 340px;
   border-radius: 20px;
 }
 
@@ -152,9 +189,10 @@ cursor: pointer;
   }
   
   #explorer {
-    white-space: nowrap
+    white-space: nowrap;
+    overflow: auto;
   }
-  
+
   #explorer img {
     display: inline-block;
     width: 600px;
