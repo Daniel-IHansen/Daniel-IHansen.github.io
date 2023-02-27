@@ -90,8 +90,8 @@ cursor: pointer;
 }
 
 
-/* if screen size is lower than 600px = mobile */
-@media screen and (max-width: 600px) {
+/* if screen size is lower than 800px = mobile */
+@media screen and (max-width: 800px) {
   body {
  margin: 0;
  width: 100%;
@@ -110,7 +110,7 @@ cursor: pointer;
     margin: 0;
     display: inline-block;
     position: relative;
-    top: 20%;
+    top: 0;
     left: 20px;
     cursor: pointer;
   }
@@ -119,6 +119,7 @@ cursor: pointer;
     display: block;
     position: relative;
     margin: auto;
+    right: 30px;
     width: 30%;
     height: 30px;
   top: -22px;
