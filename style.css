@@ -74,11 +74,12 @@ cursor: pointer;
   overflow: scroll;
   overflow-y: hidden; 
   overflow-x: hidden;
+  position: relative;
 }
 
 #explorerButtons {
   position: absolute;
-  height: 178px;
+  height: 100%;
   width: 100%;
   z-index: +1;
 }
@@ -86,7 +87,7 @@ cursor: pointer;
 .gradient {
   display: inline-block;
   width: 200px;
-  height: 100%;
+  height: calc(100% - 4px);
   position: absolute;
 }
 
