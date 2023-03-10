@@ -75,6 +75,7 @@ cursor: pointer;
   overflow-y: hidden; 
   overflow-x: hidden;
   position: relative;
+  margin-bottom: 50px;
 }
 
 #explorerButtons {
@@ -160,8 +161,6 @@ cursor: pointer;
   cursor: pointer;
 }
 
-
-
 .filterTerms {
   margin: 0;
   font-size: 14px;
@@ -172,7 +171,15 @@ cursor: pointer;
 }
 
 #projects {
-  background-color: rgba(0, 229, 255, 0.27);
+  margin: auto;
+  width: 92%;
+}
+
+.projectImg {
+  object-fit: cover;
+  position: relative;
+  border-radius: 20px;
+  width: 33%;
 }
 
 footer {
