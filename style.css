@@ -106,8 +106,16 @@ cursor: pointer;
   position: relative;
   height: 60px;
   margin: auto;
-  top: 40%;
+  top: 35%;
   cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.6s ease;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.arrow:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 #rightArrow {
@@ -180,6 +188,7 @@ cursor: pointer;
   position: relative;
   border-radius: 20px;
   width: 33%;
+  height: 300px;
 }
 
 footer {

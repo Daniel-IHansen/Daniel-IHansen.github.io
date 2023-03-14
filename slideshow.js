@@ -1,4 +1,16 @@
-// //turns the height of the gradients to the height of the pictures constantly
-// setInterval(() => {
-//     console.log(document.getElementById("firstExplorerImg").style.height)
-// }, 5);
+slides = document.getElementsByClassName("explorerImg");
+slideLengthArr = [];
+
+for (let i = 0; i < slides.length; i++) {
+    slideLengthArr.push(i);
+}
+
+function changeSlides(n){
+    if (n == -1){
+        slideEnd = slideLengthArr.pop()
+        slideLengthArr += slideLengthArr.unshift(slideEnd)
+    }
+
+
+    n = 0;
+}
