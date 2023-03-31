@@ -5,13 +5,14 @@
   <!--Page title-->
   <title>Prosjekter</title>
     <!--Page icon-->
-  <link rel="icon" href="./mainMedia/Technoblade.png">
+  <link rel="icon" href="../mainMedia/Technoblade.png">
       <!--Stuff-->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--See style.css-->
+  <link rel="stylesheet" href="../globalStyle.css" />
   <link rel="stylesheet" href="style.css" />
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,97 +25,18 @@
 </head>
 
 <body>
-<div id="navbar">
-  <h3 id="siteTitle" class="topButton">Daniel Hansen</h3>
-  <form action="" class="topButton" id="searchForm">
-    <input type="text" id="search" class="topButton" placeholder="Search for keywords">
-  </form>
-  <div id="settings" class="topButton"><p>...</p></div>
-  <p id="cvButton" class="topButton">CV</p>
-  <p id="projectButton" class="topButton">Projects</p>
-</div>
-
-<div id="explorer">
-  <div id="explorerButtons">
-    <div id="leftGradient" class="gradient">
-      <img src="./mainMedia/arrow.png" id="leftArrow" class="arrow" onclick="changeSlides(-1)">
-    </div>
-    <div id="rightGradient" class="gradient">
-      <img src="./mainMedia/arrow.png" id="rightArrow" class="arrow" onclick="changeSlides(1)">
-    </div>
-  </div>
-  <img class="explorerImg" id="expImg0" src="./mainMedia/vinterstemmning.jpg"/>
-  <img class="explorerImg" id="expImg1" src="./mainMedia/code.jpg"/>
-  <img class="explorerImg" id="expImg2" src="./mainMedia/ticTacToe.jpg"/>
-  <img class="explorerImg" id="expImg3" src="./mainMedia/rockPaperScissors.jpg"/>
-  <img class="explorerImg" id="expImg4" src="./mainMedia/darkTheme.jpg"/>
-</div>
-<div class="wrapper">
-  <ul id="filter" class="menu">
-    <li id="selectedFilter"><p class="filterTerms" id="featured">Featured</p></li>
-    <li><p class="filterTerms" id="newest">Newest</p></li>
-    <li><p class="filterTerms" id="oldest">Oldest</p></li>
-  </ul>
-</div>
-
-<div id="projects">
-  <div class="projectWrapper">
-    <div class="imgWrapper">
-      <img class="projectImg" src="./mainMedia/vinterstemmning.jpg"/>
-      <img class="forwardLink" src="mainMedia/forwardLink.png">
-    </div>
-  </div>
-  <div class="projectWrapper">
-    <div class="imgWrapper">
-      <img class="projectImg" src="./mainMedia/balanse.jpg"/>
-      <img class="forwardLink" src="mainMedia/forwardLink.png">
-    </div>
-  </div>
-  <div class="projectWrapper">
-    <div class="imgWrapper">
-      <img class="projectImg" src="./mainMedia/bevegelse.jpg"/>
-      <img class="forwardLink" src="mainMedia/forwardLink.png">
-    </div>
-  </div>
-  <div class="projectWrapper">
-    <div class="imgWrapper">
-      <img class="projectImg" src="./mainMedia/darkTheme.jpg"/>
-      <img class="forwardLink" src="mainMedia/forwardLink.png">
-    </div>
-  </div>
-  <div class="projectWrapper">
-    <div class="imgWrapper">
-      <img class="projectImg" src="./mainMedia/kontrast.jpg"/>
-      <img class="forwardLink" src="mainMedia/forwardLink.png">
-    </div>
-  </div>
-  <div class="projectWrapper">
-    <div class="imgWrapper">
-      <img class="projectImg" src="./mainMedia/rockPaperScissors.jpg"/>
-      <img class="forwardLink" src="mainMedia/forwardLink.png">
-    </div>
-  </div>
-  <div class="projectWrapper">
-    <div class="imgWrapper">
-      <img class="projectImg" src="./mainMedia/ticTacToe.jpg"/>
-      <img class="forwardLink" src="mainMedia/forwardLink.png">
-    </div>
-  </div>
-  <div class="projectWrapper">
-    <div class="imgWrapper">
-      <img class="projectImg" src="./mainMedia/vegg.jpg"/>
-      <img class="forwardLink" src="mainMedia/forwardLink.png">
-    </div>
-  </div>
-  <div class="projectWrapper">
-    <div class="imgWrapper">
-      <img class="projectImg" src="./mainMedia/code.jpg"/>
-      <img class="forwardLink" src="mainMedia/forwardLink.png">
-    </div>
+  <div id="navbar">
+    <a href="../index.html" id="siteTitle" class="topButton">Daniel Hansen</a>
+    <form action="" class="topButton" id="searchForm">
+      <input type="text" id="search" class="topButton" placeholder="Search for keywords">
+    </form>
+    <div id="settings" class="topButton"><a >...</a></div>
+    <a href="../cv\index.html" id="cvButton" class="topButton">CV</a>
+    <a href="../projects\index.html" id="projectButton" class="topButton">Projects</a>
   </div>
 
-</div>
 
+  
 <footer>
   <div id="footer1">
     <p class="footerTitle">Fellow Webdevs</p>
@@ -130,7 +52,7 @@
   <div id="contactMe">
     <p>Contact Me</p>
   </div>
-  <img id="theBlade" src="./mainMedia/Technoblade.png" alt="A legend.">
+  <img id="theBlade" src="../mainMedia/Technoblade.png" alt="A legend.">
 </footer>
 <script src="slideshow.js"></script>
 </body>
