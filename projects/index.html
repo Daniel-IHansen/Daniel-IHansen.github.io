@@ -5,13 +5,14 @@
   <!--Page title-->
   <title>Prosjekter</title>
     <!--Page icon-->
-  <link rel="icon" href="./media/Technoblade.png">
+  <link rel="icon" href="../mainMedia/Technoblade.png">
       <!--Stuff-->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--See style.css-->
+  <link rel="stylesheet" href="../globalStyle.css" />
   <link rel="stylesheet" href="style.css" />
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,15 +25,15 @@
 </head>
 
 <body>
-<div id="navbar">
-  <h3 id="siteTitle" class="topButton">Daniel Hansen</h3>
-  <form action="" class="topButton" id="searchForm">
-    <input type="text" id="search" class="topButton" placeholder="Search for keywords">
-  </form>
-  <div id="settings" class="topButton"><p>...</p></div>
-  <p id="cvButton" class="topButton">CV</p>
-  <p id="projectButton" class="topButton">Projects</p>
-</div>
+  <div id="navbar">
+    <a href="../index.html" id="siteTitle" class="topButton">Daniel Hansen</a>
+    <form action="" class="topButton" id="searchForm">
+      <input type="text" id="search" class="topButton" placeholder="Search for keywords">
+    </form>
+    <div id="settings" class="topButton"><a >...</a></div>
+    <a href="../cv\index.html" id="cvButton" class="topButton">CV</a>
+    <a href="../projects\index.html" id="projectButton" class="topButton">Projects</a>
+  </div>
 
 <div id="explorer">
   <div id="explorerButtons">
@@ -130,7 +131,7 @@
   <div id="contactMe">
     <p>Contact Me</p>
   </div>
-  <img id="theBlade" src="./.media/Technoblade.png" alt="A legend.">
+  <img id="theBlade" src="../mainMedia/Technoblade.png" alt="A legend.">
 </footer>
 <script src="slideshow.js"></script>
 </body>

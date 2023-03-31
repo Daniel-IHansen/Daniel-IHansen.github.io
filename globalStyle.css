@@ -1,3 +1,138 @@
+/*
+Colors based on the core image:
+#fcfbec - white
+#fff4e1 - pinkish white
+#fed8c3 - light pink
+#faa798 - pink
+#ffdc8e - gold
+#e55b68 - red
+#522e3a - brown
+*/
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #fed8c3;
+    overflow-x : hidden;
+   }
+   
+   #navbar {
+     width: 100%;
+   }
+   
+   #siteTitle {
+     font-size: 25px;
+     margin: 0;
+     padding: 18px;
+   }
+   
+   #searchForm {
+     position: absolute;
+     left: calc(50% - 230px);
+     padding: 15px;
+   }
+   
+   #search {
+     width: 400px;
+     height: 30px;
+     font-size: 14px;
+     padding-left: 15px;
+     background-color: #fcfbec;
+     cursor: text;
+   }
+   
+   #projectButton {
+     background-color: #faa798;
+     font-size: 17px;
+     padding: 7px;
+     margin: 13px;
+     text-align: center;
+     float: right;
+   }
+   
+   #cvButton {
+     background-color: #faa798;
+     font-size: 17px;
+     padding: 7px;
+     margin: 13px;
+     text-align: center;
+     float: right;
+   }
+   
+   .topButton {
+     font-family: 'Montserrat', sans-serif;
+     cursor: pointer;
+     display: inline-block;
+     border-radius: 30px;
+     font-weight:500;
+   }
+   
+   #settings {
+     position: relative;
+     width: 35px;
+     height: 35px;
+     float: right;
+     top: -2px;
+     font-size: 35px;
+     margin: 15px;
+     margin-right: 20px;
+     background-color: #faa798;
+     text-decoration-line: none;
+   }
+   
+   #settings a {
+     position: relative;
+     top: -14px;
+     right: -6px;
+   }
+
+   footer {
+    background-color: #fed8c3;
+    width: 100%;
+    position: relative;
+  }
+  
+  footer div {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 90px;
+    margin-left: 90px;
+    font-family: 'Montserrat', sans-serif;
+    top: 0;
+  }
+  
+  .footerTitle {
+    font-weight:600;
+  }
+  
+  #footer2 {
+    top: -35px;
+  }
+  
+  footer div p {
+    cursor: pointer;
+  }
+  
+  #contactMe {
+    position: absolute;
+    top: 20%;
+    right: 200px;
+    background-color: #e55b68;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  #theBlade {
+    position: absolute;
+    height: 150px;
+    right: 20px;
+    bottom: 5px;
+  }
+
 /* scroll bar adjustments */
 /* width */
 ::-webkit-scrollbar {
