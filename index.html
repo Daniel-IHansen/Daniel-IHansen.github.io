@@ -3,7 +3,7 @@
 
 <head>
   <!--Page title-->
-  <title>DanHanHub</title>
+  <title>Prosjekter</title>
     <!--Page icon-->
   <link rel="icon" href="./-media/Technoblade.png">
       <!--Stuff-->
@@ -25,11 +25,13 @@
 
 <body>
 <div id="navbar">
-  <h3 id="siteTitle">DanHanHub</h3>
-  <form action="">
-    <input type="text" id="search" placeholder="Search for keywords">
+  <h3 id="siteTitle" class="topButton">Daniel Hansen</h3>
+  <form action="" class="topButton" id="searchForm">
+    <input type="text" id="search" class="topButton" placeholder="Search for keywords">
   </form>
-  <div id="settings"><p>&hellip;</p></div>
+  <div id="settings" class="topButton"><p>...</p></div>
+  <p id="cvButton" class="topButton">CV</p>
+  <p id="projectButton" class="topButton">Projects</p>
 </div>
 
 <div id="explorer">
@@ -41,11 +43,11 @@
       <img src="./-media/arrow.png" id="rightArrow" class="arrow" onclick="changeSlides(1)">
     </div>
   </div>
-  <img class="explorerImg" id="expImg0" src="./-media/vinterstemmning.jpg" alt="A winter picture, taken and edited by me."/>
-  <img class="explorerImg" id="expImg1" src="./-media/code.jpg" alt="A picture of code."/>
-  <img class="explorerImg" id="expImg2" src="./-media/ticTacToe.jpg" alt="A tic tac toe game."/>
-  <img class="explorerImg" id="expImg3" src="./-media/rockPaperScissors.jpg" alt="A rock paper scissors game."/>
-  <img class="explorerImg" id="expImg4" src="./-media/darkTheme.jpg" alt="A website template."/>
+  <img class="explorerImg" id="expImg0" src="./-media/vinterstemmning.jpg"/>
+  <img class="explorerImg" id="expImg1" src="./-media/code.jpg"/>
+  <img class="explorerImg" id="expImg2" src="./-media/ticTacToe.jpg"/>
+  <img class="explorerImg" id="expImg3" src="./-media/rockPaperScissors.jpg"/>
+  <img class="explorerImg" id="expImg4" src="./-media/darkTheme.jpg"/>
 </div>
 <div class="wrapper">
   <ul id="filter" class="menu">
@@ -56,15 +58,61 @@
 </div>
 
 <div id="projects">
-  <img class="projectImg" src="./-media/vinterstemmning.jpg"/>
-  <img class="projectImg" src="./-media/balanse.jpg"/>
-  <img class="projectImg" src="./-media/kontrast.jpg"/>
-  <img class="projectImg" src="./-media/code.jpg"/>
-  <img class="projectImg" src="./-media/bevegelse.jpg"/>
-  <img class="projectImg" src="./-media/vegg.jpg"/>
-  <img class="projectImg" src="./-media/ticTacToe.jpg"/>
-  <img class="projectImg" src="./-media/rockPaperScissors.jpg"/>
-  <img class="projectImg" src="./-media/darkTheme.jpg"/>
+  <div class="projectWrapper">
+    <div class="imgWrapper">
+      <img class="projectImg" src="./-media/vinterstemmning.jpg"/>
+      <img class="forwardLink" src="-media/forwardLink.png">
+    </div>
+  </div>
+  <div class="projectWrapper">
+    <div class="imgWrapper">
+      <img class="projectImg" src="./-media/balanse.jpg"/>
+      <img class="forwardLink" src="-media/forwardLink.png">
+    </div>
+  </div>
+  <div class="projectWrapper">
+    <div class="imgWrapper">
+      <img class="projectImg" src="./-media/bevegelse.jpg"/>
+      <img class="forwardLink" src="-media/forwardLink.png">
+    </div>
+  </div>
+  <div class="projectWrapper">
+    <div class="imgWrapper">
+      <img class="projectImg" src="./-media/darkTheme.jpg"/>
+      <img class="forwardLink" src="-media/forwardLink.png">
+    </div>
+  </div>
+  <div class="projectWrapper">
+    <div class="imgWrapper">
+      <img class="projectImg" src="./-media/kontrast.jpg"/>
+      <img class="forwardLink" src="-media/forwardLink.png">
+    </div>
+  </div>
+  <div class="projectWrapper">
+    <div class="imgWrapper">
+      <img class="projectImg" src="./-media/rockPaperScissors.jpg"/>
+      <img class="forwardLink" src="-media/forwardLink.png">
+    </div>
+  </div>
+  <div class="projectWrapper">
+    <div class="imgWrapper">
+      <img class="projectImg" src="./-media/ticTacToe.jpg"/>
+      <img class="forwardLink" src="-media/forwardLink.png">
+    </div>
+  </div>
+  <div class="projectWrapper">
+    <div class="imgWrapper">
+      <img class="projectImg" src="./-media/vegg.jpg"/>
+      <img class="forwardLink" src="-media/forwardLink.png">
+    </div>
+  </div>
+  <div class="projectWrapper">
+    <div class="imgWrapper">
+      <img class="projectImg" src="./-media/code.jpg"/>
+      <img class="forwardLink" src="-media/forwardLink.png">
+    </div>
+  </div>
+
 </div>
 
 <footer>
@@ -82,7 +130,6 @@
   <div id="contactMe">
     <p>Contact Me</p>
   </div>
-  <div id="footerBottom"></div>
   <img id="theBlade" src="./-media/Technoblade.png" alt="A legend.">
 </footer>
 <script src="slideshow.js"></script>
