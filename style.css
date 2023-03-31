@@ -1,5 +1,22 @@
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  'img1 txt1'
+  'img1 txt2';
+}
+#img1 {   grid-area: img1; }
+#img2 {   grid-area: img2; }
+#img3 {   grid-area: img3; }
+#txt1 {   grid-area: txt1; }
+#txt2 {   grid-area: txt2; }
+#txt3 {   grid-area: txt3; }
+#txt4 {   grid-area: txt4; }
+
+
 .img {
-  width: 550px;
+  width: 450px;
   height: 500px;
   object-fit: cover;
   display: inline-block;
@@ -14,22 +31,27 @@
   position: relative;
   display: inline-block;
   margin: 30px;
-}
-
-#mainText {
-  font-weight: 600;
-  font-size: 40px;
-  top: -320px;
-}
-
-#mainText2 {
   font-weight: 400;
   font-size: 18px;
-  top: -350px;
-  right: -592px;
+}
+
+.titleText {
+  font-weight: 600;
+  font-size: 40px;
 }
 
 #mainText::after {
   content: "A small-time developer.";
   color: #e55b68;
+}
+
+#mainText2 {
+  width: 600px;
+  top: 0px;
+  right: 0px;
+}
+
+#mainText3 {
+  width: 300px;
+  margin: 100px;
 }
