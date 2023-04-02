@@ -171,17 +171,3 @@ a:active {
   text-decoration: none;
   color: black;
 }
-
-
-/* if screen size is lower than 800px = mobile */
-@media screen and (max-width: 800px) {
-  
-  .explorerImg {
-    width: 100%;
-  }
-  
-  .arrow {
-  height: 60px;
-  }
-  
-}

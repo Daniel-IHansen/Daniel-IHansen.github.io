@@ -1,7 +1,7 @@
 #main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr;
   grid-template-areas: 
   'img1 txt1'
   'img1 txt2'
@@ -17,30 +17,26 @@
 #txt3 {   grid-area: txt3; }
 #txt4 {   grid-area: txt4; }
 
-
 .img {
-  width: 450px;
-  height: 500px;
+  width: 70%;
+  height: 80%;
   object-fit: cover;
-  display: inline-block;
-  margin: 20px;
   margin-top: 10px;
-  border-radius: 20px;
+  position: relative;
 }
 
 .text {
   font-family: 'Montserrat', sans-serif;
   color: black;
   position: relative;
-  display: inline-block;
-  margin: 30px;
+  margin: 40px;
   font-weight: 400;
   font-size: 18px;
 }
 
 .titleText {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 350%;
 }
 
 #txt1::after {
@@ -57,4 +53,18 @@
 #txt3 {
   width: 300px;
   margin: 100px;
+}
+
+#txt4 {
+  width: 300px;
+  margin: 100px;
+}
+
+#img1 {
+  width: 90%;
+  height: 100%;
+}
+
+#img2 {
+  right: 0;
 }
