@@ -14,6 +14,8 @@
   <!--See style.css-->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="globalStyle.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,30 +27,64 @@
 </head>
 
 <body>
-<div id="navbar">
-  <a href="index.html" id="siteTitle" class="topButton">Daniel Hansen</a>
-  <form action="" class="topButton" id="searchForm">
-    <input type="text" id="search" class="topButton" placeholder="Search for keywords">
-  </form>
-  <div id="settings" class="topButton"><a >...</a></div>
-  <a href="cv\index.html" id="cvButton" class="topButton">CV</a>
-  <a href="projects\index.html" id="projectButton" class="topButton">Projects</a>
-</div>
-<div id="main">
-<img src="mainMedia/me.jpg" alt="Me!" class="img" id="img1">
-  <p class="text titleText" id="txt1">I'm Daniel Hansen <br></p>
-  <p class="text" id="txt2">I'm just a simple developer, making my way through life, <br> one line at a time. Often thinks big, and works hard to keep it.</p>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">Daniel Hansen</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">CV</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" style="font-family: 'Montserrat', sans-serif;cursor: pointer;font-weight:500;background-color: #fcfbec;
+        cursor: text;width: 100%;height: 30px;font-size: 14px;border-radius: 30px;padding-left: 1rem;" placeholder="Search for keywords">
+      </form>
+    </div>
+  </div>
+</nav>
 
-  <div>
-    <p class="text" id="txt3">I am experienced in media editing software such as; Photoshop, Premiere Pro, Audition, Illustrator and Indesign...</p>
-    <img src="mainMedia/vinterstemmning.jpg" alt="Et bilde som er tatt og redigert av meg." class="img" id="img2">
+<!-- <div id="main">
+  <div class="div1" id="div1">
+    <img src="mainMedia/me.jpg" alt="Me!" class="largeImg" id="img1">
+    <div>
+      <p class="text titleText" id="txt1">I'm Daniel Hansen <br></p>
+      <p class="text" id="txt2">I'm just a simple developer making my way through life, <br> one line at a time. Often thinks big, and works hard to keep it.</p>
+    </div>
   </div>
 
-  <div>
-    <p class="text" id="txt4">...As well as programming languages like HTML5, CSS, JavaScript, PHP and PowerShell.</p>
-    <img src="mainMedia/code.jpg" alt="Et bilde som er tatt og redigert av meg." class="img" id="img3">
+    <div class="div1" id="div2">
+      <div class="div2">
+        <p class="text" id="txt3">I am experienced in media editing software such as; Photoshop, Premiere Pro, Audition, Illustrator and Indesign...</p>
+        <img src="mainMedia/photoshop.png" alt="" class="smallImg">
+        <img src="mainMedia/premierePro.png" alt="" class="smallImg">
+        <img src="mainMedia/audition.png" alt="" class="smallImg">
+        <img src="mainMedia/illustrator.png" alt="" class="smallImg">
+        <img src="mainMedia/inDesign.png" alt="" class="smallImg">
+      </div>
+      <img src="mainMedia/vinterstemmning.jpg" alt="Et bilde som er tatt og redigert av meg." class="largeImg" id="img2">
+    </div>
+
+    <div class="div1" id="div3">
+      <img src="mainMedia/code.jpg" alt="Et bilde som er tatt og redigert av meg." class="largeImg" id="img3">
+      <div class="div2">
+        <p class="text" id="txt4">...As well as programming languages like HTML5, CSS, JavaScript, PHP and PowerShell.</p>
+        <img src="mainMedia/html5.png" alt="" class="smallImg">
+        <img src="mainMedia/css.png" alt="" class="smallImg">
+        <img src="mainMedia/js.png" alt="" class="smallImg">
+        <img src="mainMedia/php.png" alt="" class="smallImg">
+        <img src="mainMedia/ps.png" alt="" class="smallImg">
+      </div>
+    </div>
   </div>
-</div>
+ </div>
+
 
 <footer>
   <div id="footer1">
@@ -61,11 +97,9 @@
     <p class="footerTitle">About Me</p>
     <p>Introduction</p>
     <p>CV</p>
+    <p>Projects</p>
   </div>
-  <div id="contactMe">
-    <p>Contact Me</p>
-  </div>
+  <div id="contactMe"><p>Contact Me</p></div>
   <img id="theBlade" src="./mainMedia/Technoblade.png" alt="A legend.">
-</footer>
-<script src="slideshow.js"></script>
+</footer> -->
 </body>
