@@ -1,3 +1,52 @@
 #navbar {
   background-color: #fed8c3;
 }
+
+#mediaRow1 {
+  background-color: #fed8c3;
+}
+
+#navTitle {
+  font-family: 'Montserrat',sans-serif; 
+  font-weight:600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#projects {
+  font-family: 'Montserrat',sans-serif; 
+  font-weight:500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#cv {
+  font-family: 'Montserrat',sans-serif; 
+  font-weight:500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#navSearch {
+  font-family: 'Montserrat',sans-serif; 
+  font-weight:500;
+  font-size: 14px;
+  cursor: text;
+  border-radius: 30px;
+  padding-left: 1rem;
+}
+
+#txt1 {
+  font-family: 'Montserrat',sans-serif; 
+  font-weight:bold;
+}
+
+#txt1::after {
+  content: "A small-time developer.";
+  color: #e55b68;
+}
+
+#txt2 {
+  font-family: 'Montserrat',sans-serif; 
+  font-weight:500;
+}
