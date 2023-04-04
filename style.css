@@ -1,8 +1,8 @@
-#navbar {
-  background-color: #fed8c3;
+.cusImg {
+  object-fit: cover;
 }
 
-#mediaRow1 {
+#navbar {
   background-color: #fed8c3;
 }
 
@@ -36,6 +36,11 @@
   padding-left: 1rem;
 }
 
+#mediaRow1 {
+  background-color: #fed8c3;
+  height: 50rem;
+}
+
 #txt1 {
   font-family: 'Montserrat',sans-serif; 
   font-weight:bold;
@@ -49,4 +54,26 @@
 #txt2 {
   font-family: 'Montserrat',sans-serif; 
   font-weight:500;
+}
+
+#mediaRow2 {
+  background-color: #273c52;
+  height: 40rem;
+}
+
+#txt3 {
+  font-family: 'Montserrat',sans-serif; 
+  font-weight:500;
+  color: #fcfbec;
+}
+
+#mediaRow3 {
+  background-color: #1e1e1e;
+  height: 40rem;
+}
+
+#txt4 {
+  font-family: 'Montserrat',sans-serif; 
+  font-weight:500;
+  color: #fcfbec;
 }
