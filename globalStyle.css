@@ -1,20 +1,7 @@
-/* scroll bar adjustments */
-/* width */
-::-webkit-scrollbar {
-  position: absolute;
-  width: 10px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  opacity: 0;
-
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #522e3a; 
-  border-radius: 4px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #3c222b; 
-}
+/* Colors:
+Bistre; #251605
+Brown sugar; #C57B57
+Atomic tangerine; #F1AB86
+Peach yellow; #F7DBA7
+Cadet gray; #9CAFB7
+*/
