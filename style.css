@@ -19,20 +19,8 @@ body {
   position: absolute;
 }
 
-#card1 {
+.cardPos1 {
   rotate: 270deg; 
-  top: 400px;
-  left: 1400px;
-}
-
-#card2 {
-  rotate: 270deg; 
-  top: 300px;
-  left: 1400px;
-}
-
-#card2 {
-  rotate: 270deg; 
-  top: 200px;
-  left: 1400px;
+  top: 150px;
+  left: 1800px;
 }
