@@ -1,81 +1,17 @@
-.cusImg {
-  object-fit: cover;
+body {
+  background-color: #514036;
+}
+#backdrop {
+  height: 100vh;
+  width: 100%;
+  object-fit:contain;
+  position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#navbar {
-  background-color: #F7DBA7;
-}
-
-#navTitle {
-  font-family: 'Montserrat',sans-serif; 
-  font-weight:600;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-#projects {
-  font-family: 'Montserrat',sans-serif; 
-  font-weight:500;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#cv {
-  font-family: 'Montserrat',sans-serif; 
-  font-weight:500;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#navSearch {
-  font-family: 'Montserrat',sans-serif; 
-  font-weight:500;
-  font-size: 14px;
-  cursor: text;
-  border-radius: 30px;
-  padding-left: 1rem;
-}
-
-#mediaRow1 {
-  background-color: #F7DBA7;
-  height: 50rem;
-}
-
-#txt1 {
-  font-family: 'Montserrat',sans-serif; 
-  font-weight:bold;
-  color: #251605;
-}
-
-#txt1::after {
-  content: "A small-time developer.";
-  color: #e55b68;
-}
-
-#txt2 {
-  font-family: 'Montserrat',sans-serif; 
-  font-weight:500;
-  color: #251605;
-}
-
-#mediaRow2 {
-  background-color: #C57B57;
-  height: 40rem;
-}
-
-#txt3 {
-  font-family: 'Montserrat',sans-serif; 
-  font-weight:500;
-  color: #9CAFB7;
-}
-
-#mediaRow3 {
-  background-color: #1e1e1e;
-  height: 40rem;
-}
-
-#txt4 {
-  font-family: 'Montserrat',sans-serif; 
-  font-weight:500;
-  color: #9CAFB7;
+.card {
+  height: 25vh;
+  background: transparent;
 }
