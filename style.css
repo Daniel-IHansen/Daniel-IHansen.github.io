@@ -1,5 +1,6 @@
 body {
   background-color: #514036;
+  overflow: hidden;
 }
 #backdrop {
   height: 100vh;
@@ -12,6 +13,20 @@ body {
 }
 
 .card {
-  height: 25vh;
+  height: 26vh;
   background: transparent;
+  box-shadow: 1px 1px 4px black;
+  position: absolute;
+}
+
+#card1 {
+  rotate: 270deg; 
+  top: 400px;
+  left: 1400px;
+}
+
+#card2 {
+  rotate: 270deg; 
+  top: 400px;
+  left: 1400px;
 }
