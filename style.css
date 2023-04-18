@@ -27,6 +27,12 @@ body {
 
 #card2 {
   rotate: 270deg; 
-  top: 400px;
+  top: 300px;
+  left: 1400px;
+}
+
+#card2 {
+  rotate: 270deg; 
+  top: 200px;
   left: 1400px;
 }
