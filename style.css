@@ -10,6 +10,7 @@ body {
     top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 .card {
@@ -17,10 +18,11 @@ body {
   background: transparent;
   box-shadow: 1px 1px 4px black;
   position: absolute;
+  pointer-events: none;
 }
 
 .cardPos1 {
   rotate: 270deg; 
   top: 150px;
-  left: 1800px;
+  left: 1400px;
 }
