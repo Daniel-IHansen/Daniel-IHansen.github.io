@@ -1,9 +1,14 @@
-function bob(){
+function img1(){
   console.log("test")
   anime({
-    targets: '#test',
-    translateX: -250,
+    targets: '#img1',
     easing: 'easeInOutQuint',
-    duration: 1000
+    keyframes: [
+      {translateY: -40},
+      {translateX: 250, duration: 2000},
+      {translateY: 40},
+      {translateX: 0},
+      {translateY: 0}
+    ],
   });
 }
