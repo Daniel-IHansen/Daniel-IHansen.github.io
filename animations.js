@@ -1,4 +1,6 @@
-anime({
-  targets: '.css-selector-demo .el',
-  translateX: 250
-});
+function bob(){
+  anime({
+    targets: '#test',
+    translateX: -250
+  });
+}
