@@ -18,6 +18,8 @@ body {
   background: transparent;
   box-shadow: 1px 1px 4px black;
   position: absolute;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
 }
 
 .cardPos1 {
