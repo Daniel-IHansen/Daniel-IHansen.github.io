@@ -32,25 +32,25 @@ function menuStart(){
       setTimeout(() => {
         anime({
           targets: '#img3',
-          translateY: -500,
+          translateY: -480,
           translateX: 300,
           rotate: '100',
           scale: '1.2',
           easing: 'easeInOutQuint',
           duration: 750,
         });
-      }, 100);
-      setTimeout(() => {
-        anime({
-          targets: '#img4',
-          translateY: -400,
-          translateX: 300,
-          rotate: '100',
-          scale: '1.2',
-          easing: 'easeInOutQuint',
-          duration: 750,
-        });
-      }, 100);
-    }, 100);
-  }, 100);
+        setTimeout(() => {
+          anime({
+            targets: '#img4',
+            translateY: -360,
+            translateX: 300,
+            rotate: '100',
+            scale: '1.2',
+            easing: 'easeInOutQuint',
+            duration: 750,
+          });
+        }, 200);
+      }, 200);
+    }, 200);
+  }, 200);
 }
