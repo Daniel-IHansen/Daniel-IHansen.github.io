@@ -1,5 +1,5 @@
 function menuStart(){
-  console.log("test")
+  document.getElementById("homeButton").style.display = "initial";
   anime({
     targets: '#img5',
     translateY: -1100,
@@ -49,6 +49,9 @@ function menuStart(){
             easing: 'easeInOutQuint',
             duration: 750,
           });
+          setTimeout(() => {
+            document.getElementById("homeButton").style.opacity = "1";
+          }, 200);
         }, 200);
       }, 200);
     }, 200);

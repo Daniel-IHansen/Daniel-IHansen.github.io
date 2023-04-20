@@ -22,8 +22,22 @@ body {
   transform-box: fill-box;
 }
 
-.cardPos1 {
+.cardStackPos {
   rotate: 270deg; 
   top: 150px;
   left: 92vw;
+}
+
+.navElem {
+  position: absolute;
+  transition-duration: 1s;
+  opacity: 0;
+  display: none;
+  }
+
+#homeButton {
+  width: 70px;
+  top: 20px;
+  left: 95px;
+  cursor: pointer;
 }
