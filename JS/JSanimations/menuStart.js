@@ -1,5 +1,5 @@
 function menuStart(){
-  document.getElementsByClassName("navElem").style.display = "initial";
+  document.getElementById("homeButton").style.display = "initial";
   anime({
     targets: '#img5',
     translateY: -1100,
@@ -50,7 +50,7 @@ function menuStart(){
             duration: 750,
           });
           setTimeout(() => {
-            document.getElementsByClassName("navElem").style.opacity = "1";
+            document.getElementById("homeButton").style.opacity = "1";
           }, 200);
         }, 200);
       }, 200);
