@@ -15,8 +15,8 @@ function menuStart(){
     easing: 'easeInOutQuint',
     duration: 750,
   });
-  //  animates the nav icon
-  setTimeout(() => {
+    //  animates the nav elements
+    setTimeout(() => {
     anime({
       targets: '#img1',
       translateY: flexScale(-83).vw,
@@ -26,7 +26,6 @@ function menuStart(){
       easing: 'easeInOutQuint',
       duration: 750,
     });
-    
     setTimeout(() => {
       anime({
         targets: '#img2',
