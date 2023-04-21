@@ -23,7 +23,7 @@ function menuStart(){
     anime({
       targets: '#img1',
       translateY: flexScale(-83).vw,
-      translateX: flexScale(38.2).vh,
+      translateX: flexScale(37.5).vh,
       rotate: '100',
       easing: 'easeInOutQuint',
       duration: 750,
