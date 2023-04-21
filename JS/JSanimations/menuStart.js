@@ -23,39 +23,35 @@ function menuStart(){
     anime({
       targets: '#img1',
       translateY: flexScale(-83).vw,
-      translateX: flexScale(40).vh,
+      translateX: flexScale(38.2).vh,
       rotate: '100',
-      scale: '1.5',
       easing: 'easeInOutQuint',
       duration: 750,
     });
     setTimeout(() => {
       anime({
         targets: '#img2',
-        translateY: flexScale(-40).vw,
-        translateX: flexScale(45).vh,
+        translateY: flexScale(-40.5).vw,
+        translateX: flexScale(42).vh,
         rotate: '100',
-        scale: '1.2',
         easing: 'easeInOutQuint',
         duration: 750,
       });
       setTimeout(() => {
         anime({
           targets: '#img3',
-          translateY: flexScale(-31).vw,
-          translateX: flexScale(45).vh,
+          translateY: flexScale(-32).vw,
+          translateX: flexScale(42).vh,
           rotate: '100',
-          scale: '1.2',
           easing: 'easeInOutQuint',
           duration: 750,
         });
         setTimeout(() => {
           anime({
             targets: '#img4',
-            translateY: flexScale(-22).vw,
-            translateX: flexScale(45).vh,
+            translateY: flexScale(-23,5).vw,
+            translateX: flexScale(42).vh,
             rotate: '100',
-            scale: '1.2',
             easing: 'easeInOutQuint',
             duration: 750,
           });

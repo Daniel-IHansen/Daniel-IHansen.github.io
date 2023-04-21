@@ -54,28 +54,30 @@ body {
 }
 
 #homeButton {
-  width: 6vw;
+  width: 4vw;
   top: 2vh;
-  left: 9vw;
+  left: 10vw;
+  pointer-events: none;
 }
 
 .navText {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #978971;
   font-family: "fancyFont";
+  pointer-events: none;
 }
 
 #cv {
-  top: -2vh;
+  top: 0vh;
   left: 53.5vw;
 }
 
 #projects {
-  top: -2vh;
+  top: 0vh;
   left: 60vw;
 }
 
 #contact {
-  top: -2vh;
+  top: 0vh;
   left: 69.3vw;
 }
