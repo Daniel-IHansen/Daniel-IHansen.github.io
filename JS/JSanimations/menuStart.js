@@ -1,7 +1,8 @@
 //  translateX = Y axis
 //  translateY = X axis
-
+let menuClosed = true;
 function menuStart(){
+  menuClosed = false;
   //  displays nav elements when animation starts
   document.getElementById("homeIcon").style.display = "initial";
   document.getElementById("cv").style.display = "initial";

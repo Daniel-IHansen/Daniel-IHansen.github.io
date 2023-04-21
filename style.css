@@ -43,6 +43,7 @@ body {
 
 #cardStack {
   pointer-events: all;
+  cursor: pointer;
 }
 
 .navElem {

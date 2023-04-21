@@ -1,3 +1,15 @@
+//  the card stack wil pulse until clicked
+  anime({
+    targets: "#cardStack",
+    keyframes: [
+      {scale: 1.2, duration: 900},
+      {scale: 1, duration: 600}
+    ],
+    duration: 1500,
+    easing: "easeInOutQuint",
+    loop: true
+  })
+
 var hoverElem = document.getElementsByClassName("hover")
 
 //  for every element with hover
