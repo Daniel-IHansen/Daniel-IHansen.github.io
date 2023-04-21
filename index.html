@@ -25,24 +25,24 @@
 </head>
 
 <body>
-  <img class="center-fit" src='mainMedia/img/backdrop.jpg' id="backdrop">
+  <img src='mainMedia/img/backdrop.jpg' id="backdrop">
   <div id="cardWrapper">
-    <img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="img1">
-    <img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="img2">
-    <img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="img3">
-    <img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="img4">
-    <img src="mainMedia/cards/cardDaniel.png" alt="" class="card cardStackPos" id="img5">
-    <img src="mainMedia/cards/cardCode.png" alt="" class="card cardStackPos" id="img6">
-    <img src="mainMedia/cards/cardStack.png" alt="" class="card cardStackPos hover" id="img7" onclick="menuStart()">
+    <a href="#"><img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="card0"></a>
+    <a href="pages/cv/index.html"><img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="card1"></a>
+    <a href="pages/projects/index.html"><img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="card2"></a>
+    <a href="pages/contact/index.html"><img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="card3"></a>
+    <img src="mainMedia/cards/cardDaniel.png" alt="" class="card cardStackPos" id="cardDaniel">
+    <img src="mainMedia/cards/cardStack.png" alt="" class="card cardStackPos hover" id="cardStack" onclick="menuStart()">
   </div>
   <nav>
-    <a href="#"><img src="mainMedia/icon/icon.svg" alt="" class="navElem" id="homeButton"></a>
-    <a href="#"><p class="navElem navText" id="cv">CV</p></a>
-    <a href="#"><p class="navElem navText" id="projects">Projects</p></a>
-    <a href="#"><p class="navElem navText" id="contact">Contact</p></a>
+    <img src="mainMedia/icon/icon.svg" alt="" class="navElem" id="homeIcon">
+    <p class="navElem navText" id="cv">CV</p>
+    <p class="navElem navText" id="projects">Projects</p>
+    <p class="navElem navText" id="contact">Contact</p>
   </nav>
 
-  <script src="node_modules/animejs/lib/anime.min.js"></script>
+  <script src="node_modules/@barba/core/dist/barba.js"></script>
+  <script src="node_modules/animejs/lib/anime.js"></script>
   <script src="JS/miscLib.js"></script>
   <script src="JS/JSanimations/menuStart.js"></script>
   <script src="JS/JSanimations/menuInteraction.js"></script>

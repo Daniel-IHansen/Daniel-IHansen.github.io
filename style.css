@@ -32,16 +32,17 @@ body {
   filter: drop-shadow(2px 2px 5px #222);
   transform-origin: 50% 50%;
   transform-box: fill-box;
-}
-
-.hover:hover {
-/* GET SOMETHING RESPONSIVE AND GOOD HERE */
+  pointer-events: none;
 }
 
 .cardStackPos {
   rotate: 270deg; 
   top: 20vh;
   left: 92vw;
+}
+
+#cardStack {
+  pointer-events: all;
 }
 
 .navElem {
@@ -53,7 +54,7 @@ body {
   rotate: 10deg;
 }
 
-#homeButton {
+#homeIcon {
   width: 4vw;
   top: 2vh;
   left: 10vw;

@@ -3,14 +3,14 @@
 
 function menuStart(){
   //  displays nav elements when animation starts
-  document.getElementById("homeButton").style.display = "initial";
+  document.getElementById("homeIcon").style.display = "initial";
   document.getElementById("cv").style.display = "initial";
   document.getElementById("projects").style.display = "initial";
   document.getElementById("contact").style.display = "initial";
 
   //  animates my own card
   anime({
-    targets: '#img5',
+    targets: '#cardDaniel',
     translateY: flexScale(-70).vw,
     translateX: flexScale(-10).vh,
     scale: 2,
@@ -21,7 +21,7 @@ function menuStart(){
     //  animates the nav elements
     setTimeout(() => {
     anime({
-      targets: '#img1',
+      targets: '#card0',
       translateY: flexScale(-83).vw,
       translateX: flexScale(37.5).vh,
       rotate: '100',
@@ -30,7 +30,7 @@ function menuStart(){
     });
     setTimeout(() => {
       anime({
-        targets: '#img2',
+        targets: '#card1',
         translateY: flexScale(-40.5).vw,
         translateX: flexScale(42).vh,
         rotate: '100',
@@ -39,7 +39,7 @@ function menuStart(){
       });
       setTimeout(() => {
         anime({
-          targets: '#img3',
+          targets: '#card2',
           translateY: flexScale(-32).vw,
           translateX: flexScale(42).vh,
           rotate: '100',
@@ -48,7 +48,7 @@ function menuStart(){
         });
         setTimeout(() => {
           anime({
-            targets: '#img4',
+            targets: '#card3',
             translateY: flexScale(-23,5).vw,
             translateX: flexScale(42).vh,
             rotate: '100',
@@ -57,13 +57,24 @@ function menuStart(){
           });
           setTimeout(() => {
             //  gradually reveals nav elements
-            document.getElementById("homeButton").style.opacity = "1";
+            document.getElementById("homeIcon").style.opacity = "1";
             setTimeout(() => {
               document.getElementById("cv").style.opacity = "1";
               setTimeout(() => {
                 document.getElementById("projects").style.opacity = "1";
                 setTimeout(() => {
                   document.getElementById("contact").style.opacity = "1";
+
+                  //  turns all objects in nav clickable
+                  document.getElementById("card0").style.pointerEvents = "all"
+                  document.getElementById("card1").style.pointerEvents = "all"
+                  document.getElementById("card2").style.pointerEvents = "all"
+                  document.getElementById("card3").style.pointerEvents = "all"
+                  anime({
+                    targets: "#homeIcon",
+                    rotate: "1turn",
+                    duration: "infinite",
+                  })
                 }, 300);
               }, 300);
             }, 400);

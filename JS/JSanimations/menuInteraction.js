@@ -31,3 +31,4 @@ function animateHover(elem, scale, duration, elasticity) {
       elasticity: elasticity
     });
   }
+
