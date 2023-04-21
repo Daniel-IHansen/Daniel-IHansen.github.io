@@ -30,8 +30,8 @@ function menuStart(){
     setTimeout(() => {
       anime({
         targets: '#img2',
-        translateY: -600,
-        translateX: 300,
+        translateY: flexScale(-40).vw,
+        translateX: flexScale(45).vh,
         rotate: '100',
         scale: '1.2',
         easing: 'easeInOutQuint',
@@ -40,8 +40,8 @@ function menuStart(){
       setTimeout(() => {
         anime({
           targets: '#img3',
-          translateY: -480,
-          translateX: 300,
+          translateY: flexScale(-31).vw,
+          translateX: flexScale(45).vh,
           rotate: '100',
           scale: '1.2',
           easing: 'easeInOutQuint',
@@ -50,8 +50,8 @@ function menuStart(){
         setTimeout(() => {
           anime({
             targets: '#img4',
-            translateY: -360,
-            translateX: 300,
+            translateY: flexScale(-22).vw,
+            translateX: flexScale(45).vh,
             rotate: '100',
             scale: '1.2',
             easing: 'easeInOutQuint',
