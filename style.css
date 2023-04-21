@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "fancyFont";
+  src: url(mainMedia/font/zh-cn.ttf);
+  font-weight: bold;
+}
+
 body {
   background-color: #514036;
   overflow: hidden;
@@ -28,6 +34,10 @@ body {
   transform-box: fill-box;
 }
 
+.hover:hover {
+/* GET SOMETHING RESPONSIVE AND GOOD HERE */
+}
+
 .cardStackPos {
   rotate: 270deg; 
   top: 20vh;
@@ -39,11 +49,33 @@ body {
   transition-duration: 1s;
   opacity: 0;
   display: none;
+  cursor: pointer;
+  rotate: 10deg;
 }
 
 #homeButton {
-  width: 5vw;
-  top: 3vh;
-  left: 10vw;
-  cursor: pointer;
+  width: 6vw;
+  top: 2vh;
+  left: 9vw;
+}
+
+.navText {
+  font-size: 1.3rem;
+  color: #978971;
+  font-family: "fancyFont";
+}
+
+#cv {
+  top: -2vh;
+  left: 53.5vw;
+}
+
+#projects {
+  top: -2vh;
+  left: 60vw;
+}
+
+#contact {
+  top: -2vh;
+  left: 69.3vw;
 }
