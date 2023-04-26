@@ -7,7 +7,6 @@
     ],
     duration: 1500,
     easing: "easeInOutQuint",
-    loop: true
   })
 
 var hoverElem = document.getElementsByClassName("hover")
@@ -43,4 +42,3 @@ function animateHover(elem, scale, duration, elasticity) {
       elasticity: elasticity
     });
   }
-

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -26,19 +25,29 @@
 
 <body>
   <img src='mainMedia/img/backdrop.jpg' id="backdrop">
-  <div id="cardWrapper">
-    <a href="#"><img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="card0"></a>
-    <a href="pages/cv/index.html"><img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="card1"></a>
-    <a href="pages/projects/index.html"><img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="card2"></a>
-    <a href="pages/contact/index.html"><img src="mainMedia/cards/card.png" alt="" class="card cardStackPos hover" id="card3"></a>
-    <img src="mainMedia/cards/cardDaniel.png" alt="" class="card cardStackPos" id="cardDaniel">
-    <img src="mainMedia/cards/cardStack.png" alt="" class="card cardStackPos hover" id="cardStack" onclick="menuStart()">
-  </div>
   <nav>
-    <img src="mainMedia/icon/icon.svg" alt="" class="navElem" id="homeIcon">
-    <p class="navElem navText" id="cv">CV</p>
-    <p class="navElem navText" id="projects">Projects</p>
-    <p class="navElem navText" id="contact">Contact</p>
+    <div id="home" class="card cardStackPos">
+      <a href=""><img src="mainMedia/cards/card.png" alt="" class="cardImg hover"></a>
+      <img src="mainMedia/icon/icon.svg" alt="" id="homeIcon">
+    </div>
+    <div id="cv" class="card cardStackPos">
+      <a href="pages/cv/index.html"><img src="mainMedia/cards/card.png" alt="" class="cardImg hover"></a>
+      <p class="navText" id="cvText">CV</p>
+    </div>
+    <div id="projects" class="card cardStackPos">
+      <a href="pages/projects/index.html"><img src="mainMedia/cards/card.png" alt="" class="cardImg hover"></a>
+      <p class="navText" id="projectsText">Projects</p>
+    </div>
+    <div id="contact" class="card cardStackPos">
+      <a href="pages/contact/index.html"><img src="mainMedia/cards/card.png" alt="" class="cardImg hover"></a>
+      <p class="navText" id="contactText">Contact</p>
+    </div>
+    <div id="cardDaniel" class="card cardStackPos">
+      <img src="mainMedia/cards/cardDaniel.png" alt="" class="cardImg">
+    </div>
+    <div id="cardStack" class="card cardStackPos">
+      <img src="mainMedia/cards/cardStack.png" alt="" class="cardImg hover" onclick="menuStart()">
+    </div>
   </nav>
 
   <script src="node_modules/@barba/core/dist/barba.js"></script>

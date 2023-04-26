@@ -5,16 +5,16 @@ function menuStart(){
   menuClosed = false;
   //  displays nav elements when animation starts
   document.getElementById("homeIcon").style.display = "initial";
-  document.getElementById("cv").style.display = "initial";
-  document.getElementById("projects").style.display = "initial";
-  document.getElementById("contact").style.display = "initial";
+  document.getElementById("cvText").style.display = "initial";
+  document.getElementById("projectsText").style.display = "initial";
+  document.getElementById("contactText").style.display = "initial";
 
   //  animates my own card
   anime({
     targets: '#cardDaniel',
     translateY: flexScale(-70).vw,
     translateX: flexScale(-10).vh,
-    scale: 2,
+    scale: 1.5,
     rotate: '90',
     easing: 'easeInOutQuint',
     duration: 750,
@@ -22,36 +22,36 @@ function menuStart(){
     //  animates the nav elements
     setTimeout(() => {
     anime({
-      targets: '#card0',
-      translateY: flexScale(-83).vw,
-      translateX: flexScale(37.5).vh,
+      targets: '#home',
+      translateY: flexScale(-75).vw,
+      translateX: flexScale(43).vh,
       rotate: '100',
       easing: 'easeInOutQuint',
       duration: 750,
     });
     setTimeout(() => {
       anime({
-        targets: '#card1',
-        translateY: flexScale(-40.5).vw,
-        translateX: flexScale(42).vh,
+        targets: '#cv',
+        translateY: flexScale(-35).vw,
+        translateX: flexScale(48).vh,
         rotate: '100',
         easing: 'easeInOutQuint',
         duration: 750,
       });
       setTimeout(() => {
         anime({
-          targets: '#card2',
-          translateY: flexScale(-32).vw,
-          translateX: flexScale(42).vh,
+          targets: '#projects',
+          translateY: flexScale(-19).vw,
+          translateX: flexScale(48).vh,
           rotate: '100',
           easing: 'easeInOutQuint',
           duration: 750,
         });
         setTimeout(() => {
           anime({
-            targets: '#card3',
-            translateY: flexScale(-23,5).vw,
-            translateX: flexScale(42).vh,
+            targets: '#contact',
+            translateY: flexScale(-9.5  ).vw,
+            translateX: flexScale(48).vh,
             rotate: '100',
             easing: 'easeInOutQuint',
             duration: 750,
@@ -60,17 +60,17 @@ function menuStart(){
             //  gradually reveals nav elements
             document.getElementById("homeIcon").style.opacity = "1";
             setTimeout(() => {
-              document.getElementById("cv").style.opacity = "1";
+              document.getElementById("cvText").style.opacity = "1";
               setTimeout(() => {
-                document.getElementById("projects").style.opacity = "1";
+                document.getElementById("projectsText").style.opacity = "1";
                 setTimeout(() => {
-                  document.getElementById("contact").style.opacity = "1";
+                  document.getElementById("contactText").style.opacity = "1";
 
                   //  turns all objects in nav clickable
-                  document.getElementById("card0").style.pointerEvents = "all"
-                  document.getElementById("card1").style.pointerEvents = "all"
-                  document.getElementById("card2").style.pointerEvents = "all"
-                  document.getElementById("card3").style.pointerEvents = "all"
+                  document.getElementById("home").style.pointerEvents = "all"
+                  document.getElementById("cv").style.pointerEvents = "all"
+                  document.getElementById("projects").style.pointerEvents = "all"
+                  document.getElementById("contact").style.pointerEvents = "all"
                   anime({
                     targets: "#homeIcon",
                     rotate: "1turn",

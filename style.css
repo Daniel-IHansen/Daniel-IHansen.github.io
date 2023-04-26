@@ -9,6 +9,7 @@ body {
   overflow: hidden;
   height: 100vh;
 }
+
 #backdrop {
   height: 100vh;
   width: 100%;
@@ -18,68 +19,56 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  z-index: -5;
 }
 
-#cardWrapper {
-  width: 100%;
+nav {
   height: 100%;
+  width: 100%;
 }
 
 .card {
-  height: 30vh;
-  background: transparent;
   position: absolute;
-  filter: drop-shadow(2px 2px 5px #222);
-  transform-origin: 50% 50%;
-  transform-box: fill-box;
+  height: 40vh;
   pointer-events: none;
 }
 
+.cardImg {
+height: 100%;
+}
+
 .cardStackPos {
-  rotate: 270deg; 
-  top: 20vh;
-  left: 92vw;
+top: 20vh;
+right: -2vw;
+rotate: 270deg;
 }
 
 #cardStack {
   pointer-events: all;
-  cursor: pointer;
-}
-
-.navElem {
-  position: absolute;
-  transition-duration: 1s;
-  opacity: 0;
-  display: none;
-  cursor: pointer;
-  rotate: 10deg;
 }
 
 #homeIcon {
-  width: 4vw;
-  top: 2vh;
-  left: 10vw;
+  transition: 1s;
+  position: relative;
+  width: 12vh;
+  bottom: 3vh;
+  right: 8.5vw;
+  display: none;
+  opacity: 0; 
   pointer-events: none;
 }
 
 .navText {
-  font-size: 1rem;
+  transition: 1s;
+  position: relative;
+  bottom: 3vh;
+  animation-duration: 2s;
+  display: none;
+  opacity: 0;
+  font-size: 4vh;
   color: #978971;
   font-family: "fancyFont";
   pointer-events: none;
-}
-
-#cv {
-  top: 0vh;
-  left: 53.5vw;
-}
-
-#projects {
-  top: 0vh;
-  left: 60vw;
-}
-
-#contact {
-  top: 0vh;
-  left: 69.3vw;
+  left: -50%;
+  transform: translateX(-50%);
 }
