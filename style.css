@@ -47,12 +47,17 @@ rotate: 270deg;
   pointer-events: all;
 }
 
+#home {
+  text-align: center;
+}
+
 #homeIcon {
   transition: 1s;
-  position: relative;
+  position: absolute;
   width: 12vh;
   bottom: 3vh;
-  right: 8.5vw;
+  left: 2.5vw;
+  margin: 0 auto;
   display: none;
   opacity: 0; 
   pointer-events: none;
@@ -60,15 +65,15 @@ rotate: 270deg;
 
 .navText {
   transition: 1s;
-  position: relative;
-  bottom: 3vh;
-  animation-duration: 2s;
+  transform-origin: 2px;
+  position: absolute;
+  bottom: -2vh;
   display: none;
   opacity: 0;
   font-size: 4vh;
   color: #978971;
   font-family: "fancyFont";
   pointer-events: none;
-  left: -50%;
+  left: 50%;
   transform: translateX(-50%);
 }

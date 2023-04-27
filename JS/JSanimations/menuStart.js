@@ -23,8 +23,8 @@ function menuStart(){
     setTimeout(() => {
     anime({
       targets: '#home',
-      translateY: flexScale(-75).vw,
-      translateX: flexScale(43).vh,
+      translateY: flexScale(-85).vw,
+      translateX: flexScale(44).vh,
       rotate: '100',
       easing: 'easeInOutQuint',
       duration: 750,
@@ -41,7 +41,7 @@ function menuStart(){
       setTimeout(() => {
         anime({
           targets: '#projects',
-          translateY: flexScale(-19).vw,
+          translateY: flexScale(-25).vw,
           translateX: flexScale(48).vh,
           rotate: '100',
           easing: 'easeInOutQuint',
@@ -50,7 +50,7 @@ function menuStart(){
         setTimeout(() => {
           anime({
             targets: '#contact',
-            translateY: flexScale(-9.5  ).vw,
+            translateY: flexScale(-15).vw,
             translateX: flexScale(48).vh,
             rotate: '100',
             easing: 'easeInOutQuint',
@@ -71,11 +71,15 @@ function menuStart(){
                   document.getElementById("cv").style.pointerEvents = "all"
                   document.getElementById("projects").style.pointerEvents = "all"
                   document.getElementById("contact").style.pointerEvents = "all"
-                  anime({
-                    targets: "#homeIcon",
-                    rotate: "1turn",
-                    duration: "infinite",
-                  })
+                  //  spins the home icon for a funny effect
+                  document.getElementById("homeIcon").style.transition = "all"
+                    anime({
+                      targets: "#homeIcon",
+                      rotate: 360,
+                      duration: 3000,
+                      easing: 'linear',
+                      loop: true
+                    })
                 }, 300);
               }, 300);
             }, 400);
