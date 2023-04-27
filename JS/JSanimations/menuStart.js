@@ -4,11 +4,10 @@ let menuClosed = true;
 function menuStart(){
   menuClosed = false;
   //  displays nav elements when animation starts
-  document.getElementById("homeIcon").style.display = "initial";
-  document.getElementById("cvText").style.display = "initial";
-  document.getElementById("projectsText").style.display = "initial";
-  document.getElementById("contactText").style.display = "initial";
-
+//  document.getElementById("homeIcon").style.display = "initial";
+//  document.getElementById("cvText").style.display = "initial";
+//  document.getElementById("projectsText").style.display = "initial";
+//  document.getElementById("contactText").style.display = "initial";
   //  animates my own card
   anime({
     targets: '#cardDaniel',
