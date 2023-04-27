@@ -5,15 +5,6 @@ function menuClose() {
     document.getElementById("projects").style.pointerEvents = "none";
     document.getElementById("contact").style.pointerEvents = "none";
   
-    //  spins the home icon back to its original position
-    anime({
-      targets: "#homeIcon",
-      rotate: 0,
-      duration: 3000,
-      easing: 'linear',
-      loop: false
-    });
-  
     setTimeout(() => {
       // gradually hides nav elements
       document.getElementById("contactText").style.opacity = "0";
@@ -80,12 +71,12 @@ function menuClose() {
                     //  enables pointer events for the card stack
                     document.getElementById("cardStack").style.pointerEvents = "all";
                     menuClosed = true;
-                  }, 750);
-                }, 200);
-              }, 200);
-            }, 200);
-          }, 300);
-        }, 300);
-      }, 400);
-    }, 400);
+                  }, 375);
+                }, 100);
+              }, 100);
+            }, 100);
+          }, 150);
+        }, 150);
+      }, 200);
+    }, 200);
   }
