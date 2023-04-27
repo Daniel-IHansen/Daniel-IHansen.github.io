@@ -2,12 +2,14 @@
 //  translateY = X axis
 let menuClosed = true;
 function menuStart(){
+  document.getElementById("cardStack").style.pointerEvents = "none"
   menuClosed = false;
   //  displays nav elements when animation starts
  document.getElementById("homeIcon").style.display = "initial";
  document.getElementById("cvText").style.display = "initial";
  document.getElementById("projectsText").style.display = "initial";
  document.getElementById("contactText").style.display = "initial";
+ document.getElementById("cardLText").style.display = "initial";
   //  animates my own card
   anime({
     targets: '#cardDaniel',
@@ -62,6 +64,7 @@ function menuStart(){
               document.getElementById("cvText").style.opacity = "1";
               setTimeout(() => {
                 document.getElementById("projectsText").style.opacity = "1";
+                document.getElementById("cardLText").style.opacity = "1";
                 setTimeout(() => {
                   document.getElementById("contactText").style.opacity = "1";
 
@@ -76,17 +79,9 @@ function menuStart(){
                     targets: "#homeIcon",
                     rotate: 360,
                     duration: 3000,
-                    easing: 'easeInQuad',
+                    easing: 'linear',
+                    loop: true
                   })
-                  setTimeout(() => {
-                    anime({
-                      targets: "#homeIcon",
-                      rotate: 360,
-                      duration: 3000,
-                      easing: 'linear',
-                      loop: true
-                    })
-                  }, 3000);
                 }, 300);
               }, 300);
             }, 400);

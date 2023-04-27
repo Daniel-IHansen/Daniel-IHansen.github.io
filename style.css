@@ -8,6 +8,7 @@ body {
   background-color: #514036;
   overflow: hidden;
   height: 100vh;
+  margin: 0;
 }
 
 #backdrop {
@@ -23,7 +24,7 @@ body {
 }
 
 nav {
-  height: 100%;
+  height: 20%;
   width: 100%;
 }
 
@@ -43,10 +44,6 @@ right: -2vw;
 rotate: 270deg;
 }
 
-#cardStack {
-  pointer-events: all;
-}
-
 #home {
   text-align: center;
 }
@@ -63,6 +60,10 @@ rotate: 270deg;
   pointer-events: none;
 }
 
+#cardStack {
+  pointer-events: all;
+}
+
 .navText {
   transition: 1s;
   transform-origin: 2px;
@@ -76,4 +77,31 @@ rotate: 270deg;
   pointer-events: none;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#cardLText {
+  height: 60vh;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45vw;
+  display: none;
+  opacity: 0;
+  transition: 1s;
+}
+
+#cardLWrapper {
+  padding: 2vw;
+  position: absolute; 
+}
+
+.whiteText {
+  font-family: "fancyFont";
+  color: #ffffff;
+  font-size: 4vh;
+}
+
+.grayText {
+  font-family: "fancyFont";
+  color: #d1d1d1;
+  font-size: 2.5vh;
 }
