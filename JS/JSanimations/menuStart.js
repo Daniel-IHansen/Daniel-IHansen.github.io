@@ -4,10 +4,10 @@ let menuClosed = true;
 function menuStart(){
   menuClosed = false;
   //  displays nav elements when animation starts
-//  document.getElementById("homeIcon").style.display = "initial";
-//  document.getElementById("cvText").style.display = "initial";
-//  document.getElementById("projectsText").style.display = "initial";
-//  document.getElementById("contactText").style.display = "initial";
+ document.getElementById("homeIcon").style.display = "initial";
+ document.getElementById("cvText").style.display = "initial";
+ document.getElementById("projectsText").style.display = "initial";
+ document.getElementById("contactText").style.display = "initial";
   //  animates my own card
   anime({
     targets: '#cardDaniel',
@@ -19,7 +19,7 @@ function menuStart(){
     duration: 750,
   });
     //  animates the nav elements
-    setTimeout(() => {
+  setTimeout(() => {
     anime({
       targets: '#home',
       translateY: flexScale(-85).vw,
@@ -72,6 +72,13 @@ function menuStart(){
                   document.getElementById("contact").style.pointerEvents = "all"
                   //  spins the home icon for a funny effect
                   document.getElementById("homeIcon").style.transition = "all"
+                  anime({
+                    targets: "#homeIcon",
+                    rotate: 360,
+                    duration: 3000,
+                    easing: 'easeInQuad',
+                  })
+                  setTimeout(() => {
                     anime({
                       targets: "#homeIcon",
                       rotate: 360,
@@ -79,6 +86,7 @@ function menuStart(){
                       easing: 'linear',
                       loop: true
                     })
+                  }, 3000);
                 }, 300);
               }, 300);
             }, 400);

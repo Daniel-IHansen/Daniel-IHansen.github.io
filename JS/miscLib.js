@@ -31,3 +31,10 @@ function flexScale(viewportVar) {
     vh
   }
 }
+
+//  uses setTimeout to wait
+function wait(time, code){
+  setTimeout(() => {
+    code
+  }, time);
+}
