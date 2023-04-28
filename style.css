@@ -9,6 +9,7 @@ body {
   overflow: hidden;
   height: 100vh;
   margin: 0;
+  font-family: "fancyFont";
 }
 
 #backdrop {
@@ -94,17 +95,14 @@ rotate: 270deg;
   position: absolute; 
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: "fancyFont";
-  pointer-events: all;
-}
-
 h1 {
   color: #ffffff;
   font-size: 4vh;
+  pointer-events: all;
 }
 
 h3 {
   color: #d1d1d1;
   font-size: 2.5vh;
+  pointer-events: all;
 }
