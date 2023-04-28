@@ -94,14 +94,17 @@ rotate: 270deg;
   position: absolute; 
 }
 
-.whiteText {
+h1, h2, h3, h4, h5 {
   font-family: "fancyFont";
+  pointer-events: all;
+}
+
+h1 {
   color: #ffffff;
   font-size: 4vh;
 }
 
-.grayText {
-  font-family: "fancyFont";
+h3 {
   color: #d1d1d1;
   font-size: 2.5vh;
 }
