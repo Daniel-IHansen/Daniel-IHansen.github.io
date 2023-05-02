@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "fancyFont";
+  font-family: "customFont";
   src: url(mainMedia/font/zh-cn.ttf);
   font-weight: bold;
 }
@@ -7,9 +7,8 @@
 body {
   background-color: #514036;
   overflow: hidden;
-  height: 100vh;
   margin: 0;
-  font-family: "fancyFont";
+  font-family: "customFont";
 }
 
 #backdrop {
@@ -74,7 +73,7 @@ rotate: 270deg;
   opacity: 0;
   font-size: 4vh;
   color: #978971;
-  font-family: "fancyFont";
+  font-family: "customFont";
   pointer-events: none;
   left: 50%;
   transform: translateX(-50%);

@@ -13,14 +13,14 @@ function menuStart(){
   //  animates my own card
   anime({
     targets: '#cardDaniel',
-    translateY: flexScale(-70).vw,
+    translateY: flexScale(-65).vw,
     translateX: flexScale(-10).vh,
     scale: 1.5,
     rotate: '90',
     easing: 'easeInOutQuint',
     duration: 750,
   });
-    //  animates the nav elements
+  //  animates the nav elements
   setTimeout(() => {
     anime({
       targets: '#home',
@@ -73,6 +73,10 @@ function menuStart(){
                   document.getElementById("cv").style.pointerEvents = "all"
                   document.getElementById("projects").style.pointerEvents = "all"
                   document.getElementById("contact").style.pointerEvents = "all"
+                  document.getElementById("home").style.cursor = "pointer"
+                  document.getElementById("cv").style.cursor = "pointer"
+                  document.getElementById("projects").style.cursor = "pointer"
+                  document.getElementById("contact").style.cursor = "pointer"
                   //  spins the home icon for a funny effect
                   document.getElementById("homeIcon").style.transition = "all"
                   anime({

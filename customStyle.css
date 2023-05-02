@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "customFont";
+    src: url(mainMedia/font/zh-cn.ttf);
+    font-weight: bold;
+  }
+  
+  body {
+    background-color: #514036;
+    overflow: hidden;
+    margin: 0;
+    font-family: "customFont";
+  }
+  
+  #backdrop {
+    height: 100vh;
+    width: 100%;
+    object-fit:contain;
+    position: absolute;
+    z-index: -5;
+  }
+  
+  nav {
+    height: 20%;
+    width: 100%;
+  }
+  
+  .card {
+    position: absolute;
+    height: 40vh;
+  }
+  
+  .cardImg {
+  height: 100%;
+  }
+  
+  .cardStackPos {
+  top: 20vh;
+  right: -2vw;
+  rotate: 270deg;
+  }
+  
+  #homeIcon {
+    transition: 1s;
+    position: absolute;
+    width: 12vh;
+    bottom: 3vh;
+    left: 2.5vw;
+    display: none;
+    opacity: 0; 
+  }
+  
+  .navText {
+    transition: 1s;
+    transform-origin: 2px;
+    position: absolute;
+    bottom: -2vh;
+    display: none;
+    opacity: 0;
+    font-size: 4vh;
+    color: #978971;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #cardLText {
+    height: 60vh;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50vw;
+    display: none;
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  #cardLWrapper {
+    padding: 2vw;
+    position: absolute; 
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-size: 4vh;
+  }
+  
+  h3 {
+    color: #d1d1d1;
+    font-size: 2.5vh;
+  }

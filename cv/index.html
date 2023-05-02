@@ -5,15 +5,15 @@
   <!--Page title-->
   <title>My Personal Website</title>
     <!--Page icon-->
-  <link rel="icon" href="./mainMedia/icon/iconBlack.svg">
+  <link rel="icon" href="../.media/icon/iconBlack.svg">
       <!--Stuff-->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--See style.css-->
-  <link rel="stylesheet" href="globalstyle.css" />
-  <link rel="stylesheet" href="customstyle.css" />
+  <link rel="stylesheet" href="../globalstyle.css" />
+  <link rel="stylesheet" href="../customstyle.css" />
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,40 +25,30 @@
 </head>
 
 <body>
-  <img src='mainMedia/Img/backdrop.jpg' id="backdrop" class="center noAction">
+  <img src='.media/Img/backdrop.jpg' id="backdrop" class="center noAction">
   <div id="home" class="card noAction cardStackPos">
-    <img src="mainMedia/cards/card.png" alt="" class="cardImg hover">
-    <img src="mainMedia/icon/icon.svg" alt="" id="homeIcon" class="noAction">
+    <img src=".media/cards/card.png" alt="" class="cardImg hover">
+    <img src=".media/icon/icon.svg" alt="" id="homeIcon" class="noAction">
   </div>
   <div id="cv" class="card noAction cardStackPos">
-    <img src="mainMedia/cards/card.png" alt="" class="cardImg hover" onclick="menuClose('cv')">
+    <img src=".media/cards/card.png" alt="" class="cardImg hover" onclick="menuClose('cv')">
     <p class="navText noAction" id="cvText">CV</p>
   </div>
   <div id="projects" class="card noAction cardStackPos">
-    <img src="mainMedia/cards/card.png" alt="" class="cardImg hover" onclick="menuClose('projects')">
+    <img src=".media/cards/card.png" alt="" class="cardImg hover" onclick="menuClose('projects')">
     <p class="navText noAction" id="projectsText">Projects</p>
   </div>
   <div id="contact" class="card noAction cardStackPos">
-    <img src="mainMedia/cards/card.png" alt="" class="cardImg hover" onclick="menuClose('contact')">
+    <img src=".media/cards/card.png" alt="" class="cardImg hover" onclick="menuClose('contact')">
     <p class="navText noAction" id="contactText">Contact</p>
   </div>
 
   <main>
-    <div id="cardDaniel" class="card noAction cardStackPos">
-      <img src="mainMedia/cards/cardDaniel.png" alt="" class="cardImg">
-    </div>
-    <div id="cardLText" class="card">
-      <div id="cardLWrapper">
-        <h1 id="h1">Daniel Hansen</h1>
-        <hr>
-        <h3 id="h3">I'm just a simple developer making my way through life, one line at a time. Often thinks big, and works hard to keep it.</h3>
-      </div>
-      <img src="mainMedia/cards/cardL.png" alt="" class="cardImg">
-    </div>
+
   </main>
 
   <div id="cardStack" class="card action cardStackPos">
-    <img src="mainMedia/cards/cardStack.png" alt="" class="cardImg hover" onclick="menuStart()">
+    <img src=".media/cards/cardStack.png" alt="" class="cardImg hover" onclick="menuStart()">
   </div>
   <script src="node_modules/animejs/lib/anime.js"></script>
   <script src="JS/miscLib.js"></script>
