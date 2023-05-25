@@ -1,0 +1,32 @@
+%!Adobe-FontList 1.23
+%Locale:0x414
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:HYWenHei-HEW
+FamilyName:HYWenHei
+StyleName:85W
+FullName:HYWenHei 85W
+MenuName:HYWenHei-85W
+StyleBits:0
+FamilyNameNative:HYWenHei
+StyleNameNative:85W
+FullNameNative:HYWenHei 85W
+WritingScript:Japanese
+OutlineFileName:C:\Users\danie\OneDrive\Skrivebord\Laptop\Skrivebord\VS Code\danielhansensen.github.io\mainMedia\Font\zh-cn.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:7232220
+FileModTime:1682105250
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,HYWenHei 85W
+NameArray:0,Win,1,HYWenHei-85W
+NameArray:0,Win,16,HYWenHei
+NameArray:25,Win,1,汉仪文黑-85W
+NameArray:25,Win,16,汉仪文黑
+%EndFont
+

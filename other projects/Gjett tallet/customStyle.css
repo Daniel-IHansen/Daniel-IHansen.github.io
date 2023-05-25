@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "customFont";
+    src: url(.media/font/zh-cn.ttf);
+    font-weight: bold;
+  }
+
+
+body {
+  height: 100vh;
+}
+
+#map {
+  background-color: rgba(0, 0, 255, 0.474);
+  display: grid;
+  grid-template-columns: "tile","tile","tile";
+  grid-template-rows: "tile","tile","tile";
+}
+
+.tile {
+  grid-area: tile;
+  margin: 0;
+  width: 50px;
+}
