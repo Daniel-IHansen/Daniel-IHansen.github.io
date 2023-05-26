@@ -1,8 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* gives all elements a custom font */
 body {
   font-family: "customFont";
-  margin: 0;
 }
 
+/* centers elements and places them accordingly */
 .centerXTop {
     display: flex;
     text-align: center;
@@ -45,10 +50,12 @@ body {
     justify-content: center;
 }
 
+/* removes mouse actions from object */
 .noAction {
  pointer-events: none;
 }
 
-.action {
-    cursor: pointer;
+/* centers object position */
+.posCenter {
+    transform: translate(-50%, -50%);
 }

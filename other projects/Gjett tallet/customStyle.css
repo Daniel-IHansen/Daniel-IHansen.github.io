@@ -4,20 +4,18 @@
     font-weight: bold;
   }
 
-
-body {
+#tableWrapper {
   height: 100vh;
 }
 
-#map {
-  background-color: rgba(0, 0, 255, 0.474);
-  display: grid;
-  grid-template-columns: "tile","tile","tile";
-  grid-template-rows: "tile","tile","tile";
+.tile {
+  margin: -3px -1px;
+  width: 80px;
 }
 
-.tile {
-  grid-area: tile;
-  margin: 0;
-  width: 50px;
+#player {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
