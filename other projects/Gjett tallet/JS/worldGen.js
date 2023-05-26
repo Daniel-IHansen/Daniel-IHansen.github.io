@@ -49,6 +49,7 @@ for (var x = 0; x < 10; x++) {
     }
 }
 
+
 function createTile(setTile){
     //  increases the tile id based on number of tiles
     tileId++;
@@ -78,31 +79,23 @@ function createHitbox(setTile){
     //  gives the hitbox a class
     hitbox.setAttribute("class", "hitbox");
   
+    //  sets common lengths
+    let longSide = "80px";
+    let shortSide = "30px";
+
+    //  adjusts the height, width, rotation and position of hitbox
     if (setTile = 1) {
-        
+        hitbox.style.height = shortSide;
+        hitbox.style.width = longSide;
+        // hitbox.style.left = x + "px";
+        // hitbox.style.top = y + "px";
+        // hitbox.style.rotate = rot + "deg";
     }
     else if (setTile = 2){
         
     }
-    else if (setTile = 3){
-        
-    }
-    else if (setTile = 4){
-        
-    }
-    else if (setTile = 5){
-        
-    }
-    else if (setTile = 6){
-        
-    }
-    else if (setTile = 7){
-        
-    }
-    else if (setTile = 8){
-        
-    }
 
     //  displays the hitbox element
-    document.getElementById("mapHitbox").appendChild(hitbox);
+    console.log(tileId)
+    document.getElementById("td" + tileId).appendChild(hitbox);
   }
