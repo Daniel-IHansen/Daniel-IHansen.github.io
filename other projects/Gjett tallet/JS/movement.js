@@ -4,9 +4,8 @@ let playerYVel = 0;
 let playerX =  getAttributesById("player").x;
 let playerY =  getAttributesById("player").y;
 
-
 //  makes a key array
-let keys = {
+const keys = {
   w: false,
   a: false,
   s: false,
@@ -17,51 +16,56 @@ let keys = {
   ArrowUp: false
 };
 
-// gradually lowers speed and sets speed based on input
-setInterval(function () { 
-  let speed = 1.8;
-  playerXVel *= 0.95;
-  playerYVel *= 0.95;
+setInterval(function() {
+  //  gradually lowers speed and sets speed based on input
+  const speed = 1.8;
+  playerXVel *= 0.91;
+  playerYVel *= 0.91;
 
-  playerX += playerXVel;
-  playerY += playerYVel;
+  //  is player colliding with wall?
+  let collisionDetected = false;
+  for (let i = 0; i < document.getElementsByClassName("hitbox").length; i++) {
+    if (keys.w) {
+      if (!isColliding("player", ("hitbox" + i), "top")) {
+        console.log(isColliding("player", ("hitbox" + i), "top"))
+        collisionDetected = true;
+        playerYVel = -speed;
+      }
+    }
+    if (keys.a) {
+      if (!isColliding("player", "hitbox" + i, "left")){
+        collisionDetected = true;
+        playerXVel = -speed;
+      }
+    }
+    if (keys.s) {
+      if (!isColliding("player", "hitbox" + i, "bottom")){
+        collisionDetected = true;
+        playerYVel = speed;
+      }
+    }
+    if (keys.d) {
+      if (!isColliding("player", "hitbox" + i, "right")){
+        collisionDetected = true;
+        playerXVel = speed;
+      }
+    }
+    if (!isColliding("player", "hitbox" + i)){
+      collisionDetected = true;
+    }
+  }
+
+  if (!collisionDetected) {
+    playerX += playerXVel;
+    playerY += playerYVel;
+  }
+  
+  // updates the player position
   document.getElementById("player").style.left = playerX + "px";
   document.getElementById("player").style.top = playerY + "px";
 
-  //  if player is moving, change movement based on velocity
-  // if (keys.w) {
-  //   if (!wallCollide(1, 0, -20)) {
-  //     playerYVel = -speed;
-  //   }
-  // }
-  // if (keys.a) {
-  //   if (!wallCollide(1, -20, 0)) {
-  //     playerXVel = -speed;
-  //   }
-  // }
-  // if (keys.s) {
-  //   if (!wallCollide(1, 0, 20)) {
-  //     playerYVel = speed;
-  //   }
-  // }
-  // if (keys.d) {
-  //   if (!wallCollide(1, 20, 0)) {
-  //     playerXVel = speed;
-  //   }
-  // }
-  if (keys.w) {
-    playerYVel = -speed;
-  }
-  if (keys.a) {
-    playerXVel = -speed;
-  }
-  if (keys.s) {
-    playerYVel = speed;
-  }
-  if (keys.d) {
-    playerXVel = speed;
-  }
-}, 10);
+//  determines the player refresh rate
+}, 30);
 
 //  listens to player key down
 addEventListener("keydown", (event) => {

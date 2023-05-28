@@ -14,10 +14,12 @@
 }
 
 #player {
-  width: 60px;
+  width: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 1;
+  background-color: rgba(0, 0, 255, 0.514);
 }
 
 td {
@@ -30,4 +32,14 @@ td {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 1;
+}
+
+.hitbox2 {
+  margin: -3px -1px;
+  background-color: rgba(255, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
 }
