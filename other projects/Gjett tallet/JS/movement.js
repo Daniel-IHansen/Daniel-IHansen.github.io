@@ -55,7 +55,7 @@ setInterval(function() {
     }
   }
 
-  if (!collisionDetected) {
+  if (collisionDetected) {
     playerX += playerXVel;
     playerY += playerYVel;
   }
