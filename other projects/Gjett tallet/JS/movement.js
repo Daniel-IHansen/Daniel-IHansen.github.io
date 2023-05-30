@@ -23,39 +23,45 @@ setInterval(function() {
   playerYVel *= 0.91;
 
   //  is player colliding with wall?
-  let collisionDetected = false;
-  for (let i = 0; i < document.getElementsByClassName("hitbox").length; i++) {
-    if (keys.w) {
+  let notColliding = true;
+    for (let i = 0; i < document.getElementsByClassName("hitbox").length; i++) {
       if (!isColliding("player", ("hitbox" + i), "top")) {
-        console.log(isColliding("player", ("hitbox" + i), "top"))
-        collisionDetected = true;
-        playerYVel = -speed;
+        if (keys.w) {
+          playerYVel = -speed;  
+        }
+      }
+      else {
+        notColliding = false;
       }
     }
-    if (keys.a) {
-      if (!isColliding("player", "hitbox" + i, "left")){
-        collisionDetected = true;
-        playerXVel = -speed;
+  for (let i = 0; i < document.getElementsByClassName("hitbox").length; i++) {
+      if (!isColliding("player", ("hitbox" + i), "left")) {
+        if (keys.a) {
+        playerXVel = -speed;  
       }
     }
-    if (keys.s) {
-      if (!isColliding("player", "hitbox" + i, "bottom")){
-        collisionDetected = true;
-        playerYVel = speed;
+    else {
+      notColliding = false;
+    }
+    if (!isColliding("player", ("hitbox" + i), "bottom")) {
+      if (keys.s) {
+        playerYVel = speed;  
       }
     }
-    if (keys.d) {
-      if (!isColliding("player", "hitbox" + i, "right")){
-        collisionDetected = true;
-        playerXVel = speed;
+    else {
+      notColliding = false;
+    }
+    if (!isColliding("player", ("hitbox" + i), "right")) {
+      if (keys.d) {
+        playerXVel = speed;  
       }
     }
-    if (!isColliding("player", "hitbox" + i)){
-      collisionDetected = true;
+    else {
+      notColliding = false;
     }
   }
 
-  if (collisionDetected) {
+  if (notColliding) {
     playerX += playerXVel;
     playerY += playerYVel;
   }
@@ -65,7 +71,7 @@ setInterval(function() {
   document.getElementById("player").style.top = playerY + "px";
 
 //  determines the player refresh rate
-}, 30);
+}, 20);
 
 //  listens to player key down
 addEventListener("keydown", (event) => {

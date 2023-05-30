@@ -10,11 +10,11 @@
 
 .tile {
   margin: -3px -1px;
-  width: 80px;
+  width: 8vh;
 }
 
 #player {
-  width: 50px;
+  width: 5vh;
   position: absolute;
   top: 50%;
   left: 50%;

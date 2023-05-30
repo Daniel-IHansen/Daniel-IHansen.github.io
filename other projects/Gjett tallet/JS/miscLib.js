@@ -44,18 +44,14 @@ function isColliding(object1id, object2id, side) {
   let object2Width = getAttributesById(object2id).width;
   let object2Height = getAttributesById(object2id).height;
 
-  // changes object 1 position based on side
+  // will the top of object 1 collide with top of object 2?
   if (side == "top") {
-    object1Y = getAttributesById(object1id).y - 20;
   }
   else if (side == "right"){
-    object1X = getAttributesById(object1id).x + 20;
   }
   else if (side == "bottom"){
-    object1Y = getAttributesById(object1id).y + 20;
   }
   else if (side == "left"){
-    object1X = getAttributesById(object1id).x - 20;
   }
 
   //  will object 1 collide with object 2?
@@ -65,7 +61,7 @@ function isColliding(object1id, object2id, side) {
     object2Y < object1Y + object1Height) {
       return true;
     }
-  else {
+  else { 
     return false;
   }
 }

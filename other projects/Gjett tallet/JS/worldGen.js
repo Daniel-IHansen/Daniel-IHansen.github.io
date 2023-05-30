@@ -12,7 +12,7 @@
 // 11 = bottom door
 // 12 = left door
 
-//  defines map
+//  defines map through arrays
 var map = [
     [8,1,1,1,1,1,8,1,1,5],
     [4,0,0,0,0,0,12,0,0,2],
@@ -90,8 +90,8 @@ function createHitbox(setTile){
         hitbox.setAttribute("id","hitbox" + hitboxId);
     
         //  sets common lengths
-        let longSide = "80px";
-        let shortSide = "30px";
+        let longSide = "8vh";
+        let shortSide = "3vh";
 
         //  adjusts the height, width, rotation and position of hitbox
         if (setTile == 1) {
