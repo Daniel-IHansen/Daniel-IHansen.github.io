@@ -45,9 +45,6 @@ for (var x = 0; x < 10; x++) {
 
         //  generaties a fresh tile
         createTile(curTile);
-
-        //  generates a fitting hitbox
-        createHitbox(curTile);
     }
 }
 console.log("[World generation]: " + (tileId + 1) + " tiles loaded.")
@@ -73,97 +70,4 @@ function createTile(setTile){
 
     //  generates the tile
     document.getElementById("td" + tileId).appendChild((tile));
-}
-
-function createHitbox(setTile){
-
-    if (setTile > 0) {
-
-        //  increases the tile id based on number of tiles
-        hitboxId++;
-        
-        //  generates a hitbox element
-        const hitbox = document.createElement("div");
-
-        //  gives the hitbox a class and id
-        hitbox.setAttribute("class", "hitbox");
-        hitbox.setAttribute("id","hitbox" + hitboxId);
-    
-        //  sets common lengths
-        let longSide = "8vh";
-        let shortSide = "3vh";
-
-        //  adjusts the height, width, rotation and position of hitbox
-        if (setTile == 1) {
-            hitbox.style.height = shortSide;
-            hitbox.style.width = longSide;
-        }
-        else if (setTile == 2){
-            hitbox.style.height = longSide;
-            hitbox.style.width = shortSide;
-            hitbox.style.left = getAttributesById("tile0").width/1.6 + "px";
-        }
-        else if (setTile == 3){
-            hitbox.style.height = shortSide;
-            hitbox.style.width = longSide;
-            hitbox.style.top = getAttributesById("tile0").width/1.6 + "px";
-        }
-        else if (setTile == 4){
-            hitbox.style.height = longSide;
-            hitbox.style.width = shortSide;
-        }
-        else if (setTile >= 5){
-            //  generates a secondary hitbox element
-            const hitbox2 = document.createElement("div");
-
-            //  gives the second hitbox a class
-            hitbox2.setAttribute("class", "hitbox2");
-
-            // //  increases the tile id based on number of tiles
-            // hitbox2Id++;
-
-            // hitbox2.setAttribute("id","hitbox");
-            
-            //  adjusts the height, width, rotation and position of secondary hitbox
-            if (setTile == 5) {
-                hitbox.style.height = shortSide;
-                hitbox.style.width = longSide;
-
-                hitbox2.style.height = longSide;
-                hitbox2.style.width = shortSide;
-                hitbox2.style.left = getAttributesById("tile0").width/1.6 + "px";
-            }
-            else if (setTile == 6){
-                hitbox2.style.height = longSide;
-                hitbox2.style.width = shortSide;
-                hitbox2.style.left = getAttributesById("tile0").width/1.6 + "px";
-
-                hitbox.style.height = shortSide;
-                hitbox.style.width = longSide;
-                hitbox.style.top = getAttributesById("tile0").width/1.6 + "px";
-            }
-            else if (setTile == 7){
-                hitbox2.style.height = shortSide;
-                hitbox2.style.width = longSide;
-                hitbox2.style.top = getAttributesById("tile0").width/1.6 + "px";
-
-                hitbox.style.height = longSide;
-                hitbox.style.width = shortSide;
-            }
-            else if (setTile == 8){
-                hitbox.style.height = longSide;
-                hitbox.style.width = shortSide;
-
-                hitbox2.style.height = shortSide;
-                hitbox2.style.width = longSide;
-            }
-
-            //  displays the second hitbox element
-            document.getElementById("td" + tileId).appendChild(hitbox2)
-        }
-
-        //  displays the hitbox element
-        document.getElementById("td" + tileId).appendChild(hitbox);
-
-    }
 }
