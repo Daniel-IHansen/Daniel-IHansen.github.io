@@ -73,5 +73,6 @@ function createTile(setTile) {
 }
 
 let player = new Player("player") // creating an instance of player
-player.draw(10, 100)
+// player.draw(10, 100)
+player.draw(500, 100)
 
