@@ -1,15 +1,14 @@
 
 class Player {
-    constructor(x, y, id) {
-        super(id);
-        this.x = x;
-        this.y = y;
-        this.id = document.getElementById(id);;
-        
+    constructor(id) {
+        this.x = document.getElementById(String(id)).x;
+        this.y = document.getElementById(String(id)).y;
+        this.id = id;
+        // this.collision = new Collision(this.x, this.y) // collision logic
     }
-
-    draw() {
-        // this.player.style().top = "100px";
-        return 1;
+    // render
+    draw(x, y) {
+        x = this.x
+        y = this.y
     }
 }

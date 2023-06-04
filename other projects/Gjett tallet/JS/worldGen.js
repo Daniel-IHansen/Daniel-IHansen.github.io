@@ -72,5 +72,6 @@ function createTile(setTile) {
     document.getElementById("td" + tileId).appendChild((tile));
 }
 
-// let player = new Player(10, 10, "player");
-// // console.log(document.getElementById("tr").innerHTML = player.draw())
+let player = new Player("player") // creating an instance of player
+player.draw(10, 100)
+
