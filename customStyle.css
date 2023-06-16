@@ -1,88 +1,87 @@
-@font-face {
-    font-family: "customFont";
-    src: url(.media/font/zh-cn.ttf);
-    font-weight: bold;
-  }
-  
-  body {
-    background-color: #514036;
-    overflow: hidden;
-    margin: 0;
-    font-family: "customFont";
-  }
-  
-  #backdrop {
-    height: 100vh;
-    width: 100%;
-    object-fit:contain;
-    position: absolute;
-    z-index: -5;
-  }
-  
-  nav {
-    height: 20%;
-    width: 100%;
-  }
-  
-  .card {
-    position: absolute;
-    height: 40vh;
-  }
-  
-  .cardImg {
+/* 111111 161616 59C3C3 */
+
+body {
+  background-color: #212121;
+}
+
+#background {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+}
+
+#patternWrapper {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  box-shadow: 0px 10px 50px 15px;
+}
+
+#pattern {
   height: 100%;
-  }
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* generates a pattern from https://css-pattern.com/ */
+  --s: 80px; /* control the size */
+  --c1: #111111; /* color 1 */
+  --c2: #212121; /* color 2 */
   
-  .cardStackPos {
-  top: 20vh;
-  right: -2vw;
-  rotate: 270deg;
-  }
-  
-  #homeIcon {
-    transition: 1s;
-    position: absolute;
-    width: 12vh;
-    bottom: 3vh;
-    left: 2.5vw;
-    display: none;
-    opacity: 0; 
-  }
-  
-  .navText {
-    transition: 1s;
-    transform-origin: 2px;
-    position: absolute;
-    bottom: -2vh;
-    display: none;
-    opacity: 0;
-    font-size: 4vh;
-    color: #978971;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  #cardLText {
-    height: 60vh;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50vw;
-    display: none;
-    opacity: 0;
-    transition: 1s;
-  }
-  
-  #cardLWrapper {
-    padding: 2vw;
-    position: absolute; 
-  }
-  
-  h1 {
-    color: #ffffff;
-    font-size: 4vh;
-  }
-  
-  h3 {
-    color: #d1d1d1;
-    font-size: 2.5vh;
-  }
+  --_g: var(--c1)        6.25%,var(--c2)  6.3% 18.75%,var(--c1) 18.8% 31.25%,
+        var(--c2) 31.3% 43.75%,var(--c1) 43.8% 56.25%,var(--c2) 56.3% 68.75%,#0000 0;
+  background:
+    radial-gradient(var(--s) at 100% 0   ,var(--_g)),
+    radial-gradient(var(--s) at 0    0   ,var(--_g)),
+    radial-gradient(var(--s) at 0    100%,var(--_g)),
+    radial-gradient(var(--s) at 100% 100%,var(--_g)) var(--c1);
+  background-size: var(--s) var(--s);
+}
+
+#gradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), #111111);
+}
+
+main {
+  width: 80%;
+  height: 300px;
+}
+
+nav {
+  margin: 50px 0px 20px 0px;
+}
+
+#logo {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 100%;
+  padding: 14px 12px;
+  background-color: rgba(0, 255, 255, .5);
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.textWrapper {
+  display: inline-block;
+  padding: 10px;
+}
+
+#websiteTitle {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#mainImg {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 0% 60%;
+  box-shadow: 0px 30px 30px -30px;
+}
