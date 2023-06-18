@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -28,6 +29,15 @@
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, .3); 
   }
+
+.hover {
+  transition-duration: .2s;
+}
+
+.hover:hover {
+  scale: 1.1;
+  color: rgba(255, 255, 255, .8);
+}
 
 body {
   font-family: "customFont";
