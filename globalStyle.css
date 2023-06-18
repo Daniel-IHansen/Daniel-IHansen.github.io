@@ -3,8 +3,34 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: customFont;
+    src: url(media/font/RobotoCondensed-Regular.ttf);
+  }
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff00; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .5); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, .3); 
+  }
+
 body {
-  font-family: "arial";
+  font-family: "customFont";
 }
 
 .topX {
