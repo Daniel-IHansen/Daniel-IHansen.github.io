@@ -49,7 +49,6 @@ body {
 
 main {
   width: 80%;
-  height: 300px;
 }
 
 nav {
@@ -78,10 +77,17 @@ nav {
   font-weight: 500;
 }
 
+#websiteSubtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
 #mainImg {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  object-position: 0% 60%;
+  object-position: 100% 60%;
   box-shadow: 0px 30px 30px -30px;
 }
