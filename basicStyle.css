@@ -100,6 +100,7 @@ nav {
   background-color: rgba(0, 255, 255, .5);
   color: black;
   display: inline-block;
+  transition-duration: .2s;
   animation: spin infinite linear 10s;
 }
 
@@ -340,7 +341,7 @@ img {
 
 .updateTitle {
   color: white;
-  font-weight: 100
+  font-weight: 100;
 }
 
 hr {
@@ -350,6 +351,7 @@ hr {
 
 .updateText {
   color: rgba(255, 255, 255, .5);
+  margin-bottom: 20px;
 }
 
 #contactImg {
