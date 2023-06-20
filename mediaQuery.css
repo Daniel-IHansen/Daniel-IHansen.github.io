@@ -1,0 +1,14 @@
+
+/* tablet size */
+@media only screen and (max-width: 1150px){
+    #content {
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+/* phone size */
+@media only screen and (max-width: 768px){
+    #content {
+        grid-template-columns: 1fr;
+      }
+}

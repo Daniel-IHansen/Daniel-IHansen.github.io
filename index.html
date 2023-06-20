@@ -5,22 +5,23 @@
   <!--Page title-->
   <title>Daniel Hansen</title>
   <!--Page icon-->
-  <link rel="icon" href="media/icon/iconBlack.svg">
+  <link rel="icon" href="media/icons/mainIcon.svg">
   <!--Stuff-->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--See style.css-->
-  <link rel="stylesheet" href="globalStyle.css" />
-  <link rel="stylesheet" href="customStyle.css" />
+  <link rel="stylesheet" href="basicStyle.css" />
+  <link rel="stylesheet" href="mediaQuery.css" />
+  <link rel="stylesheet" href="startUp.css" />
   <!--Google search information-->
   <meta name="Keywords" content="Daniel Hansen CV">
   <meta name="description" content="Min egen personlige nettside for å vise fram prosjekter og liknende.">
   <meta name="Author" content="Daniel Hansen">
 </head>
 
-<body class="centerX">
+<body>
 
   <div id="background">
     <div id="patternWrapper">
@@ -31,40 +32,30 @@
   <main>
     <!-- NAV MENU -->
     <nav>
-      <a id="logo" href="index.html"><img src="media/icon/iconBlack.svg" alt=""></a>
+      <a id="logo" href="index.html"><img src="media/icons/mainIcon.svg"></a>
       <div class="textWrapper">
         <p id="websiteTitle">DANIEL HANSEN</p>
         <p id="websiteSubtitle">My works and projects</p>
       </div>
       <ul id="menu">
         <li class="menuItem active"><a href="index.html">HOME</a></li>
-        <li class="menuItem"><a href="#">PROJECTS</a></li>
         <li class="menuItem"><a href="#">PORTOFOLIO</a></li>
         <li class="menuItem"><a href="#">PHOTOS</a></li>
+        <li class="menuItem"><a href="#">UPDATES</a></li>
       </ul>
     </nav>
     <!-- MAIN IMAGE -->
-    <div id="imgWrapper" class="centerX">
-      <img src="media/bakgrunnsbilde.jpg" id="mainImg">
+    <div id="imgWrapper">
+      <img src="media/bakgrunnsbilde.jpg" id="mainImg" alt="Photo: Edvin Falk">
       <p id="imgTitle">DANIEL HANSEN</p>
       <p id="imgSubtitle">DEVELOPER</p>
     </div>
     <div class="light"></div>
     <div id="content">
-      <div class="column" id="projects">
-        <h2><span class="symbol">◯ </span>ONGOING PROJECTS</h2>
-        <hr class="light2">
-        <div class="tapeWrapper"><img src="collections/photos/media/vinterstemmning.jpg"></div>
-        <a href="#" class="text current">Current project</a>
-        <a href="#" class="text">🞄 Project 2</a>
-        <a href="#" class="text">🞄 Project 3</a>
-        <a href="#" class="text">🞄 Project 4</a>
-        <a href="#" class="text more">More Projects <span>></span></a>
-      </div>
       <div class="column" id="portofolio">
         <h2><span class="symbol">◯ </span>LATEST WORK</h2>
         <hr class="light2">
-        <div class="tapeWrapper"><img src="collections/photos/media/vinterstemmning.jpg"></div>
+        <div class="tapeWrapper"><img src="collections/photos/media/winterMirror.jpg"></div>
         <a href="#" class="text current">My work</a>
         <a href="#" class="text">🞄 Work 2</a>
         <a href="#" class="text">🞄 Work 3</a>
@@ -74,17 +65,17 @@
       <div class="column" id="photos">
         <h2><span class="symbol">◯ </span>PHOTOGRAPHS</h2>
         <hr class="light2">
-        <div class="tapeWrapper"><img src="collections/photos/media/vinterstemmning.jpg"></div>
+        <div class="tapeWrapper"><img src="collections/photos/media/winterMirror.jpg"></div>
         <div id="photoCollection">
-          <img src="collections/photos/media/vinterstemmning.jpg" alt="" class="collectionImg">
-          <img src="collections/photos/media/vinterstemmning.jpg" alt="" class="collectionImg">
-          <img src="collections/photos/media/vinterstemmning.jpg" alt="" class="collectionImg">
-          <img src="collections/photos/media/vinterstemmning.jpg" alt="" class="collectionImg">
-          <img src="collections/photos/media/vinterstemmning.jpg" alt="" class="collectionImg">
-          <img src="collections/photos/media/vinterstemmning.jpg" alt="" class="collectionImg">
-          <img src="collections/photos/media/vinterstemmning.jpg" alt="" class="collectionImg">
-          <img src="collections/photos/media/vinterstemmning.jpg" alt="" class="collectionImg">
-          <img src="collections/photos/media/vinterstemmning.jpg" alt="" class="collectionImg">
+          <img src="collections/photos/media/winterMirror.jpg" alt="" class="collectionImg">
+          <img src="collections/photos/media/winterMirror.jpg" alt="" class="collectionImg">
+          <img src="collections/photos/media/winterMirror.jpg" alt="" class="collectionImg">
+          <img src="collections/photos/media/winterMirror.jpg" alt="" class="collectionImg">
+          <img src="collections/photos/media/winterMirror.jpg" alt="" class="collectionImg">
+          <img src="collections/photos/media/winterMirror.jpg" alt="" class="collectionImg">
+          <img src="collections/photos/media/winterMirror.jpg" alt="" class="collectionImg">
+          <img src="collections/photos/media/winterMirror.jpg" alt="" class="collectionImg">
+          <img src="collections/photos/media/winterMirror.jpg" alt="" class="collectionImg">
         </div>
         <a href="" class="photoButton text more">More<span>></span></a>
       </div>
@@ -104,18 +95,19 @@
         <hr class="light2">
         <img src="media/meSmall.jpg" id="contactImg">
         <div class="contact">
-          <img src="media/icon/email-icon.svg">
+          <img src="media/icons/email-icon.svg">
           <p>Email</p>
         </div>
         <div class="contact">
-          <img src="media/icon/linkedin-icon.svg">
+          <img src="media/icons/linkedin-icon.svg">
           <p>LinkedIn</p>
         </div>
         <div class="contact">
-          <img src="media/icon/github-icon.svg">
+          <img src="media/icons/github-icon.svg">
           <p>Github</p>
         </div>
       </div>
     </div>
   </main>
+  <script src="JS/startUp.js"></script>
 </body>
