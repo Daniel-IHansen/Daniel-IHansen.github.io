@@ -175,6 +175,11 @@ nav {
     ) 1;
   }
 
+#hamburger {
+  font-size: 25px;
+  padding: 14px;
+}
+
 #imgWrapper {
   position: relative;
   height: fit-content;
