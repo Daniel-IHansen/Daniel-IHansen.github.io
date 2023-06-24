@@ -23,5 +23,5 @@ var workCol = [
 var updateCol = [
   ["Date", "Name", "Content"],
   ["20.6.2023", "Test", "This is a test to see how the update text behaves. <br/> Although it might not work, I am prepared for the results."]
+
 ];
-document.getElementById("text1").innerHTML = updateCol.slice(-1)[0][2];
