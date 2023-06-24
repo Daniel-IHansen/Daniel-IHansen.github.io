@@ -11,8 +11,11 @@
     #content {
         grid-template-columns: 1fr;
     }
+    #imgTitle {
+      letter-spacing: 10px;
+    }
     #imgSubtitle {
-      top: 88%;
+      top: 90%;
     }
     .large {
       display: none;
