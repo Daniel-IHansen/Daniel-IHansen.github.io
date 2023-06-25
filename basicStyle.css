@@ -182,13 +182,30 @@ nav {
   padding: 14px;
 }
 
+/* Hide the links inside the navigation menu (except for logo/home) */
+#mobileMenu {
+  display: none;
+  position: absolute;
+  transform: translate(-78%, 8.5%);
+  z-index: 3;
+  transition-duration: .5s;
+}
+
+.mobileItem {
+  list-style-type: none;
+  width: 100%;
+  padding: 5px;
+  background-color: #2f2f2f;
+}
+
+
 #imgWrapper {
   position: relative;
   height: fit-content;
-  overflow: hidden;
   box-shadow: 0px 50px 30px -30px, 0px 0px 15px 1px;
   display: flex;
   justify-content: center;
+  z-index: -1;
 }
 
 #mainImg {
@@ -228,7 +245,7 @@ img {
   transform: translateX(-50%);
   border-radius: 100%;
   filter: blur(40px);
-  z-index: -1;
+  z-index: -2;
   position: relative;
 }
 
@@ -245,7 +262,7 @@ img {
   background-color: #181818;
   font-weight: 100;
   position: relative;
-  z-index: -2;
+  z-index: -3;
   margin: 0px -10px;
 }
 
@@ -260,7 +277,7 @@ img {
   color: white;
   filter: blur(10px);
   position: relative;
-  z-index: -3;
+  z-index: -4;
 }
 
 .tapeWrapper img {
@@ -401,3 +418,20 @@ hr {
 .contact p {
   margin-left: 20px;
 }
+
+footer {
+  --s: 90.3px; /* control the size*/
+  
+  --_g: radial-gradient(#0000 70%,#181818 71%);
+  background:
+    var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2),
+    conic-gradient(#303030 25%,#1d1d1d 0 50%,#252525 0 75%,#414141 0);
+  background-size: var(--s) var(--s); 
+
+  width: 100%;
+  height: 15vh;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: 40px;
+}
+
