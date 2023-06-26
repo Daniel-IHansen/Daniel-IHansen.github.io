@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Page title-->
+  <title>Daniel's Portofolio</title>
+  <!--Page icon-->
+  <link rel="icon" href="../media/icons/mainIcon.svg">
+  <!--Stuff-->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--See style.css-->
+  <link rel="stylesheet" href="../basicStyle.css" />
+  <link rel="stylesheet" href="../mediaQuery.css" />
+  <!--Google search information-->
+  <meta name="Keywords" content="Daniel Hansen CV">
+  <meta name="description" content="Min egen personlige nettside for å vise fram prosjekter og liknende.">
+  <meta name="Author" content="Daniel Hansen">
+</head>
+
+<body>
+
+  <div id="background">
+    <div id="patternWrapper">
+      <div id="pattern"></div>
+      <div id="gradient"></div>
+    </div>
+  </div>
+  <main>
+    <!-- NAV MENU -->
+    <nav>
+      <!-- logo -->
+      <a id="logo" href="index.html"><img src="../media/icons/mainIcon.svg"></a>
+      <!-- left menu (name and text) -->
+      <div class="textWrapper">
+        <p id="websiteTitle">DANIEL HANSEN</p>
+        <p id="websiteSubtitle">My works and projects</p>
+      </div>
+      <!-- right menu -->
+      <ul id="menu">
+        <!-- dissapears on mobile -->
+        <li class="large menuItem"><a href="../index.html">HOME</a></li>
+        <li class="large menuItem active"><a href="../pages/portofolio.html">PORTOFOLIO</a></li>
+        <li class="large menuItem"><a href="../pages/photos.html">PHOTOS</a></li>
+        <li class="large menuItem"><a href="../pages/updates.html ">UPDATES</a></li>
+        <!-- shows on mobile -->
+        <li id="hamburger" class="menuItem"><a href="#" onclick="showMenu()">☰</a>
+            <!-- nav (hidden by default) -->
+            <ul id="mobileMenu">
+              <li class="mobileItem"><a href="../index.html">HOME</a></li>
+            <li class="mobileItem"><a href="../pages/portofolio.html">PORTOFOLIO</a></li>
+            <li class="mobileItem"><a href="../pages/photos.html">PHOTOS</a></li>
+            <li class="mobileItem"><a href="../pages/updates.html">UPDATES</a></li> 
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <footer></footer>
+  </main>
+  <script src="collections/collections.js"></script>
+</body>
