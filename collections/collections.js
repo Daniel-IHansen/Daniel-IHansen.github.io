@@ -1,14 +1,17 @@
+// "Name",'Date',"Filename",'Small description'
 var photoCol = [
-  ["Name",'Date',"Filename",'Small description'],
 ["Winter Mirror",'15.12.2022',"winterMirror.jpg",'A combination of photos I have taken, edited and blended in Photoshop.'],
 ["Blue Lights",'10.1.2023',"blueLights.jpg",'A test to imitate car lights in Photoshop.'],
 ["Warm Street",'10.1.2023',"warmStreet.jpg",'Street photo, edited and blended in Photoshop.'],
+["Contrast", '2.11.2023', "contrast.jpg", 'An image taken for a predetermined photoshoot, with the theme being Contrast.'],
+["Movement", '2.11.2023', "movement.jpg", 'An image taken for a predetermined photoshoot, with the theme being Movement.'],
+["Wall", '2.11.2023', "wall.jpg", 'An unused image taken for a predetermined photoshoot. Is most fitting for a backdrop with blended text.'],
 ["Movie Night",'10.1.2023',"movieNight.jpg",'A test combination of three images, using window reflection as a base.'],
 ["Friends",'3.6.2023',"friends.jpg",'Picture taken of my friends, with me edited in using Photoshop.']
 ];
 
+// "Name",'Date',"Filename",'Small description'
 var workCol = [
-  ["Name",'Date',"Filename",'Small description'],
 ["My First Website",'5.8.2022',"lockeLamora.png",'This was my first ever website. It was made for a book series I was fond of.'],
 ["Dark Theme",'7.9.2022',"darkTheme.png",'A darker themed website, made to include neon lights-like lighting.'],
 ["Rock Paper Scissors",'20.1.2023',"rockPaperScissors.png",'Based on the common rock, paper, scissors-game! Includes a battlepass and login system.'],
