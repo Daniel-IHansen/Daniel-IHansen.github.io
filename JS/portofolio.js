@@ -1,12 +1,12 @@
 //  makes a variable to determine what column the div ends up in
 let column = 0;
 
+  //  determines the menu boolean
+  var menuOpen = true;
+
 //  a method for displaying the infoMenu
 HTMLElement.prototype.showInfo = function(x) {
     //  executable code here
-
-    //  determines the menu boolean
-    var menuOpen = true;
 
     //  if menu is open
     if (menuOpen) {
