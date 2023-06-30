@@ -1,0 +1,26 @@
+
+/* tablet size */
+@media only screen and (max-width: 1550px){
+  #workContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* phone size */
+@media only screen and (max-width: 1030px){
+  #workContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .workTitle {
+    font-size: 1.4rem;
+  }
+  
+  .workText {
+    font-size: 1rem;
+  }
+  
+  .workLink {
+    font-size: 1rem;
+  }
+}

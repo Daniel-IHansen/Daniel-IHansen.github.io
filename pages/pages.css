@@ -1,7 +1,7 @@
 #workContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 75%;
+  width: 90%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -10,7 +10,7 @@
 .work {
   position: relative;
   margin: 30px;
-  transition-duration: .2s;
+  transition-duration: .3s;
   box-shadow: 2px 2px 10px 2px;
 }
 
@@ -30,7 +30,7 @@
   rotate: 270deg;
   z-index: 1;
   transition-duration: .2s;
-  filter: blur(5px);
+  filter: blur(8px);
 }
 
 .work:hover::after {
@@ -53,17 +53,24 @@
   margin: 10px;
   font-size: 1.6rem;
   cursor: pointer;
+  z-index: 2;
+  transition-duration: 1s;
 }
 
 .infoDiv {
   opacity: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
   width: 100%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  height: 100%;
   padding: 20px;
+  transition-duration: .5s;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .8);
 }
 
 .infoElem {
@@ -72,18 +79,30 @@
 
 .workTitle {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: white;
 }
 
 .workText {
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .workLink {
-  padding: 20px;
-  background-color: rgb(0, 255, 255, .8);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px 10px;
+  margin: 10px;
+  background-color: rgb(0, 255, 255, .5);
   border-radius: 20px;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, .9);
+  transition-duration: .1s;
+}
+
+.workLink:hover {
+  background-color: rgb(0, 255, 255, .8);
 }
