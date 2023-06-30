@@ -56,7 +56,7 @@
 }
 
 .infoDiv {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -84,5 +84,5 @@
 
 .workLink {
   padding: 20px;
-  background-color: rgb;
+  background-color: rgb(0, 255, 255, .8);
 }
