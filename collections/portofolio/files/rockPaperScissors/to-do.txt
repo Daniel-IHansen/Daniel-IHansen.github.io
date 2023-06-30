@@ -1,0 +1,21 @@
+
+TO DO LIST:
+
+- Inventory
+- Battle pass (PRIORITY)
+- Shop
+- Emojis (PRIORITY)
+
+- light/dark theme switch (extra)
+- FPS / Ping counter
+- Music
+- Pay to win
+
+
+Skins:
+
+Common x8
+Rare x4
+Mythic x2
+Legendary x1
+15 Totalt

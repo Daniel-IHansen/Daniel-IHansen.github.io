@@ -10,17 +10,17 @@ var photoCol = [
 ["Friends",'3.6.2023',"friends.jpg",'Picture taken of my friends, with me edited in using Photoshop.']
 ];
 
-// "Name",'Date',"Filename",'Small description'
+// "Name",'Date',"Filename",'Small description', "File/index.html"
 var workCol = [
-["My First Website",'5.8.2022',"lockeLamora.png",'This was my first ever website. It was made for a book series I was fond of.'],
-["Dark Theme",'7.9.2022',"darkTheme.png",'A darker themed website, made to include neon lights-like lighting.'],
-["Rock Paper Scissors",'20.1.2023',"rockPaperScissors.png",'Based on the common rock, paper, scissors-game! Includes a battlepass and login system.'],
-["Communication Book",'2.11.2022',"communicationBook.jpg","My first experience with InDesign. The book's content was made by Nils Petter Johnsrud."],
-["Manhunt Poster",'4.4.2023',"manhuntPoster.jpg",'A poster made for a student movie. The whole poster is designed in Photoshop.'],
-["Logo Design Manual",'14.4.2023',"designManual.jpg",'Design manual based on a student-made logo. Includes blending on clothes in InDesign.'],
-["Guess the Number",'1.5.2023',"guessTheNumber.png",'My last game, with stylized background, screen and terminal. Includes sarcasm.'],
-["How to Take Photos",'10.5.2023',"howToTakePhotos.jpg",'A manual for how to take a good photo with your own phone. Designed in InDesign.'],
-["Class Quote Book",'15.5.2023',"quoteBook.jpg",'As a last act for the class, I made a class quote book containing memorable sayings.']
+["My First Website",'5.8.2022',"lockeLamora.png",'This was my first ever website. It was made for a book series I was fond of.', "lockeLamora/LockeLamora.html"],
+["Dark Theme",'7.9.2022',"darkTheme.png",'A darker themed website, made to include neon lights-like lighting.', "darkTheme/index.html"],
+["Rock Paper Scissors",'20.1.2023',"rockPaperScissors.png",'Based on the common rock, paper, scissors-game! Includes a battlepass and login system.', "rockPaperScissors/index.html"],
+["Communication Book",'2.11.2022',"communicationBook.jpg","My first experience with InDesign. The book's content was made by Nils Petter Johnsrud.", "communicationBook.pdf"],
+["Manhunt Poster",'4.4.2023',"manhuntPoster.jpg",'A poster made for a student movie. The whole poster is designed in Photoshop.', "manhuntPoster.pdf"],
+["Logo Design Manual",'14.4.2023',"designManual.jpg",'Design manual based on a student-made logo. Includes blending on clothes in InDesign.', "designManual.pdf"],
+["Guess the Number",'1.5.2023',"guessTheNumber.png",'My last game, with stylized background, screen and terminal. Includes sarcasm.', "guessTheNumber/index.html"],
+["How to Take Photos",'10.5.2023',"howToTakePhotos.jpg",'A manual for how to take a good photo with your own phone. Designed in InDesign.', "howToTakePhotos.pdf"],
+["Class Quote Book",'15.5.2023',"quoteBook.jpg",'As a last thing for the class, I made a class quote book containing memorable sayings.', "quoteBook.pdf"]
 ];
 
 var updateCol = [

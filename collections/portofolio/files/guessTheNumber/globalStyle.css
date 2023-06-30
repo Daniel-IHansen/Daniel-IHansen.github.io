@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* gives all elements a custom font */
+body {
+  font-family: "customFont";
+}
+
+/* centers elements and places them accordingly */
+.centerXTop {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.rightX {
+    display: flex;
+    justify-content: right;
+}
+
+.centerX {
+    display: flex;
+    justify-content: center;
+}
+
+.leftX {
+    display: flex;
+    justify-content: left;
+}
+
+.topY {
+    display: flex;
+    align-items: start;
+}
+
+.centerY {
+    display: flex;
+    align-items: center;
+}
+
+.bottomY {
+    display: flex;
+    align-items: end;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* removes mouse actions from object */
+.noAction {
+ pointer-events: none;
+}
+
+/* centers object position */
+.posCenter {
+    transform: translate(-50%, -50%);
+}

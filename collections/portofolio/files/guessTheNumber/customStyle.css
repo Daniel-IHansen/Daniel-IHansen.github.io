@@ -1,0 +1,277 @@
+body {
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    background-color: #1a1b1f;
+    overflow: hidden;
+}
+
+main {
+    height: 100vh;
+}
+
+/* background */
+#screen {
+    width: 400px;
+    border: 3px solid rgb(33 150 243 / .8);
+    aspect-ratio: 10 / 16;
+    border-radius: 1rem;
+    background-color: rgb(33 150 243 / .15);
+    overflow: hidden;
+    position: relative;
+
+    animation: startup 1s ease-in-out forwards;
+    animation-delay: 0s;
+}
+
+#screenOverlay {
+    background: linear-gradient(
+        rgb(33 150 243 / .15),
+        rgb(33 150 243 / .15) 3px,
+        transparent 3px,
+        transparent 9px
+    );
+    background-size: 100% 9px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    animation: panOverlay 22s infinite linear;
+}
+
+@keyframes panOverlay {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 0% -100%;
+    }
+}
+
+#screenImg {
+    background-image: url(".media/background.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: 300%;
+    filter: sepia(100%) saturate(300%) brightness(50%) hue-rotate(160deg);
+    opacity: .6;
+    position: absolute;
+
+    animation: panImg 15s linear infinite;
+    /* ease */
+}
+
+@keyframes panImg {
+    /* view 1 */
+    0% {
+        background-position: 0% 0%;
+        background-size: 200%;
+    }
+    20% {
+        background-position: 23% 30%;
+        background-size: 200%;
+    }
+    /* view 2 */
+    20.0001% {
+        background-position: 100% 50%;
+        background-size: 200%;
+    }
+    40% {
+        background-position: 30% 60%;
+        background-size: 200%;
+    }
+    /* view 3 */
+    40.0001% {
+        background-position: 50% 65%;
+        background-size: 200%;
+    }
+    60% {
+        background-position: 75% 40%;
+        background-size: 200%;
+    }
+    /* view 4 */
+    60.0001% {
+        background-position: 90% 57%;
+        background-size: 200%;
+    }
+    80% {
+        background-position: 42% 45%;
+        background-size: 200%;
+    }
+    /* view 5 */
+    80.0001% {
+        background-position: 10% 40%;
+        background-size: 200%;
+    }
+    100% {
+        background-position: 40% 20%;
+        background-size: 200%;
+    }
+}
+
+#screenContent {
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid rgba(74, 132, 180, .3);
+    border-radius: 10px;
+}
+
+/* elements */
+#gameTitle {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    letter-spacing: 5px;
+    font-size: 30px;
+    position: relative;
+    padding: 10px;
+    margin: 5px 12px;
+    color: white;
+    
+    opacity: 0;
+    animation: startup 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+#score {
+    border-radius: 20px;
+    margin: 20px 80px;
+
+    opacity: 0;
+    animation: startup 1s ease-in-out forwards;
+    animation-delay: 1.25s;
+}
+
+#guesses {
+    border-radius: 20px;
+    margin: 20px 80px;
+
+    opacity: 0;
+    animation: startup 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+#tableWrapper {
+    width: 100%;
+}
+
+table {
+    top: 0;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 20px;
+    border-spacing: 10px;
+
+    opacity: 0;
+    animation: startup 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+td {
+    cursor: pointer;
+    padding: 5px;   
+    position: relative;
+    background-color: rgba(74, 132, 180, 0.05);
+    border-radius: 20px;
+    transition: background-color .5s ease;
+    transition: scale .2s ease;
+}
+    
+td:hover {
+    background-color: #4a84b3c9;
+    scale: 1.1;
+}
+
+p {
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    transition: 0.3s ease;
+    color: rgb(200, 200, 200);
+}
+
+#log {
+    height: 22px;
+    position: relative;
+    width: 260px;
+    border-radius: 20px;
+    border: 3px solid #2d628b;
+    margin: 0px 7px;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: rgba(15, 25, 34, 0.664);
+
+    opacity: 0;
+    animation: startup 1s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+
+.consoleText {
+    color: rgb(200, 200, 200);
+    display: inline-block;
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#restart {
+    font-size: 30px;
+    border-radius: 100%;
+    margin: 0px 7px;
+    cursor: pointer;
+
+    opacity: 0;
+    animation: startup 1s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+#restart:hover {
+    scale: 1.1;
+}
+
+.stroke {
+    position: relative;
+    height: 3px;
+    width: 70px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    background-color: white;
+    left: 50%;
+    translate: -50% 0;
+    border-radius: 20px;
+}
+
+/* blob */
+#blob {
+     height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 100%;
+    background: rgba(127, 187, 255, 0.3);
+    z-index: -2;
+
+
+    opacity: 0;
+    animation: startup 2s ease-in-out forwards;
+    animation-delay: 4s;
+}
+
+#blurBlob {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    backdrop-filter: blur(200px);
+}
+
+/* startup animation */
+@keyframes startup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

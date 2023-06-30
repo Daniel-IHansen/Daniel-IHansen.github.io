@@ -1,36 +1,88 @@
 #workContainer {
-    display: flex;
-    width: 70%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 75%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .work {
-  flex: 1;
+  position: relative;
+  margin: 30px;
+  transition-duration: .2s;
+  box-shadow: 2px 2px 10px 2px;
 }
 
 .work img {
   object-fit: contain;
 }
 
-.work::before {
+.work::after {
   content: "";
   display: block;
   position: absolute;
-  bottom: 100%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  width: 60%;
-  height: 10%;
-  rotate: 45deg;
-  background-color: rgba(255, 255, 255, .2);
+  top: 0%;
+  right: 0%;
+  border-left: 100px solid transparent;
+  border-bottom: 100px solid rgba(255, 255, 255, .05);
+  transform: translate(-0%, -0%);
+  rotate: 270deg;
   z-index: 1;
   transition-duration: .2s;
-  filter: blur(1px);
+  filter: blur(5px);
 }
 
-.work:hover .work::before {
-    transform: translate(-50%, 100%);
+.work:hover::after {
+  border-left: 150px solid transparent;
+  border-bottom: 150px solid rgba(255, 255, 255, .1);
+}
+
+.work:hover {
+  scale: 1.05;
+  box-shadow: 6px 6px 15px 4px;
+}
+
+.workMenu {
+  color: white;
+  background-color: rgba(0, 0, 0, .3);
+  padding: 2px 8px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.infoDiv {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+}
+
+.infoElem {
+  margin-bottom: 10px;
+}
+
+.workTitle {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.workText {
+  font-weight: 200;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.workLink {
+  padding: 20px;
+  background-color: rgb;
 }
