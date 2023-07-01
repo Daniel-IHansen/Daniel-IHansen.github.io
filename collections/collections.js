@@ -23,8 +23,8 @@ var workCol = [
 ["Class Quote Book",'15.5.2023',"quoteBook.jpg",'As a last thing for the class, I made a class quote book containing memorable sayings.', "quoteBook.pdf"]
 ];
 
+//  "Date", 'Name', "Content"
 var updateCol = [
-  ["Date", 'Name', "Content"],
   ["Wednesday 20, June 2023", 'Test', "This is a test to see how the update text behaves. <br/> Although it might not work, I am prepared for the results."],
   ["Saturday 24, June 2023", 'First Contact', "I'm tired. This website is intricate, and every time I want to work on it, energy surges from me, and I don't want to. Yet, I know it will give me joy seeing a fully fleshed out website. My goal is to work on it tonight."]
 ];

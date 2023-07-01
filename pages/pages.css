@@ -45,7 +45,7 @@
 
 .workMenu {
   color: white;
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, .5);
   padding: 2px 8px;
   border-radius: 100%;
   position: absolute;
@@ -105,4 +105,22 @@
 
 .workLink:hover {
   background-color: rgb(0, 255, 255, .8);
+}
+
+.updateCont {
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.updateDate {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.updateTitle {
+  font-size: 1.5rem;
+}
+
+.updateText {
+  margin: 10px;
 }

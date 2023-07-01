@@ -46,7 +46,7 @@ function buttonEvent(x) {
 }
 
 //  runs for every varible in array, placing one object inside every container
-for (var x = 0; x < workCol.length; x++) {
+for (var x = 0; x < photoCol.length; x++) {
 
     //  seperates the divs into columns
     column++;
@@ -62,7 +62,7 @@ for (var x = 0; x < workCol.length; x++) {
 
     //  makes a img 
     const img = document.createElement("img");
-    img.src = "../collections/portofolio/" + workCol.slice(-x)[0][2];
+    img.src = "../collections/photos/" + photoCol.slice(-x)[0][2];
     document.getElementById("work" + x).appendChild(img);
 
     //  makes a menu
@@ -80,22 +80,15 @@ for (var x = 0; x < workCol.length; x++) {
 
     //  makes a title inside infoDiv
     const title = document.createElement("p");
-    title.innerHTML = workCol.slice(-x)[0][0];
+    title.innerHTML = photoCol.slice(-x)[0][0];
     title.setAttribute("class", "workTitle infoElem");
     document.getElementById("info" + x).appendChild(title);
 
     //  makes a small text inside infoDiv
     const text = document.createElement("p");
-    text.innerHTML = workCol.slice(-x)[0][3];
+    text.innerHTML = photoCol.slice(-x)[0][3];
     text.setAttribute("class", "workText infoElem");
     document.getElementById("info" + x).appendChild(text);
-
-    //  makes a link inside infoDiv
-    const link = document.createElement("a");
-    link.innerHTML = "Link";
-    link.href = "../collections/portofolio/files/" + workCol.slice(-x)[0][4];
-    link.setAttribute("class", "workLink infoElem");
-    document.getElementById("info" + x).appendChild(link);
 
     //  executes the method 
     buttonEvent(x);
