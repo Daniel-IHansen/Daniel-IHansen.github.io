@@ -7,6 +7,9 @@ var photoCol = [
 ["Movement", '2.11.2023', "movement.jpg", 'An image taken for a predetermined photoshoot, with the theme being Movement.'],
 ["Wall", '2.11.2023', "wall.jpg", 'An unused image taken for a predetermined photoshoot. Is most fitting for a backdrop with blended text.'],
 ["Movie Night",'10.1.2023',"movieNight.jpg",'A test combination of three images, using window reflection as a base.'],
+["Post Hunt",'3.6.2023',"postHunt.jpg",'Taken on a trip with my friends, while on a trip to a waterfall.'],
+["Kebab",'3.6.2023',"kebab.jpg",'Taken on a trip with my friends. I got hungry, and took an image of a kebab.'],
+["JHVH",'3.6.2023',"jhvh.jpg",'Taken on a trip with my friends, seeing a copy of an old hebrew scroll one of them had.'],
 ["Friends",'3.6.2023',"friends.jpg",'Picture taken of my friends, with me edited in using Photoshop.']
 ];
 

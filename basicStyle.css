@@ -187,7 +187,6 @@ nav {
   opacity: 0;
   position: absolute;
   transform: translate(-76%, 6%);
-  z-index: 3;
 }
 
 .mobileItem {
