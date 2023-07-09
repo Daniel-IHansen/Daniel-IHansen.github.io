@@ -232,6 +232,7 @@ img {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.2rem;
   letter-spacing: 5px;
+  word-spacing: 30px;
 }
 
 .light {
