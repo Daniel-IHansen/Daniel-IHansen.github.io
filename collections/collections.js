@@ -29,6 +29,6 @@ var workCol = [
 //  "Date", 'Name', "Content"
 var updateCol = [
   ["Wednesday 20, June 2023", 'Test', "This is a test to see how the update text behaves. <br/> Although it might not work, I am prepared for the results."],
-  ["Saturday 24, June 2023", 'First Contact', "I'm tired. This website is intricate, and every time I want to work on it, energy surges from me, and I don't want to. Yet, I know it will give me joy seeing a fully fleshed out website. My goal is to work on it tonight."]
+  ["Saturday 24, June 2023", 'First Contact', "I'm tired. This website is intricate, and every time I want to work on it, energy surges from me, and I don't want to. Yet, I know it will give me joy seeing a fully fleshed out website. My goal is to work on it tonight."],
   ["Wednesday 12, July 2023", 'Welcome', "Welcome to my web page! <br/>This will be a place to store projects I have worked on, such as web pages, books, and much more. You are invited to have a look around. The web page itself is coded by me in the summer of 2023 as a side project. Additionally, I also took the Cisco course 'Networking Essentials', during that time."]
 ];
