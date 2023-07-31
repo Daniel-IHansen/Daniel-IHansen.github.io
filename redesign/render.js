@@ -23,7 +23,7 @@ let room;
 
 //  imports a GLTF object
 const loader = new GLTFLoader();
-loader.load('models/rom.gltf', function(gltf) {
+loader.load('/redesign/models/rom.gltf', function(gltf) {
     room = gltf.scene;
     room.scale.set(10, 10, 10);
 
