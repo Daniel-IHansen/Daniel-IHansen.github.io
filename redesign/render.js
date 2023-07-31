@@ -30,21 +30,15 @@ loader.load('/redesign/models/rom.gltf', function(gltf) {
     //  show mesh configs
     console.log(room.getObjectByName("Cylinder001"));
 
-    //  change lamp material to emit light
-    const cylinder = room.getObjectByName("Cylinder001");
-    if (cylinder) {
-        cylinder.castShadow = true;
 
-        // Create a material with emissive property for emitting light
-        const emissiveMaterial = new THREE.MeshPhongMaterial({
-            color: cylinder.material.color,
-            emissive: cylinder.material.color, // Use the same color for emissive to emit the same color of light
-            emissiveIntensity: 1.0, // Set the intensity of emission, ranging from 0 to 1
-        });
+    // create light source material with emission
+    const lightSourceMat = new THREE.MeshPhongMaterial({
+        emissive: 0xffffff,
+        emissiveIntensity: 1.0,
+    });
 
-        // Assign the emissive material to the cylinder
-        cylinder.material = emissiveMaterial;
-    }
+    // assigns material to 
+    room.getObjectByName("Cylinder001").material = lightSourceMat;
 
     scene.add(room);
 });
