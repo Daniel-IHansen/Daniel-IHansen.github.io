@@ -2,15 +2,68 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/redesign/style.css">
 		<title>Daniel Hansen</title>
+
     	</head>
 	<body>
-    <div id="container3D"></div>
-    <!-- imported scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <!-- own scripts -->
-    <script type="module" src="/redesign/render.js"></script>
-    <script type="module" src="/redesign/movement.js"></script>
+        
+        <div class="nav">
+            <ul>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="desktop-outline"></ion-icon>
+                        </span>
+                        <span class="text">Pages</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="image-outline"></ion-icon>
+                        </span>
+                        <span class="text">Images</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="ribbon-outline"></ion-icon>
+                        </span>
+                        <span class="text">Badges</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="text">Books</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- three.js / GLTF Object -->
+        <div id="container3D"></div>
+
+        <!-- imported scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <!-- own scripts -->
+        <script type="module" src="/redesign/render.js"></script>
+        <script type="module" src="/redesign/movement.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 	</body>
 </html>
