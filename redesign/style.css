@@ -37,7 +37,7 @@ body {
     height: 70px;
     z-index: 1;
 }
-.nav ui li {
+.nav ul li a {
     position: relative;
     display: flex;
     justify-content: center;
@@ -47,29 +47,50 @@ body {
     text-align: center;
     font-weight: 500;
 }
-.nav ui li .icon {
+.nav ul li .icon {
     position: relative;
     display: block;
     line-height: 75px;
     font-size: 1.5em;
     text-align: center;
-    transision: .5s;
+    transition: .5s;
     color: var(--clr)
 }
-.nav ui li.active .icon {
+.nav ul li.active .icon {
     transform: translateY(-35px);
 }
-.nav ui li .text {
+.nav ul li .text {
     position: absolute;
     color: var(--clr);
     font-weight: 400;
     font-size: .75em;
     letter-spacing: .05;
-    transision: .5s;
+    transition: .5s;
     opacity: 0;
     transform: translateY(20px);
 }
-.nav ui li.active .text {
+.nav ul li.active .text {
     opacity: 1;
     transform: translateY(10px);
+}
+.indicator {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: #29fd53;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: .5s;
+}
+.indicator::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(--clr);
 }
