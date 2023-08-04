@@ -23,7 +23,6 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: end;
     border-radius: 10px;
 }
 .nav ul {
