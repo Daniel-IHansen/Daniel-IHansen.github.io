@@ -37,3 +37,39 @@ body {
     height: 70px;
     z-index: 1;
 }
+.nav ui li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.nav ui li .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transision: .5s;
+    color: var(--clr)
+}
+.nav ui li.active .icon {
+    transform: translateY(-35px);
+}
+.nav ui li .text {
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: .75em;
+    letter-spacing: .05;
+    transision: .5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.nav ui li.active .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
