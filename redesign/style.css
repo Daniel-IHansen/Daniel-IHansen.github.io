@@ -22,7 +22,7 @@ body {
 .nav {
     width: 400px;
     height: 70px;
-    background: #fff;
+    background: var(--clr2);
     position: relative;
     display: flex;
     justify-content: center;
