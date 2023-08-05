@@ -12,8 +12,10 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
+    flex-wrap: wrap;
     min-height: 100vh;
+    padding: 0 50px;
     background: var(--clr);
 }
 .nav {
@@ -43,7 +45,6 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    text-align: center;
     font-weight: 500;
 }
 .nav ul li .icon {
@@ -51,12 +52,11 @@ body {
     display: block;
     line-height: 75px;
     font-size: 1.5em;
-    text-align: center;
     transition: .5s;
     color: var(--clr)
 }
 .nav ul li.active .icon {
-    transform: translateY(-35px);
+    transform: translateY(35px);
 }
 .nav ul li .text {
     position: absolute;
@@ -66,15 +66,15 @@ body {
     letter-spacing: .05;
     transition: .5s;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(-10px);
 }
 .nav ul li.active .text {
     opacity: 1;
-    transform: translateY(10px);
+    transform: translateY(-20px);
 }
 .indicator {
     position: absolute;
-    top: -50%;
+    top: 50%;
     width: 70px;
     height: 70px;
     background: #29fd53;
@@ -85,24 +85,24 @@ body {
 .indicator::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: -22px;
     width: 20px;
     height: 20px;
     background: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 var(--clr);
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 10px 0 0 var(--clr);
 }
 .indicator::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 20%;
     right: -22px;
     width: 20px;
     height: 20px;
     background: transparent;
-    border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 var(--clr);
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 10px 0 0 var(--clr);
 }
 
 .nav ul li:nth-child(1).active ~ .indicator {
@@ -119,4 +119,9 @@ body {
 }
 .nav ul li:nth-child(5).active ~ .indicator {
     transform: translateX(calc(70px * 4))
+}
+
+#container3D {
+    width: 100%;
+    height: 90vh;
 }
