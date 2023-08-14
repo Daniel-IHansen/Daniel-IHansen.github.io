@@ -9,6 +9,6 @@ gsap.set(camera.position, {
 });
 gsap.set(camera.rotation, {
     x: 0,
-    y: 2.5,
+    y: 0,
     z: 0,
   });
