@@ -4,6 +4,7 @@
   #workContainer {
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    z-index: -1;
   }
   main {
     width: 90%;
