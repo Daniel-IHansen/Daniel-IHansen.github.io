@@ -21,7 +21,4 @@ document.getElementById("photo10").src = "collections/photos/" + photoCol.slice(
 
 //  under Updates
 document.getElementById("title1").innerHTML = updateCol.slice(-1)[0][0];
-document.getElementById("title2").innerHTML = updateCol.slice(-2)[0][0];
-
 document.getElementById("text1").innerHTML = updateCol.slice(-1)[0][2];
-document.getElementById("text2").innerHTML = updateCol.slice(-2)[0][2];
