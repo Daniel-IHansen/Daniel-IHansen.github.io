@@ -29,18 +29,13 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    border-radius: 10px;
-}
-
-.w3-bar-item {
     color: #0D0B08;
     transition-duration: .2s;
 }
 
 .w3-bar-item:hover {
     scale: 1.1;
-    color: #F1EFE9;
-    background-color: #695B95;
+    text-decoration: underline;
 }
 
 .logo {
@@ -107,19 +102,21 @@ ion-icon {
     padding: 0 20rem;
 }
 
-.buttons button:hover {
-    cursor: pointer;
-}
-
 .buttons button {
     width: 9rem;
-    height: 4rem;
+    height: 3.5rem;
     border-radius: 5px;
     font-weight: 600;
     font-size: 20px;
     border: 4px solid #849159;
     background-color: #F1EFE9;
     color: #849159;
+    transition-duration: .2s;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    scale: 1.1;
 }
 
 #active {
@@ -153,6 +150,7 @@ ion-icon {
     height: 100%;
     object-fit: cover;
     transition-duration: .3s;
+    scale: 1.05;
 }
 
 .article p {
@@ -197,4 +195,3 @@ ion-icon {
 .article:hover img {
     filter: blur(2px) brightness(60%);
 }
-
