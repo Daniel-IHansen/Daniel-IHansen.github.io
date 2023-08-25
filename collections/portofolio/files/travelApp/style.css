@@ -31,6 +31,7 @@ body {
     padding: 10px;
     color: #0D0B08;
     transition-duration: .2s;
+    text-underline-offset: 5px;
 }
 
 .w3-bar-item:hover {
