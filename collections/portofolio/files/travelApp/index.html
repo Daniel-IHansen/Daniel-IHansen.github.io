@@ -16,7 +16,7 @@
 </head>
 <body>
     <nav class="w3-bar">
-        <a href="#" class="w3-bar-item">
+        <a onclick="readPlace('destinationCont.html')" class="w3-bar-item">
             <ion-icon name="compass-outline"></ion-icon>
             <p>destinasjoner</p>
         </a>
@@ -24,7 +24,7 @@
             <ion-icon name="analytics-outline"></ion-icon>
             <p>reiseplanlegger</p>
         </a>
-        <a href="#" class="logo"><img src="./media/logoFIX.png" alt="Logo for Verden Videre"></a>
+        <a onclick="readPlace('homeCont.html')" class="logo"><img src="./media/logoFIX.png" alt="Logo for Verden Videre"></a>
         <a href="#" class="w3-bar-item">
             <ion-icon name="bulb-outline"></ion-icon>
             <p>tips og ressurser</p>
@@ -34,44 +34,7 @@
             <p>reisehistorier</p>
         </a>
     </nav>
-    <div class="banner">
-        <img class="slide" src="./media/banner0.jpg" style="opacity: 1;">
-        <img class="slide" src="./media/banner1.jpg">
-        <img class="slide" src="./media/banner2.jpg">
-        <img class="slide" src="./media/banner3.jpg">
-        <h1>utforsk <span style="color: #849159;">verden</span><br> ett steg av gangen</h1>
-    </div>
-
-    <div class="buttons">   
-        <button id="buttonLeft" class="active">aktuelle</button>
-        <button id="buttonRight" class="">nyeste</button>   
-    </div>
-    <div id="articles">
-        <div class="article">
-            <img src="./media/articles/travel0.jpg">
-            <p>This is a test text</p>
-        </div>
-        <div class="article">
-            <img src="./media/articles/travel1.jpg">
-            <p>This is a test text</p>
-        </div>
-        <div class="article">
-            <img src="./media/articles/travel2.jpg">
-            <p>This is a test text</p>
-        </div>
-        <div class="article">
-            <img src="./media/articles/travel3.jpg">
-            <p>This is a test text</p>
-        </div>
-        <div class="article">
-            <img src="./media/articles/travel4.jpg">
-            <p>This is a test text</p>
-        </div>
-        <div class="article">
-            <img src="./media/articles/travel5.jpg">
-            <p>This is a test text</p>
-        </div>
-    </div>
+    <main></main>
     <footer>
         <div id="footerText">
             <h3>Verden Videre</h3>
@@ -86,5 +49,6 @@
         </div>
     </footer>
     <script src="./slideshow.js"></script>
+    <script src="./pages.js"></script>
 </body>
 </html>
