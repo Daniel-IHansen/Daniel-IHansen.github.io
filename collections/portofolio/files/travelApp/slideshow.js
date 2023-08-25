@@ -13,4 +13,4 @@ setInterval(() => {
         slides[(slideCounter-1)].style.opacity = 0;
     }
     slides[slideCounter].style.opacity = 1;
-}, 3000);
+}, 4500);
