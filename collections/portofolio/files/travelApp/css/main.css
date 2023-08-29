@@ -6,21 +6,54 @@
 }
 
 @font-face {
-font-family: customFont;
-src: url(media/font/RobotoCondensed-Regular.ttf);
+    font-family: customFont;
+    src: url(/media/font/RobotoCondensed-Regular.ttf);
+}
+
+/* width */
+::-webkit-scrollbar {
+    position: absolute;
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff00; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #849159; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #717c4c; 
+}
+
+html, 
+body {
+    height: 100%;
 }
 
 body {
     font-family: "customFont";
     background-color: #F1EFE9;
+    overflow-x: hidden;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .w3-bar {
+    position: relative;
+    z-index: 1;
     overflow: visible;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 110px;
     box-shadow: 0px 4px 8px;
 }
 
@@ -28,11 +61,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 1rem;
     color: #0D0B08;
     transition-duration: .2s;
     text-underline-offset: 0px;
     text-decoration: underline #0d0b0800;
+    cursor: pointer;
 }
 
 .w3-bar-item:hover {
@@ -43,14 +77,23 @@ body {
 
 .logo {
     position: relative;
-    width: 10%;
+    width: 4rem;
+    transition-duration: .2s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    scale: 1.1;
 }
 
 .logo img {
     position: relative;
     width: 100%;
     border-radius: 100%;
-    border: solid 20px #F1EFE9;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .banner {
@@ -71,7 +114,6 @@ body {
     object-fit: cover;
     filter:brightness(75%) blur(2px);
     transform: scale(1.03);
-    z-index: -1;
     opacity: 0;
     transition-duration: 1s;
 }
@@ -83,6 +125,8 @@ body {
     font-size: 60px;
     text-transform: uppercase;
     line-height: 1.5;
+    position: relative;
+    z-index: 1;
 }
 
 ion-icon {
@@ -230,7 +274,6 @@ footer {
     background-color: #695B95;
     padding: 5rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     align-items: center;
     color: #F1EFE9;

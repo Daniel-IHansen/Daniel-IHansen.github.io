@@ -8,4 +8,4 @@ function readPlace(page) {
         oldelem.parentNode.replaceChild(newelem,oldelem);
     });
 };
-readPlace('homeCont.html');
+readPlace('destinationCont.html');
