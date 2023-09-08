@@ -146,7 +146,6 @@ ion-icon {
     align-items: center;
     width: 100%;
     height: 8rem;
-    padding: 0 20rem;
 }
 
 .buttons button {
@@ -305,4 +304,10 @@ footer #social ion-icon:hover {
     cursor: pointer;
     scale: 1.1;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .8);
+}
+
+@media (max-width: 768px) {
+    .w3-bar-item p {
+        display: none;
+    }
 }

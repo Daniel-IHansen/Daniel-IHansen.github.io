@@ -1,6 +1,7 @@
 #destinationContainer {
     display: flex;
     height: 100%;
+    width: 100%;
 }
 
 #destinations {
@@ -39,16 +40,24 @@
 }
 
 #info ion-icon {
-    padding: 20px;
+    margin: 10px;
+    transition-duration: .2s;
+    cursor: pointer;
+}   
+
+#info ion-icon:hover {
+    scale: 1.2;
+    color: rgba(255, 255, 255, 0.3);
 }
 
-.stars {
-    display: flex;
+#infoSidebar {
+    height: 100%;
+    background-color: #695B95;
+    transition: width .4s;
 }
 
-.stars ion-icon {
-    padding: 2px;
-    font-size: 16px;
+.sidebarActive {
+    width: 20rem;
 }
 
 .destination {

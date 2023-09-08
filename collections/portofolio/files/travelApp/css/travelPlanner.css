@@ -1,0 +1,18 @@
+#tableWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#planner {
+    padding: 10px;
+    box-shadow: 0 5px 15px;
+}
+
+#planner tr td {
+    border: 1px solid black;
+    min-width: 7rem;
+    padding: 10px 5px;
+}

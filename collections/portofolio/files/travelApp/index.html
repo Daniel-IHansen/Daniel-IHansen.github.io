@@ -7,6 +7,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/destination.css">
+    <link rel="stylesheet" href="./css/travelPlanner.css">
     <!-- Ionicons icon pack -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -17,15 +18,15 @@
 </head>
 <body>
     <nav class="w3-bar">
-        <a onclick="readPlace('destinationCont.html')" class="w3-bar-item">
+        <a href="./pages/destination.html" class="w3-bar-item">
             <ion-icon name="compass-outline"></ion-icon>
             <p>destinasjoner</p>
         </a>
-        <a href="#" class="w3-bar-item">
+        <a href="./pages/travelPlanner.html" class="w3-bar-item">
             <ion-icon name="analytics-outline"></ion-icon>
             <p>reiseplanlegger</p>
         </a>
-        <a onclick="readPlace('homeCont.html')" class="logo"><img src="./media/logo/verdenVidere.svg" alt="Logo for Verden Videre"></a>
+        <a href="./index.html" class="logo"><img src="./media/logo/verdenVidere.svg" alt="Logo for Verden Videre"></a>
         <a href="#" class="w3-bar-item">
             <ion-icon name="bulb-outline"></ion-icon>
             <p>tips og ressurser</p>
@@ -35,8 +36,60 @@
             <p>reisehistorier</p>
         </a>
     </nav>
-    <main></main>
+    <main>
+        <section class="banner">
+            <img class="slide" src="./media/banner0.jpg" style="opacity: 1;">
+            <img class="slide" src="./media/banner1.jpg">
+            <img class="slide" src="./media/banner2.jpg">
+            <img class="slide" src="./media/banner3.jpg">
+            <h1>utforsk <span style="color: #849159;">verden</span><br> ett steg av gangen</h1>
+        </section>
+        
+        <div class="buttons">   
+            <button id="buttonLeft" class="active">aktuelt</button>
+            <button id="buttonRight" class="">nytt</button>   
+        </div>
+        <section id="articles">
+            <div class="article">
+                <img src="./media/articles/travel0.jpg">
+                <p>This is a test text</p>
+            </div>
+            <div class="article">
+                <img src="./media/articles/travel1.jpg">
+                <p>This is a test text</p>
+            </div>
+            <div class="article">
+                <img src="./media/articles/travel2.jpg">
+                <p>This is a test text</p>
+            </div>
+            <div class="article">
+                <img src="./media/articles/travel3.jpg">
+                <p>This is a test text</p>
+            </div>
+            <div class="article">
+                <img src="./media/articles/travel4.jpg">
+                <p>This is a test text</p>
+            </div>
+            <div class="article">
+                <img src="./media/articles/travel5.jpg">
+                <p>This is a test text</p>
+            </div>
+        </section>
+        <footer>
+            <div id="footerText">
+                <h3>Oslofjorden VGS</h3>
+            <p>Oppdag ditt ultimate reiseplanleggingsverktøy for drømmereiser. Utforsk destinasjoner, lag skreddersydde reiseruter etter dine preferanser. Bli med oss i dag og skap uforglemmelige øyeblikk.</p>
+            </div>
+            <div id="social">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-tiktok"></ion-icon>
+                <ion-icon name="logo-reddit"></ion-icon>
+            </div>
+        </footer>
+    </main>
+    
     <script src="./js/slideshow.js"></script>
-    <script src="./js/pages.js"></script>
 </body>
 </html>
