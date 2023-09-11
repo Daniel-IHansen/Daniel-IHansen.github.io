@@ -1,3 +1,7 @@
+main {
+    overflow: hidden;
+}
+
 #destinationContainer {
     display: flex;
     height: 100%;
@@ -53,11 +57,30 @@
 #infoSidebar {
     height: 100%;
     background-color: #695B95;
-    transition: width .4s;
+    transition-duration: .5s;
+    width: 0rem;
 }
 
-.sidebarActive {
-    width: 20rem;
+#infoSidebar * {
+    display: none;
+    opacity: 0;
+}
+
+#infoSidebar.sidebarActive {
+    width: 30rem;
+    padding: 1.5rem;
+}
+
+#infoSidebar.sidebarActive * {
+    display: block;
+    opacity: 1;
+}
+
+#infoSidebar img {
+    width: 100%;
+    height: 6rem;
+    object-fit: cover;
+    padding: 10px;
 }
 
 .destination {

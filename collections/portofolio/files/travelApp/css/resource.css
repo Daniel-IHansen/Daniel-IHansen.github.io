@@ -1,0 +1,18 @@
+#contentWrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#textWrapper h1 {
+    font-size: 3rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#contentWrapper img {
+    height: 20rem;
+    width: 30rem;
+    object-fit: cover;
+    padding: 2rem;
+}
