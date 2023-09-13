@@ -4,9 +4,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+#tableBackground {
+    background-image: url("../media/plannerBanner.jpg");
+    background-size: cover;
+    filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    scale: 1.1;
 }
 
 #planner {
+    background-color: white;
+    position: absolute;
     padding: 10px;
     box-shadow: 0 5px 15px;
 }
