@@ -1,41 +1,12 @@
-#firstSection {
-    display: flex;
-    height: 30rem;
-    align-items: center;
-    justify-content: center;
-}
-
-#contentWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#textWrapper {
-    padding: 3rem;
-}
-
-#textWrapper h1 {
+#pageTitle {
     font-size: 3rem;
     font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    margin: 2rem 0;
 }
 
 hr {
     margin: 10px 0;
-}
-
-#contentWrapper p {
-    font-size: 1.1rem;
-    color: #0d0b0896;
-}
-
-#contentWrapper img {
-    height: 20rem;
-    width: 25rem;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
 }
 
 #sectionDivider {
@@ -55,29 +26,26 @@ hr {
 
 article {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction:column-reverse;
     margin: 2rem;
     box-shadow: 0 0 8px;
-    height: fit-content;
-    width: fit-content;
-    width: 55rem;
     transition-duration: .2s;
+    width: 20rem;
+    height: 30rem;
 }
 
 article:hover {
-    scale: 1.02;
+    scale: 1.05;
 }
 
 article img {
-    flex: 1;
     object-fit: cover;
     width: 20rem;
+    height: 10rem;
 }
 
 .articleText {
-    flex: 1;
     margin: 1rem 2rem;
 }
 
@@ -86,7 +54,6 @@ article img {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 1rem;
-    width: fit-content;
 }
 
 .articleText h2:hover {
