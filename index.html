@@ -1,124 +1,49 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <!--Page title-->
-  <title>Daniel's Portofolio</title>
-  <!--Page icon-->
-  <link rel="icon" href="media/icons/mainIcon.svg">
-  <!--Stuff-->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--See style.css-->
-  <link rel="stylesheet" href="basicStyle.css" />
-  <link rel="stylesheet" href="mediaQuery.css" />
-  <!--Google search information-->
-  <meta name="Keywords" content="Daniel Hansen CV">
-  <meta name="description" content="Min egen personlige nettside for å vise fram prosjekter og liknende.">
-  <meta name="Author" content="Daniel Hansen">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Portfolio</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Ionicons icon pack -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/projects/parallaxEffect/media/logo/verdenVidere.svg">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
-
+</head>
 <body>
+    <div id="headerContainer"></div>
+    <script src="/js/fetchTemplate.js"></script>
+    <script>
+        fetchTemplate("/templates/header.html");
+    </script>
 
-  <div id="background">
-    <div id="patternWrapper">
-      <div id="pattern"></div>
-      <div id="gradient"></div>
-    </div>
-  </div>
-  <main>
-    <!-- NAV MENU -->
-    <nav>
-      <!-- logo -->
-      <a id="logo" href="index.html"><img src="media/icons/mainIcon.svg"></a>
-      <!-- left menu (name and text) -->
-      <div class="textWrapper">
-        <p id="websiteTitle">DANIEL HANSEN</p>
-        <p id="websiteSubtitle">My works and projects</p>
-      </div>
-      <!-- right menu -->
-      <ul id="menu">
-        <!-- dissapears on mobile -->
-        <li class="large menuItem active"><a href="index.html">HOME</a></li>
-        <li class="large menuItem"><a href="/pages/portofolio.html">PORTOFOLIO</a></li>
-        <li class="large menuItem"><a href="/pages/photos.html">PHOTOS</a></li>
-        <!-- shows on mobile -->
-        <li id="hamburger" class="menuItem"><a href="#" onclick="showMenu()">☰</a>
-            <!-- nav (hidden by default) -->
-            <ul id="mobileMenu">
-              <li class="mobileItem"><a href="index.html">HOME</a></li>
-            <li class="mobileItem"><a href="/pages/portofolio.html">PORTOFOLIO</a></li>
-            <li class="mobileItem"><a href="/pages/photos.html">PHOTOS</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <!-- MAIN IMAGE -->
-    <div id="imgWrapper">
-      <img src="media/bakgrunnsbilde.jpg" id="mainImg" alt="Photo: Edvin Falk">
-      <p id="imgTitle">DANIEL HANSEN</p>
-      <p id="imgSubtitle">DEVELOPER DESIGNER PHOTOGRAPHER</p>
-    </div>
-    <div class="light"></div>
-    <div id="content">
-      <div class="column" id="portofolio">
-        <h2><span class="symbol">◯ </span>LATEST WORK</h2>
-        <hr class="light2">
-        <div class="tapeWrapper"><img id="workImg" src=""></div>
-        <a id="work1" class="text current">My work</a>
-        <a id="work2" class="text">🞄 Work 2</a>
-        <a id="work3" class="text">🞄 Work 3</a>
-        <a id="work4" class="text">🞄 Work 4</a>
-        <a href="pages/portofolio.html" class="text more">More Works <span>></span></a>
-      </div>
-      <div class="column" id="photos">
-        <h2><span class="symbol">◯ </span>PHOTOGRAPHS</h2>
-        <hr class="light2">
-        <div class="tapeWrapper"><img id="photo1" src=""></div>
-        <div id="photoCollection">
-          <img id="photo2" src="" alt="" class="collectionImg">
-          <img id="photo3" src="" alt="" class="collectionImg">
-          <img id="photo4" src="" alt="" class="collectionImg">
-          <img id="photo5" src="" alt="" class="collectionImg">
-          <img id="photo6" src="" alt="" class="collectionImg">
-          <img id="photo7" src="" alt="" class="collectionImg">
-          <img id="photo8" src="" alt="" class="collectionImg">
-          <img id="photo9" src="" alt="" class="collectionImg">
-          <img id="photo10" src="" alt="" class="collectionImg">
+    <main id="main">     
+         <div class="vignette hide"></div>
+        <img class="background9" src="media/img/0_background.png">
+        <img class="parallax background8" src="media/img/1_moon.png" data-speedx=".18" data-speedy=".15" data-speedz=".4" data-rotation=".2" data-distance="400">
+        <img class="parallax background7" src="media/img/2_mountain.png" data-speedx=".1" data-speedy=".16" data-speedz=".2" data-rotation=".3" data-distance="800">
+        <div class="parallax text" data-speedx=".04" data-speedy=".07" data-speedz="0" data-rotation=".1" data-distance="600">
+            <h2>Daniel</h2>
+            <h1>Hansen</h1>
         </div>
-        <a href="pages/photos.html" class="photoButton text more">More<span>></span></a>
-      </div>
-      <div class="column" id="updates">
-        <h2><span class="symbol">◯ </span>UPDATES</h2>
-        <hr class="light2">
-        <h4 class="updateTitle" id="title1"></h4>
-        <hr>
-        <p class="updateText" id="text1"></p>
-        <a href="pages/updates.html" class="text more">More<span>></span></a>
-      </div>
-      <div class="column" id="social">
-        <h2><span class="symbol">◯ </span>CONTACT</h2>
-        <hr class="light2">
-        <img src="media/meSmall.jpg" id="contactImg">
-        <div class="contact">
-          <img src="media/icons/email-icon.svg">
-          <p>Email</p>
-        </div>
-        <div class="contact">
-          <img src="media/icons/linkedin-icon.svg">
-          <p>LinkedIn</p>
-        </div>
-        <div class="contact">
-          <img src="media/icons/github-icon.svg">
-          <p>Github</p>
-        </div>
-      </div>
-    </div>
-  <footer></footer>
-  </main>
-  <script src="collections/collections.js"></script>
-  <script src="../JS/mobileMenu.js"></script>
-  <script src="JS/home.js"></script>
+        <img class="parallax background6" src="media/img/3_mountain.png" data-speedx=".08" data-speedy=".1" data-speedz=".2" data-rotation=".25" data-distance="1200">
+        <img class="parallax background5" src="media/img/4_background.png" data-speedx=".07" data-speedy=".10" data-speedz=".15" data-rotation=".15" data-distance="1600">
+        <img class="parallax background4" src="media/img/5_cloud.png" data-speedx=".05" data-speedy=".08" data-speedz=".1" data-rotation=".1" data-distance="2000">
+        <img class="parallax background2" src="media/img/7_cloud.png" data-speedx=".04" data-speedy=".08" data-speedz=".1" data-rotation=".04" data-distance="2400">
+        <img class="parallax background1" src="media/img/8_balloon.png" data-speedx=".03" data-speedy=".04" data-speedz=".08" data-rotation=".02" data-distance="2800">
+        <img class="parallax background0" src="media/img/9_balloon.png" data-speedx=".02" data-speedy=".03" data-speedz=".05" data-rotation="0" data-distance="3200">
+        
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/parallax.js"></script>
 </body>
+</html>
