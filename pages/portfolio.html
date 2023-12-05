@@ -21,24 +21,61 @@
 <body>
   <!-- fetch the portfolio database -->
   <script src="/js/fetchDatabase.js"></script>
-  <!-- generate the portfolio inside the three columns -->
-  <script src="/js/generatePortfolio.js"></script>
 
   <!-- fetch and display the header -->
   <div id="headerContainer"></div>
   <script src="/js/fetchTemplate.js"></script>
   <script>
-      fetchTemplate("/templates/header.html");
+    fetchTemplate("/templates/header.html");
   </script>
 
+<div id="blob" class="noAction"></div>
+
   <main id="portfolio">
-    <div id="light"></div>
-    <div id="content">
-      <div id="column1"></div>
-      <div id="column2"></div>
-      <div id="column3"></div>
+    <div class="cardGroups">
+      <script>
+        //  get the database from fetchDatabase.js
+        fetchDatabase("/collection/portfolio.csv")
+        let cardGroupCounter = 0;
+        let activeCard = "active";
+        setTimeout(() => {
+          const portfolioData = database;
+          for (let i = 0; i < portfolioData.length; i++) {
+
+            document.querySelector(".cardGroups").innerHTML += `
+              <div class="cardGroup" data-index="${cardGroupCounter}" data-status="${activeCard}">
+                <div class="largeCard card">
+                  <img src="/collection/portfolio/${portfolioData[i].filename3}">
+                </div>
+                <div class="largeCard card">
+                  <img src="/collection/portfolio/${portfolioData[i].filename2}">
+                </div>
+                <div class="largeCard card secondCard">
+                  <a href="/collection/portfolio/files/${portfolioData[i].file}" target="_blank">About project</a>
+                  <a class="date">${portfolioData[i].date}</a>
+                  <p>${portfolioData[i].description}</p>
+                </div>
+                <div class="largeCard card">
+                  <img src="/collection/portfolio/${portfolioData[i].filename1}">
+                </div>
+              </div>`
+            cardGroupCounter++
+            activeCard = "unknown";
+          }
+        }, 1000);
+      </script>
+    </div>
+    <div class="card-swiper-buttons">
+      <button onclick="leftClick()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </button>
+      <button onclick="rightClick()">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
     </div>
   </main>
-
+  <script src="/js/cardMovement.js"></script>
+  <script src="/js/blob.js"></script>
+  <script src="/js/dropmenu.js"></script>
 </body>
 </html>

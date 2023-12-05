@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Portfolio</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/portofolio.css">
+    <link rel="stylesheet" href="/css/photos.css">
     <!-- Ionicons icon pack -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -21,24 +22,50 @@
 <body>
   <!-- fetch the portfolio database -->
   <script src="/js/fetchDatabase.js"></script>
-  <!-- generate the portfolio inside the three columns -->
-  <script src="/js/generatePhotos.js"></script>
 
   <!-- fetch and display the header -->
   <div id="headerContainer"></div>
   <script src="/js/fetchTemplate.js"></script>
   <script>
-      fetchTemplate("/templates/header.html");
+    fetchTemplate("/templates/header.html");
   </script>
 
+<div id="blob" class="noAction"></div>
+
   <main id="portfolio">
-    <div id="light"></div>
-    <div id="content">
-      <div id="column1"></div>
-      <div id="column2"></div>
-      <div id="column3"></div>
+    <div class="cardGroups">
+      <script>
+        //  get the database from fetchDatabase.js
+        fetchDatabase("/collection/photos.csv")
+        let cardGroupCounter = 0;
+        let activeCard = "active";
+        setTimeout(() => {
+          const photoData = database;
+          for (let i = 0; i < photoData.length; i++) {
+
+            document.querySelector(".cardGroups").innerHTML += `
+              <div class="cardGroup" data-index="${cardGroupCounter}" data-status="${activeCard}">
+                <div class="largeCard card">
+                  <a href="/collection/photos/originals/${photoData[i].filename}"><img src="/collection/photos/${photoData[i].filename}"></a>
+                </div>
+              </div>`
+            cardGroupCounter++
+            activeCard = "unknown";
+          }
+        }, 1000);
+      </script>
+    </div>
+    <div class="card-swiper-buttons">
+      <button onclick="leftClick()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </button>
+      <button onclick="rightClick()">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
     </div>
   </main>
-
+  <script src="/js/cardMovement.js"></script>
+  <script src="/js/blob.js"></script>
+  <script src="/js/dropmenu.js"></script>
 </body>
 </html>

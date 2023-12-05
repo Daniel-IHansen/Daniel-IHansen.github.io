@@ -25,4 +25,6 @@ function fetchDatabase(csvFile) {
         database = parsedData;
       })
       .catch(error => console.error('Error fetching CSV:', error));
+
+    console.log(`Successfully fetched [${csvFile}]`)
   }

@@ -1,7 +1,8 @@
 <header class="hide">
     <nav>
         <a href="/index.html">
-            <h1>daniel</h1>
+            <img src="/media/favicon.png">
+            <h1>Daniel</h1>
         </a>
         <ul>
             <li>
@@ -11,7 +12,11 @@
                 <a class="link" href="/pages/photos.html">Photos</a>
             </li>
             <li class="hamburger">
-                <a href="#"><div class="bar"></div></a>
+                <a href="#" class="dropdown" onclick="dropMenu()"><div class="bar"></div></a>
+                <div class="drop">
+                    <a class="link dropLink" href="/pages/portfolio.html">Portfolio</a>
+                    <a class="link dropLink" href="/pages/photos.html">Photos</a>
+                </div>
             </li>
         </ul>
     </nav>

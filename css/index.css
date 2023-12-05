@@ -18,9 +18,28 @@
     background-color: var(--blue);
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3AAFB9bb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue);
+}
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--black);
+    overflow: hidden;
 }
 
 header {
@@ -36,17 +55,30 @@ header {
 header nav {
     max-width: 1800px;
     margin: 0 auto;
-    padding: 0 2rem;
+    margin: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+nav > a {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: cover;
+    border-radius: 100%;
+    transition-duration: .2s;
+}
+
 header h1 {
-    color: var(--white);
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 2rem;
+  padding-left: 1.8rem;
+  font-weight: 300;
+  font-size: 2rem;
+  color: var(--white);
 }
 
 header a {
@@ -96,22 +128,23 @@ header ul a {
     width: 100%;
 }
 
-.hamburger a {
+.hamburger {
+  display: none;
+  position: relative;
+  transition-duration: .5s ease-in;
+}
+
+.hamburger a.dropdown {
     padding: 0;
     width: 40px;
     height: 40px;
     display: flex;
     border-radius: 50%;
     background-color: var(--blue);
-    opacity: .5;
     backdrop-filter: blur(10px);
     justify-content: center;
     align-items: center;
     transition-duration: .2s;
-}
-
-.hamburger a:hover {
-    opacity: 1;
 }
 
 .hamburger .bar {
@@ -142,9 +175,20 @@ header ul a {
     top: 5px;
 }
 
+.drop {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+}
+
+.hamburger .link {
+  opacity: 0;
+  margin: 1rem 0;
+}
+
 main#main {
     position: relative;
-    background-color: var(--blue);
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -158,7 +202,7 @@ main#main {
 .background9 {
     position: absolute;
     width: 130%;
-    top: 40%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -285,6 +329,10 @@ main#main {
   /* mobile */
   @media (max-width: 725px) {
 
+    .hamburger {
+      display: block;
+    }
+
     .text h1 {
         font-size: 4.5rem;
         line-height: 1.1;
@@ -297,6 +345,9 @@ main#main {
 
     .link {
         display: none;
+    }
+    .hamburger .link {
+      display: block;
     }
 
     .background9 {
@@ -352,4 +403,8 @@ main#main {
         top: 30%;
         left: 50%;
       }
+      .link:after {
+        width: 100%;
+    }
   }
+
