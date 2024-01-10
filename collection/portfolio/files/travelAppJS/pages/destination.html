@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verden Videre</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/collection/portfolio/files/travelAppJS/css/main.css">
+    <link rel="stylesheet" href="/collection/portfolio/files/travelAppJS/css/destination.css">
+    <!-- Ionicons icon pack -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/collection/portfolio/files/travelAppJS/media/logo/verdenVidere.svg">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swapp" rel="stylesheet"> 
+</head>
+
+<body>
+    <main>
+        <section id="destinationContainer">
+            <div id="destinations">  
+                <script src="/collection/portfolio/files/travelAppJS/js/fetchDatabase.js"></script>
+                <script>
+                    fetchDatabase("/collection/portfolio/files/travelAppJS/csv/planner.csv")
+                    //  timeout for the database to be fetched
+                    setTimeout(() => {
+                        database.forEach(article => {
+                            console.log(article)
+                            document.getElementById("destinations").innerHTML += `
+                            <div class="destination" onclick=selectDestination("${article.idplanner}")>
+                                <div class="textContainer">
+                                    <h3>${article.location}</h3>
+                                </div>
+                                <img src="/collection/portfolio/files/travelAppJS/media/img/articles/${article.locationImage}" alt="">
+                            </div>`
+                        });
+                    }, 60);
+                </script>   
+            </div>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217405.76171162789!2d-8.172667026126584!3d31.634807934408727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech%2C%20Marokko!5e0!3m2!1sno!2sno!4v1695191295911!5m2!1sno!2sno"></iframe>
+        </section>
+    </main>
+
+    <script src="/collection/portfolio/files/travelAppJS/js/destinationSelection.js"></script>
+    <script src="/collection/portfolio/files/travelAppJS/js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verden Videre</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/collection/portfolio/files/travelAppJS/css/main.css">
+    <link rel="stylesheet" href="/collection/portfolio/files/travelAppJS/css/story.css">
+    <!-- Ionicons icon pack -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/collection/portfolio/files/travelAppJS/media/logo/verdenVidere.svg">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swapp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swapp" rel="stylesheet"> 
+
+</head>
+
+<body>
+    <main id="main">
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const selectedArticle = urlParams.get('articleId');
+        </script>
+        <script src="/collection/portfolio/files/travelAppJS/js/fetchDatabase.js"></script>
+        <script>
+            fetchDatabase("/collection/portfolio/files/travelAppJS/csv/articles.csv")
+
+            //  timeout for the database to be fetched
+            setTimeout(() => {
+                let article = database[selectedArticle];
+
+                    document.getElementById("main").innerHTML += `
+                    <img src="/collection/portfolio/files/travelAppJS/media/img/articles/${article.image}" id="articleImage">
+                    <section id="articleSection">
+                        <h1>${article.title}</h1>
+                        <p>${article.text}</p>
+                    </section>`
+            }, 60);
+        </script>
+    </main>
+    <footer>
+            <div id="footerText">
+                <h3>Oslofjorden VGS</h3>
+                <p>Oppdag ditt ultimate reiseplanleggingsverktøy for drømmereiser. Utforsk destinasjoner, lag skreddersydde reiseruter etter dine preferanser. Bli med oss i dag og skap uforglemmelige øyeblikk.</p>
+            </div>
+            <div id="social">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-tiktok"></ion-icon>
+                <ion-icon name="logo-reddit"></ion-icon>
+            </div>
+        </footer>
+    <script src="/collection/portfolio/files/travelAppJS/js/nav.js"></script>
+</body>
+</html>

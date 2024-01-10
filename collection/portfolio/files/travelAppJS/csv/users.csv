@@ -1,0 +1,4 @@
+userId,username,email,password
+1,johndoe,johndoe@email.com,$2a$10$q1VgISZ4a9LnY/NzNMtqFeer9ogt.hZkHR3vRFLPznfweQwZAGlGS
+2,alice,alice@email.com,$2a$10$FLI3X4u3KjVvSoXdVJwMh.lD/eaWe1SP7n1IEkg43F8Z/1MfS/ntu
+3,bob,bob@email.com,$2a$10$dRi5cZmMIXKnJSSqQkEhSOY0cvF88YabY9lq4vN9LLxw.OF5uZBcO
