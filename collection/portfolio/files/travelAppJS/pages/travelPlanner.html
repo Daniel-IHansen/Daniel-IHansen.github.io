@@ -37,12 +37,11 @@
                 <script src="/collection/portfolio/files/travelAppJS/js/fetchDatabase.js"></script>
                 <script>
                     fetchDatabase("/collection/portfolio/files/travelAppJS/csv/planner.csv")
-    
-                    //  timeout for the database to be fetched
-                    setTimeout(() => {
-                        console.log(database)
-                        database.forEach(article => {
-                            document.getElementById("planner").innerHTML += `
+                    //  run only once database is fetched
+                    const dataInsert = setInterval(() => {
+                        if (database.length != 0) {
+                            database.forEach(article => {
+                                document.getElementById("planner").innerHTML += `
                             <tr>
                                 <td data-cell="location">${article.location}</td>
                                 <td data-cell="stayTime">${article.stayTime}</td>
@@ -53,8 +52,11 @@
                                 <td data-cell="transport">${article.transport}</td>
                                 <td data-cell="otherNotes">${article.otherNotes}</td>
                             </tr>`
-                        });
-                    }, 60);
+                            });
+                            //  stop checking once variable is not null
+                            clearInterval(dataInsert);
+                        }
+                    }, 10);
                 </script>
             </table>
         </section>

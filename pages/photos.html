@@ -35,24 +35,28 @@
   <main id="portfolio">
     <div class="cardGroups">
       <script>
-        //  get the database from fetchDatabase.js
         fetchDatabase("/collection/photos.csv")
         let cardGroupCounter = 0;
         let activeCard = "active";
-        setTimeout(() => {
-          const photoData = database;
-          for (let i = 0; i < photoData.length; i++) {
 
-            document.querySelector(".cardGroups").innerHTML += `
-              <div class="cardGroup" data-index="${cardGroupCounter}" data-status="${activeCard}">
-                <div class="largeCard card">
-                  <a href="/collection/photos/originals/${photoData[i].filename}"><img src="/collection/photos/${photoData[i].filename}"></a>
-                </div>
-              </div>`
-            cardGroupCounter++
-            activeCard = "unknown";
-          }
-        }, 1000);
+        //  run only once database is fetched
+        const dataInsert = setInterval(() => {
+            if (database.length != 0) {
+              const photoData = database;
+                database.forEach(article => {
+                  document.querySelector(".cardGroups").innerHTML += `
+                  <div class="cardGroup" data-index="${cardGroupCounter}" data-status="${activeCard}">
+                    <div class="largeCard card">
+                      <a href="/collection/photos/originals/${article.filename}"><img src="/collection/photos/${article.filename}"></a>
+                    </div>
+                  </div>`
+                cardGroupCounter++
+                activeCard = "unknown";
+                });
+                //  stop checking once variable is not null
+                clearInterval(dataInsert);
+            }
+        }, 10);
       </script>
     </div>
     <div class="card-swiper-buttons">

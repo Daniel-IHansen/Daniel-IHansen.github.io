@@ -36,17 +36,20 @@
             <script src="./js/fetchDatabase.js"></script>
             <script>
                 fetchDatabase("./csv/articles.csv")
-
-                //  timeout for the database to be fetched
-                setTimeout(() => {
-                    database.forEach(article => {
-                        document.getElementById("articles").innerHTML += `
-                        <div class="article">
-                            <img src="./media/img/articles/${article.image}">
-                            <p>${article.title}</p>
-                        </div>`
-                    });
-                }, 100);
+                //  run only once database is fetched
+                const dataInsert = setInterval(() => {
+                    if (database.length != 0) {
+                        database.forEach(article => {
+                            document.getElementById("articles").innerHTML += `
+                            <div class="article">
+                                <img src="./media/img/articles/${article.image}">
+                                <p>${article.title}</p>
+                            </div>`
+                        });
+                        //  stop checking once variable is not null
+                        clearInterval(dataInsert);
+                    }
+                }, 10);
             </script>
         </section>
         <footer>

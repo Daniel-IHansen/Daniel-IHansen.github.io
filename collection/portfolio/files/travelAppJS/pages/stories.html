@@ -27,20 +27,23 @@
             <script src="/collection/portfolio/files/travelAppJS/js/fetchDatabase.js"></script>
             <script>
                 fetchDatabase("/collection/portfolio/files/travelAppJS/csv/articles.csv")
-
-                //  timeout for the database to be fetched
-                setTimeout(() => {
-                    database.forEach(article => {
-                        document.getElementById("resources").innerHTML += `
-                        <article>
-                            <div class="articleText">
-                                <a href="story.html?articleId=${article.id}"><h2>${article.title}</h2></a>
-                                <p>${article.intro}</p>
-                            </div>
-                            <img src="/collection/portfolio/files/travelAppJS/media/img/articles/${article.image}" alt="">
-                        </article>`
-                    });
-                }, 60);
+                //  run only once database is fetched
+                const dataInsert = setInterval(() => {
+                    if (database.length != 0) {
+                        database.forEach(article => {
+                            document.getElementById("resources").innerHTML += `
+                            <article>
+                                <div class="articleText">
+                                    <a href="story.html?articleId=${article.id}"><h2>${article.title}</h2></a>
+                                    <p>${article.intro}</p>
+                                </div>
+                                <img src="/collection/portfolio/files/travelAppJS/media/img/articles/${article.image}" alt="">
+                            </article>`
+                        });
+                        //  stop checking once variable is not null
+                        clearInterval(dataInsert);
+                    }
+                }, 10);
             </script>
         </section>
     </main>
