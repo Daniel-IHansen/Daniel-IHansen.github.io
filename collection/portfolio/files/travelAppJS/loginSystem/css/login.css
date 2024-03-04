@@ -1,0 +1,136 @@
+#backgroundWrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#backgroundImage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("/collection/portfolio/files/travelAppJS/media/loginBackground.jpg");
+    background-size: cover;
+    filter: blur(2px);
+    scale: 1.01;
+}
+
+.form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainForm {
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #f1efe9cc;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+#personIcon {
+    padding: 1rem;
+    border-radius: 100%;
+    background-color: #2a2925;
+    color: #f1efe9;
+    font-size: 3rem;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 4px;
+    overflow: hidden;
+    height: 3rem;
+}
+
+.input ion-icon {
+    background-color: #0D0B08dd;
+    color: #f1efe9;
+    font-size: 1.5rem;
+    height: 100%;
+    padding: .8rem;
+}
+
+.input input {
+    width: 15rem;
+    height: 100%;
+    border: none;
+    padding-left: 10px;
+    font-size: 1rem;
+    background-color: #0D0B08aa;
+    color: #f1efe9;
+}
+
+::placeholder {
+    color: #f1efe977;
+}
+
+.input input:focus {
+    outline-width: 0;
+    background-color: #0D0B0877;
+}
+
+#register {
+    margin: 1rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#register a {
+    color: #2a2925;
+}
+
+.loginWrapper {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #f1efe9cc;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0, .6);
+    position: relative;
+    z-index: 1;
+}
+
+.loginWrapper input,
+.loginWrapper a {
+    margin: .5rem 7rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition-duration: .2s;
+    color: #2a2925;
+    padding: .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.loginWrapper input:hover,
+.loginWrapper a:hover {
+    scale: 1.1;
+    background-color: #2a2925;
+    color: #f1efe9;
+}
+
+.incorrect {
+    padding: 2rem;
+    background-color: #f1efe9cc;
+    border-radius: 20px;
+}
+
+#phpError {
+    position: absolute;
+    padding: 1.5rem;
+    background-color: #f1efe9cc;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0, .6);
+}
