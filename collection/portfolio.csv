@@ -1,8 +1,9 @@
-name;date;filename1;filename2;filename3;description;file;
-Communication Book;2/11/2022;communicationBook1.jpg;communicationBook2.jpg;communicationBook3.jpg;My first experience with InDesign. The book's content was made by Nils Petter Johnsrud.;communicationBook.pdf;
-Manhunt Poster;4/4/2023;manhuntPoster1.jpg;manhuntPoster2.jpg;manhuntPoster3.jpg;A poster made for a student movie. The whole poster is designed in Photoshop.;manhuntPoster.pdf;
-Logo Design Manual;14/4/2023;designManual1.jpg;designManual2.jpg;designManual3.jpg;Design manual based on a student-made logo. Includes blending on clothes in InDesign.;designManual.pdf;
-Guess the Number;1/5/2023;guessTheNumber1.png;guessTheNumber2.png;guessTheNumber3.png;My last game, with stylized background, screen and terminal. Includes sarcasm.;guessTheNumber/index.html;
-How to Take Photos;10/5/2023;howToTakePhotos1.jpg;howToTakePhotos2.jpg;howToTakePhotos3.jpg;A manual for how to take a good photo with your own phone. Designed in InDesign.;howToTakePhotos.pdf;
-First Github Page;30/7/2023;firstGithub1.jpg;firstGithub2.jpg;firstGithub3.jpg;This is my first idea for a github page, inspired by something i saw online.;firstGithub/index.html;
-Travel Application;2/9/2023;travelAppJS1.jpg;travelAppJS2.jpg;travelAppJS3.jpg;An application made for a imaginary travel company, made using MySQL and PHP.;travelAppJS/index.html
+name;filename;description;file
+Kommunikasjonsbok;communicationBook.jpg;Min første erfaring med InDesign. Innholdet i boken ble laget av Nils Petter Johnsrud.;communicationBook.pdf
+Filmplakat;manhuntPoster.jpg;En plakat laget for en studentfilm. Hele plakaten er designet i Photoshop.;manhuntPoster.pdf
+Gjett tallet;guessTheNumber.jpg;Mitt siste spill, med stilisert bakgrunn, skjerm og terminal. Inkluderer sarkasme.;guessTheNumber/index.html
+Hvordan ta bilder;howToTakePhotos.jpg;En veiledning om hvordan du tar gode bilder med egen telefon. Designet i InDesign.;howToTakePhotos.pdf
+Første Github-side;firstGithub.jpg;Dette er min første idé for en GitHub-side, inspirert av noe jeg så online.;firstGithub/index.html
+Reiseapplikasjon;travelAppJS.jpg;En applikasjon laget for et imaginært reiseselskap, laget med MySQL og PHP.;travelAppJS/index.html
+Andre Github-side;secondGithub.jpg;Min andre GitHub-side, laget med litt inspirasjon og en parallakseffekt.;secondGithub/index.html
+Bånsull AS;baanNettverk.jpg;Nettverksoppsett for en "klient", satt opp med VLAN og NGFW.;baansullNetwork.pdf

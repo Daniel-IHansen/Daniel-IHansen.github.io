@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+:root {
+    --blue: #3AAFB9;
+    --white: #ffffff;
+    --black: #150128;
+  }
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: var(--blue);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3AAFB9bb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--black);
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    padding: .9rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+header nav {
+    max-width: 1800px;
+    margin: 0 auto;
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: cover;
+    border-radius: 100%;
+    transition-duration: .2s;
+}
+
+header h1 {
+  padding-left: 1.8rem;
+  font-weight: 300;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+header a {
+  text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a {
+    text-decoration: none;
+    color: var(--white);
+    margin: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0 10px;
+    position: relative;
+}
+
+.link {
+    color: var(--white);
+    opacity: .6;
+    transition-duration: .2s;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.link:after {
+    content: "";
+    position: absolute;
+    background-color: var(--blue);
+    height: 3.5px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    border-radius: 20px;
+    transition-duration: .3s;
+}
+
+.link:hover:after {
+    width: 100%;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  transition-duration: .5s ease-in;
+}
+
+.hamburger a.dropdown {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    background-color: var(--blue);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    transition-duration: .2s;
+}
+
+.hamburger .bar {
+    position: relative;
+    width: 50%;
+    height: 2px;
+    background-color: var(--white);
+    border-radius: 2px;
+}
+
+.hamburger .bar::before,
+.hamburger .bar::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before {
+    top: -5px;
+}
+
+.hamburger .bar::after {
+    top: 5px;
+}
+
+.drop {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+}
+
+.hamburger .link {
+  opacity: 0;
+  margin: 1rem 0;
+}
+
+main#main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax {
+    pointer-events: none;
+    transition: .45s cubic-bezier(.2, .5, .3, .99);
+}
+
+.background9 {
+    position: absolute;
+    width: 130%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+.background8 {
+    position: absolute;
+    width: 115%;
+    top: 48%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+
+.background7 {
+    position: absolute;
+    width: 130%;
+    top: 60%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+  }
+
+  .text {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    pointer-events: auto;
+}
+
+.text h2 {
+    font-weight: 100;
+    font-size: 6rem;
+}
+
+.text h1 {
+    font-weight: 800;
+    font-size: 7rem;
+    line-height: .88;
+}
+
+.background6 {
+    position: absolute;
+    width: 130%;
+    top: 72%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+  }
+  
+  .background5 {
+    position: absolute;
+    width: 130%;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+  }
+  
+  .background4 {
+    position: absolute;
+    width: 20%;
+    top: 20%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+  }
+  
+  .background2 {
+    position: absolute;
+    width: 45%;
+    top: 15%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+  }
+  
+  .background1 {
+    position: absolute;
+    width: 130%;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .background0 {
+    position: absolute;
+    width: 90%;
+    top: 55%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+  }
+  
+  .vignette {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 65%, rgba(0, 0, 0, .4));
+    pointer-events: none;
+  }
+  
+  /* tablet */
+  @media (max-width: 1100px) {
+
+    .text h1 {
+        font-size: 5.5rem;
+    }
+
+    .text h2 {
+        font-size: 4.4rem;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: 725px) {
+
+    .hamburger {
+      display: block;
+    }
+
+    .text h1 {
+        font-size: 4.5rem;
+        line-height: 1.1;
+    }
+
+    .text h2 {
+        font-size: 3.7rem;
+        line-height: 1.1;
+    }
+
+    .link {
+        display: none;
+    }
+    .hamburger .link {
+      display: block;
+    }
+
+    .background9 {
+        width: 450%;
+        top: 30%;
+        left: 50%;
+      }
+    
+    .background8 {
+        width: 200%;
+        top: 35%;
+        left: 55%;
+      }
+    
+    .background7 {
+        width: 150%;
+        top: 70%;
+        left: 45%;
+      }
+    
+    .background6 {
+        width: 180%;
+        top: 75%;
+        left: 50%;
+      }
+      
+    .background5 {
+        width: 400%;
+        top: 85.5%;
+        left: 50%;
+      }
+      
+    .background4 {
+        width: 20%;
+        top: 20%;
+        left: 90%;
+      }
+    
+    .background2 {
+        width: 45%;
+        top: 15%;
+        left: 30%;
+      }
+      
+    .background1 {
+        width: 250%;
+        top: 40%;
+        left: 2%;
+      }
+      
+    .background0 {
+        width: 150%;
+        top: 30%;
+        left: 50%;
+      }
+      .link:after {
+        width: 100%;
+    }
+  }
+

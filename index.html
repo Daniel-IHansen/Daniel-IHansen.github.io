@@ -1,50 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniels Portfolio</title>
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/index.css">
-    <!-- Ionicons icon pack -->
+    <title>Document</title>
+    <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="/media/favicon.png">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-</head>
-</head>
-<body>
-    <!-- generates the header from header.index -->
-    <div id="headerContainer"></div>
-    <script src="/js/fetchTemplate.js"></script>
-    <script>
-        fetchTemplate("/templates/header.html");
-    </script>
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsiveStyle.css">
+    <!-- Favicon -->
+    <link rel="icon" href="./media/sea-turtle.svg">
+    <!-- Font - Serif -->
+    <link href="https://api.fontshare.com/v2/css?f[]=sentient@400,700,201,301,200,501,500,300,401,701&display=swap" rel="stylesheet">
+    <!-- Font - Sans -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
+    <!-- Script for fetching a .csv file -->
+    <script src="./script/fetchDatabase.js"></script>
 
-    <main id="main">     
-         <div class="vignette hide"></div>
-        <img class="background9" src="media/parallax/0_background.png">
-        <img class="parallax background8" src="media/parallax/1_moon.png" data-speedx=".18" data-speedy=".15" data-speedz=".4" data-rotation=".2" data-distance="400">
-        <img class="parallax background7" src="media/parallax/2_mountain.png" data-speedx=".1" data-speedy=".16" data-speedz=".2" data-rotation=".3" data-distance="800">
-        <div class="parallax text" data-speedx=".04" data-speedy=".07" data-speedz="0" data-rotation=".1" data-distance="600">
-            <h2>Daniel</h2>
-            <h1>Hansen</h1>
+    <script src="./script/showAll.js"></script>
+</head>
+
+<body id="butter">
+    <!-- Navbar -->
+    <nav>
+        <img src="./media/sea-turtle.svg" alt="" id="logo">
+        <div id="menu">
+            <a href="#about">Om meg</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#experience">Kontakt</a>
         </div>
-        <img class="parallax background6" src="media/parallax/3_mountain.png" data-speedx=".08" data-speedy=".1" data-speedz=".2" data-rotation=".25" data-distance="1200">
-        <img class="parallax background5" src="media/parallax/4_background.png" data-speedx=".07" data-speedy=".10" data-speedz=".15" data-rotation=".15" data-distance="1600">
-        <img class="parallax background4" src="media/parallax/5_cloud.png" data-speedx=".05" data-speedy=".08" data-speedz=".1" data-rotation=".1" data-distance="2000">
-        <img class="parallax background2" src="media/parallax/7_cloud.png" data-speedx=".04" data-speedy=".08" data-speedz=".1" data-rotation=".04" data-distance="2400">
-        <img class="parallax background1" src="media/parallax/8_balloon.png" data-speedx=".03" data-speedy=".04" data-speedz=".08" data-rotation=".02" data-distance="2800">
-        <img class="parallax background0" src="media/parallax/9_balloon.png" data-speedx=".02" data-speedy=".03" data-speedz=".05" data-rotation="0" data-distance="3200">
-        
-    </main>
+    </nav>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="/js/parallax.js"></script>
-    <script src="/js/dropmenu.js"></script>
+    <!-- Who i am -->
+    <div id="meContainer">
+        <div id="me">
+            <section class="shadow" id="me">
+                <div class="text">
+                    <h1>Jeg er <span>Daniel Hansen</span></h1>
+                    <p>Utvikler, designer and fotograf</p>
+                        <a class="invertedButton" href="#contact">Kontakt Meg</a>
+                </div>
+                <img id="bannerImage" src="./media/me.png" alt="">
+                <div id="socialContainer">
+                    <div class="verticalLine"></div>
+                    <a href="https://github.com/Daniel-IHansen"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.instagram.com/leidenshanan/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/daniel-ihansen"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2>Om meg</h2>
+        <div id="aboutText">
+            <div class="horizontalLine"></div>
+            <p>Min reise preges av læring og <span>lidenskap for nye erfaringer</span>. Jeg kombinerer tilpasningsdyktighet, utholdenhet og detaljfokus. Innovativ problemløsning er kjernen i min tilnærming, og jeg trives i dynamiske miljøer som krever kreative løsninger, enten jeg samarbeider i team eller tar ledelsen.
+            <br><br>Min profesjonelle etos handler om effektiv kommunikasjon, og jeg forstår dens kritiske rolle for å fremme samarbeid og suksess. Jeg ser frem til å bidra med mine ferdigheter og perspektiver til en fremtidsrettet organisasjon. Min reise gir meg verktøyene ikke bare for å møte forventningene, men overstige dem.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div id="images">
+            <script>
+                (async() => {
+                    const works = await fetchDatabase('./collection/portfolio.csv');
+                    console.log('Successfully fetched:', works);
+
+                    // Rest of database-related code
+                    let imageCount = 0;
+                    let display = "flex";
+
+                    works.forEach(work => {
+                        imageCount++
+                        if (imageCount > 6) {
+                            display = "none";
+                        }
+
+                        document.querySelector("#images").innerHTML += `
+                        <div class="imageWrapper" style="display: ${display}">
+                            <img src="./collection/portfolio/${work.filename}" alt="">
+                            <div class="imageText">
+                                <h3>${work.name}</h3>
+                                <p>${work.description}</p>
+                                <a class="button" href="./collection/portfolio/files/${work.file}">See more 🡒</a>
+                            </div>
+                        </div>`
+                    });
+                })();
+            </script>
+        </div>
+        <a onclick="showAll(document.querySelectorAll('.imageWrapper'), document.querySelector('#morePortfolio'))">
+            <p class="button bigButton" id="morePortfolio">Se mer</p>
+        </a>
+    </section>
+
+    <!-- Photos -->
+    <section id="photos">
+        <h2>Bilder</h2>
+        <div id="myPhotos">
+            <script>
+                (async() => {
+                    const photos = await fetchDatabase('./collection/photos.csv');
+                    console.log('Successfully fetched:', photos );
+
+                    // Rest of database-related code
+                    let imageCount = 0;
+                    let display = "block";
+
+                    photos.forEach(photo => {
+                        imageCount++
+                        if (imageCount > 6) {
+                            display = "none";
+                        }
+                        document.querySelector("#myPhotos").innerHTML += `
+                        <div class="photo" style="display: ${display}">
+                            <img src="./collection/photos/${photo.filename}" alt="">
+                            <div>
+                                <h3>${photo.name}</h3>
+                                <p>${photo.date}</p>
+                            </div>
+                        </div>`
+                    });
+                })();
+            </script>
+        </div>
+        <a onclick="showAll(document.querySelectorAll('.photo'), document.querySelector('#morePhotos'))">
+            <p class="button bigButton" id="morePhotos">Se mer</p>
+        </a>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Erfaring</h2>
+        <script>
+            (async() => {
+                const experiences = await fetchDatabase('./collection/experience.csv');
+                console.log('Successfully fetched:', experiences );
+
+                experiences.forEach(experience => {
+                    document.querySelector("#experience").innerHTML += `
+                    <div id="expWrapper">
+                        <div class="details">
+                            <p class="year">${experience.year}</p>
+                            <div class="glowingBall"></div>
+                            <div class="verticalLine"></div>
+                        </div>
+                        <div class="expText">
+                            <h2>${experience.jobtitle}</h2>
+                            <h3>${experience.location}</h3>
+                            <p>${experience.description}</p>
+                        </div>
+                    </div>`
+                });
+            })();
+        </script>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <div id="links">
+            <a class="link" href="https://github.com/Daniel-IHansen">
+                <ion-icon name="logo-github"></ion-icon>
+                <p>Daniel-iHansen</p>
+            </a>
+            <a class="link" href="https://www.instagram.com/leidenshanan/">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <p>Leidenshanan</p>
+            </a>
+            <a class="link" href="https://www.linkedin.com/in/daniel-ihansen">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <p>Daniel Hansen</p>
+            </a>
+        </div>
+    </section>
+    <script src="./script/nav.js"></script>
+    <script src="./script/draggableFalse.js"></script>
+    <!-- Butter smooth scroll effect -->
+    <script src="./script/butter.js"></script>
+    <script>
+        butter.init();
+        document.getElementById("butter").style.position = "unset";
+    </script>
 </body>
 </html>
