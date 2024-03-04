@@ -21,7 +21,7 @@
 
         this.wrapperDamper;
         this.wrapperId;
-        this.cancelOnTouch;
+        this.cancelOnTouch = true;
         this.wrapper;
         this.wrapperOffset = 0;
         this.animateId;
