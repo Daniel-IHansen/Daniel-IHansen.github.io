@@ -23,7 +23,7 @@
     <script src="./script/showAll.js"></script>
 </head>
 
-<body id="butter">
+<body>
     <!-- Navbar -->
     <nav>
         <img src="./media/sea-turtle.svg" alt="" id="logo">
@@ -71,7 +71,7 @@
             <script>
                 (async() => {
                     const works = await fetchDatabase('./collection/portfolio.csv');
-                    console.log('Successfully fetched:', works);
+                    console.log('Successfully fetched:', works.reverse());
 
                     // Rest of database-related code
                     let imageCount = 0;
@@ -108,7 +108,7 @@
             <script>
                 (async() => {
                     const photos = await fetchDatabase('./collection/photos.csv');
-                    console.log('Successfully fetched:', photos );
+                    console.log('Successfully fetched:', photos.reverse() );
 
                     // Rest of database-related code
                     let imageCount = 0;
@@ -142,7 +142,7 @@
         <script>
             (async() => {
                 const experiences = await fetchDatabase('./collection/experience.csv');
-                console.log('Successfully fetched:', experiences );
+                console.log('Successfully fetched:', experiences.reverse() );
 
                 experiences.forEach(experience => {
                     document.querySelector("#experience").innerHTML += `
@@ -188,6 +188,7 @@
     <script>
         butter.init();
         document.getElementById("butter").style.position = "unset";
+
     </script>
 </body>
 </html>
