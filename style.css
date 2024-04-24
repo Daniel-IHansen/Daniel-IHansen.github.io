@@ -87,11 +87,26 @@ nav {
     text-decoration: none;
     color: rgba(var(--white), .5);
     margin: 1rem;
+    padding: .5rem;
     transition-duration: .2s;
 }
 
 #menu a:hover {
     color: rgb(var(--white));
+}
+
+#menu a:after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px rgb(var(--blue));
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 100%;
+}
+
+#menu a:hover:after {
+    transform: scaleX(1);
 }
 
 input {

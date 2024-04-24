@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/portofolio.css">
+    <!-- Ionicons icon pack -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/media/favicon.png">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+  <!-- fetch the portfolio database -->
+  <script src="/js/fetchDatabase.js"></script>
+
+  <!-- fetch and display the header -->
+  <div id="headerContainer"></div>
+  <script src="/js/fetchTemplate.js"></script>
+  <script>
+    fetchTemplate("/templates/header.html");
+  </script>
+
+<div id="blob" class="noAction"></div>
+
+  <main id="portfolio">
+    <div class="cardGroups">
+      <script>
+        fetchDatabase("/collection/portfolio.csv")
+        let cardGroupCounter = 0;
+        let activeCard = "active";
+        //  run only once database is fetched
+        const dataInsert = setInterval(() => {
+            if (database.length != 0) {
+                database.forEach(article => {
+                  document.querySelector(".cardGroups").innerHTML += `
+                  <div class="cardGroup" data-index="${cardGroupCounter}" data-status="${activeCard}">
+                    <div class="largeCard card">
+                      <img src="/collection/portfolio/${article.filename3}">
+                    </div>
+                    <div class="largeCard card">
+                      <img src="/collection/portfolio/${article.filename2}">
+                    </div>
+                    <div class="largeCard card secondCard">
+                      <a href="/collection/portfolio/files/${article.file}" target="_blank">About project</a>
+                      <a class="date">${article.date}</a>
+                      <p>${article.description}</p>
+                    </div>
+                    <div class="largeCard card">
+                      <img src="/collection/portfolio/${article.filename1}">
+                    </div>
+                  </div>`
+                cardGroupCounter++
+                activeCard = "unknown";
+                });
+                //  stop checking once variable is not null
+                clearInterval(dataInsert);
+            }
+        }, 10);
+      </script>
+    </div>
+    <div class="card-swiper-buttons">
+      <button onclick="leftClick()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </button>
+      <button onclick="rightClick()">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
+    </div>
+  </main>
+  <script src="/js/cardMovement.js"></script>
+  <script src="/js/blob.js"></script>
+  <script src="/js/dropmenu.js"></script>
+</body>
+</html>

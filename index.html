@@ -85,11 +85,11 @@
 
                         document.querySelector("#images").innerHTML += `
                         <div class="imageWrapper" style="display: ${display}">
-                            <img src="./collection/portfolio/${work.filename}" alt="">
+                            <img src="${work.filename}" alt="">
                             <div class="imageText">
                                 <h3>${work.name}</h3>
                                 <p>${work.description}</p>
-                                <a class="button" href="./collection/portfolio/files/${work.file}">See more 🡒</a>
+                                <a class="button" href="${work.file}">See more 🡒</a>
                             </div>
                         </div>`
                     });
@@ -121,7 +121,7 @@
                         }
                         document.querySelector("#myPhotos").innerHTML += `
                         <div class="photo" style="display: ${display}">
-                            <img src="./collection/photos/${photo.filename}" alt="">
+                            <img src="${photo.filename}" alt="">
                             <div>
                                 <h3>${photo.name}</h3>
                                 <p>${photo.date}</p>
@@ -183,12 +183,5 @@
     </section>
     <script src="./script/nav.js"></script>
     <script src="./script/draggableFalse.js"></script>
-    <!-- Butter smooth scroll effect -->
-    <script src="./script/butter.js"></script>
-    <script>
-        butter.init();
-        document.getElementById("butter").style.position = "unset";
-
-    </script>
 </body>
 </html>

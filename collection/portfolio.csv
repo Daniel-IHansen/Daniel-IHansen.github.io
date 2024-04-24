@@ -1,9 +1,10 @@
 name;filename;description;file
-Kommunikasjonsbok;communicationBook.jpg;Min første erfaring med InDesign. Innholdet i boken ble laget av Nils Petter Johnsrud.;communicationBook.pdf
-Filmplakat;manhuntPoster.jpg;En plakat laget for en studentfilm. Hele plakaten er designet i Photoshop.;manhuntPoster.pdf
-Gjett tallet;guessTheNumber.jpg;Mitt siste spill, med stilisert bakgrunn, skjerm og terminal. Inkluderer sarkasme.;guessTheNumber/index.html
-Hvordan ta bilder;howToTakePhotos.jpg;En veiledning om hvordan du tar gode bilder med egen telefon. Designet i InDesign.;howToTakePhotos.pdf
-Første Github-side;firstGithub.jpg;Dette er min første idé for en GitHub-side, inspirert av noe jeg så online.;firstGithub/index.html
-Reiseapplikasjon;travelAppJS.jpg;En applikasjon laget for et imaginært reiseselskap, laget med MySQL og PHP.;travelAppJS/index.html
-Andre Github-side;secondGithub.jpg;Min andre GitHub-side, laget med litt inspirasjon og en parallakseffekt.;secondGithub/index.html
-Bånsull AS;baanNettverk.jpg;Nettverksoppsett for en "klient", satt opp med VLAN og NGFW.;baansullNetwork.pdf
+Kommunikasjonsbok;./collection/portfolio/communicationBook.jpg;Min første erfaring med InDesign. Innholdet i boken ble laget av Nils Petter Johnsrud.;./collection/portfolio/files/communicationBook.pdf
+Filmplakat;./collection/portfolio/manhuntPoster.jpg;En plakat laget for en studentfilm. Hele plakaten er designet i Photoshop.;./collection/portfolio/files/manhuntPoster.pdf
+Gjett tallet;./collection/portfolio/guessTheNumber.jpg;Mitt siste spill, med stilisert bakgrunn, skjerm og terminal. Inkluderer sarkasme.;./collection/portfolio/files/guessTheNumber/index.html
+Hvordan ta bilder;./collection/portfolio/howToTakePhotos.jpg;En veiledning om hvordan du tar gode bilder med egen telefon. Designet i InDesign.;./collection/portfolio/files/howToTakePhotos.pdf
+Første Github-side;./collection/portfolio/firstGithub.jpg;Dette er min første idé for en GitHub-side, inspirert av noe jeg så online.;./collection/portfolio/files/firstGithub/index.html
+Reiseapplikasjon;./collection/portfolio/travelAppJS.jpg;En applikasjon laget for et imaginært reiseselskap, laget med MySQL og PHP.;./collection/portfolio/files/travelAppJS/index.html
+Andre Github-side;./collection/portfolio/secondGithub.jpg;Min andre GitHub-side, laget med litt inspirasjon og en parallakseffekt.;./collection/portfolio/files/secondGithub/index.html
+Bånsull AS;./collection/portfolio/baanNettverk.jpg;Nettverksoppsett for en "klient", satt opp med VLAN og NGFW.;./collection/portfolio/files/baansullNetwork.pdf
+Kurs i Webdesign;./collection/portfolio/webkurs.png;Et webkurs lagd for VG1, hvor min gruppes del var selve kurset og VS Code;https://nukleus73.github.io/2ITA/webkurs/
