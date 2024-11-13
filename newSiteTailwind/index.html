@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS -->
+  <link href="./src/tailwindOutput.css" rel="stylesheet">
+  <!-- Font - Serif -->
+  <link href="https://api.fontshare.com/v2/css?f[]=sentient@400,700,201,301,200,501,500,300,401,701&display=swap"
+    rel="stylesheet">
+  <!-- Font - Sans -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
+    rel="stylesheet">
+  <title>Daniels Hjørne</title>
+  <link rel="shortcut icon" href="./media/sea-turtle.svg" type="image/x-icon">
+</head>
+
+<body class="font-sans bg-background text-text">
+  <nav class="relative flex items-center justify-center h-20 border-solid border-b-2 border-primary px-16">
+    <a class="mr-auto text-2xl uppercase font-semibold font-serif tracking-wide" href="#">Daniel</a>
+    <img class="absolute h-16 top-12 border-solid border-2 border-primary p-3 rounded-full bg-background overflow-visible" src="./media/sea-turtle.svg" alt="" id="logo">
+    <div class="flex items-center uppercase font-normal tracking-wide text-normal">
+      <a class="mx-4" href="#">Galleri</a>
+      <a class="mx-4" href="#">Prosjekter</a>
+      <a class="mx-4" href="#">Artikler</a>
+      <p class="mx-4">&#x25E6;</p>
+    </div>
+  </nav>
+  <main class="grid grid-cols-10 mt-20 h-64">
+    <div class="col-span-3 flex flex-col justify-end items-end"> <!--Intro-->
+      <h1 class="font-serif text-primary font-semibold text-6xl">Utvalgte prosjekter</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit diam nec scelerisque. In
+        rutrum dignissim leo, id accumsan dui consequat eget. Cras fringilla euismod viverra. Vestibulum in mauris
+        laoreet, rutrum nunc a, posuere leo.</p>
+      <button>Learn More</button>
+    </div>
+    <header class="col-start-4 col-span-4 relative"> <!--bannerImage-->
+      <p class="">Leading title</p>
+      <p class="">The Big Image title</p>
+      <img class="absolute blur-2xl" src="./media/reference/photos/oldBeach.jpg" alt=""> <!--effectImage-->
+      <img class="absolute" src="./media/reference/photos/oldBeach.jpg" alt="">
+    </header>
+    <div class="col-span-3"> <!--contactMe-->
+      <img class="h-10" src="./media/alt-turtle.svg" alt="graphic-turtle">
+      <p>Let's connect and discuss how I can help with your project.</p>
+      <button>Github</button>
+      <button>Instagram</button>
+      <button>Linkedin</button>
+    </div>
+  </main>
+  <div class="px-16">
+    <h2>Gallery</h2>
+    <div>
+      <article>
+        <img src="" alt="">
+        <h3>Image Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit diam nec scelerisque.</p>
+      </article>
+    </div>
+  </div>
+  <div class="px-16">
+    <h2>Projects</h2>
+    <div>
+      <article>
+        <img src="" alt="">
+        <h3>Image Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit diam nec scelerisque.</p>
+      </article>
+    </div>
+  </div>
+  <div class="px-16">
+    <h2>Articles</h2>
+    <div>
+      <article>
+        <img src="" alt="">
+        <h3>Image Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit diam nec scelerisque.</p>
+      </article>
+    </div>
+  </div>
+  <footer></footer>
+
+  <!-- 
+- Ønsker å benytte markdown istedenfor csv pga. lesbarhet for backend-bruker. 
+- Ønsker også et redesign som benytter Tailwind og har bedre fargebruk.
+-->
+</body>
+
+</html>
