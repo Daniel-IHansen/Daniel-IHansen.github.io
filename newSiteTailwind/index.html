@@ -14,32 +14,45 @@
     rel="stylesheet">
   <title>Daniels Hjørne</title>
   <link rel="shortcut icon" href="./media/sea-turtle.svg" type="image/x-icon">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./src/custom.css">
 </head>
 
-<body class="font-sans bg-background text-text">
-  <nav class="relative flex items-center justify-center h-20 border-solid border-b-2 border-primary px-16">
+<body class="font-sans bg-background text-text flex flex-col items-center">
+  <nav
+    class="relative flex items-center justify-center h-20 border-solid border-b-2 border-primary px-10 max-w-screen-2xl w-full">
     <a class="mr-auto text-2xl uppercase font-semibold font-serif tracking-wide" href="#">Daniel</a>
-    <img class="absolute h-16 top-12 border-solid border-2 border-primary p-3 rounded-full bg-background overflow-visible" src="./media/sea-turtle.svg" alt="" id="logo">
+    <img
+      class="absolute h-16 top-12 border-solid border-2 border-primary p-3 rounded-full bg-background overflow-visible pointer-events-none"
+      src="./media/sea-turtle.svg" alt="" id="logo">
     <div class="flex items-center uppercase font-normal tracking-wide text-normal">
       <a class="mx-4" href="#">Galleri</a>
       <a class="mx-4" href="#">Prosjekter</a>
       <a class="mx-4" href="#">Artikler</a>
-      <p class="mx-4">&#x25E6;</p>
     </div>
   </nav>
-  <main class="grid grid-cols-10 mt-20 h-64">
-    <div class="col-span-3 flex flex-col justify-end items-end"> <!--Intro-->
-      <h1 class="font-serif text-primary font-semibold text-6xl">Utvalgte prosjekter</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit diam nec scelerisque. In
+  <main class="flex justify-around items-end px-10 max-w-screen-2xl mt-16">
+    <div class="flex flex-col w-1/4"> <!--Intro-->
+      <h1 class="font-serif text-primary font-semibold text-6xl">Utvalgte Prosjekter</h1>
+      <p class="text-sm leading-7 mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit
+        diam nec scelerisque. In
         rutrum dignissim leo, id accumsan dui consequat eget. Cras fringilla euismod viverra. Vestibulum in mauris
         laoreet, rutrum nunc a, posuere leo.</p>
-      <button>Learn More</button>
+      <button class="w-28 border-solid border-2 border-text p-2 rounded-full mt-8">Se mer</button>
     </div>
-    <header class="col-start-4 col-span-4 relative"> <!--bannerImage-->
-      <p class="">Leading title</p>
-      <p class="">The Big Image title</p>
-      <img class="absolute blur-2xl" src="./media/reference/photos/oldBeach.jpg" alt=""> <!--effectImage-->
-      <img class="absolute" src="./media/reference/photos/oldBeach.jpg" alt="">
+    <header class="aspect-4/3 h-[25rem] flex items-center justify-center "> <!--bannerImage-->
+      <img class=" relative h-full border-primary border-solid border-2 rounded-lg max-h-[25rem]"
+        src="./media/reference/photos/oldBeach.jpg" alt="">
+      <p class="absolute">Leading title</p>
+      <p class="absolute">The Big Image title</p>
+      <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter class="w-full h-full" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values="0 0 0 0 .7  0 0 0 0 .4  0 0 0 0 .5  0 0 0 1 0" />
+          </filter>
+        </defs>
+        <rect width="100%" height="10" fill="red" filter="url(#f1)" />
+      </svg>
     </header>
     <div class="col-span-3"> <!--contactMe-->
       <img class="h-10" src="./media/alt-turtle.svg" alt="graphic-turtle">
@@ -49,7 +62,7 @@
       <button>Linkedin</button>
     </div>
   </main>
-  <div class="px-16">
+  <div class="px-10 max-w-screen-2xl">
     <h2>Gallery</h2>
     <div>
       <article>
@@ -59,7 +72,7 @@
       </article>
     </div>
   </div>
-  <div class="px-16">
+  <div class="px-10 max-w-screen-2xl">
     <h2>Projects</h2>
     <div>
       <article>
@@ -69,7 +82,7 @@
       </article>
     </div>
   </div>
-  <div class="px-16">
+  <div class="px-10 max-w-screen-2xl">
     <h2>Articles</h2>
     <div>
       <article>

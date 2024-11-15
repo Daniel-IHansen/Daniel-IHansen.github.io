@@ -10,10 +10,12 @@ module.exports = {
       'text': '#f6f8f8',
       'background': '#262b30',
       'primary': '#e0d4c5',
-      'secondary': '#455367',
-      'accent': '#60cfcf',
+      'secondary': '#bba78e',
+      'accent': '#455367',
      },
-     
+     aspectRatio: {
+      '4/3': '4 / 3',
+     },
   },
   plugins: [],
 }
