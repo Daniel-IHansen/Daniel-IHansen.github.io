@@ -19,6 +19,7 @@
 </head>
 
 <body class="font-sans bg-background text-text flex flex-col items-center">
+
   <nav
     class="relative flex items-center justify-center h-20 border-solid border-b-2 border-primary px-10 max-w-screen-2xl w-full">
     <a class="mr-auto text-2xl uppercase font-semibold font-serif tracking-wide" href="#">Daniel</a>
@@ -31,7 +32,8 @@
       <a class="mx-4" href="#">Artikler</a>
     </div>
   </nav>
-  <main class="flex justify-around items-end px-10 max-w-screen-2xl mt-16">
+
+  <main class="flex justify-around items-end px-10 max-w-screen-2xl h-full mt-16 h-[24rem]">
     <div class="flex flex-col w-1/4"> <!--Intro-->
       <h1 class="font-serif text-primary font-semibold text-6xl">Utvalgte Prosjekter</h1>
       <p class="text-sm leading-7 mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit
@@ -40,28 +42,23 @@
         laoreet, rutrum nunc a, posuere leo.</p>
       <button class="w-28 border-solid border-2 border-text p-2 rounded-full mt-8">Se mer</button>
     </div>
-    <header class="aspect-4/3 h-[25rem] flex items-center justify-center "> <!--bannerImage-->
-      <img class=" relative h-full border-primary border-solid border-2 rounded-lg max-h-[25rem]"
+    <header class="relative aspect-4/3 h-full flex items-start justify-center"> <!--bannerImage-->
+      <img class=" relative h-full border-primary border-solid border-2 rounded-lg max-h-full"
         src="./media/reference/photos/oldBeach.jpg" alt="">
-      <p class="absolute">Leading title</p>
-      <p class="absolute">The Big Image title</p>
-      <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <filter class="w-full h-full" color-interpolation-filters="sRGB">
-            <feColorMatrix type="matrix" values="0 0 0 0 .7  0 0 0 0 .4  0 0 0 0 .5  0 0 0 1 0" />
-          </filter>
-        </defs>
-        <rect width="100%" height="10" fill="red" filter="url(#f1)" />
-      </svg>
+      <p class="absolute text-lg top-28 shadow-xl">Leading title</p>
+      <p class="absolute text-3xl font-serif top-36 shadow-md tracking-widest uppercase font-medium">IMAGE TITLE</p>
+      <div class="absolute mix-blend-color bg-primary w-full h-full"></div> <!--duotone-overlay-->
     </header>
-    <div class="col-span-3"> <!--contactMe-->
-      <img class="h-10" src="./media/alt-turtle.svg" alt="graphic-turtle">
-      <p>Let's connect and discuss how I can help with your project.</p>
-      <button>Github</button>
-      <button>Instagram</button>
-      <button>Linkedin</button>
+    <div class="w-1/4 h-full px-12 flex flex-col justify-end items-center"> <!--contactMe-->
+      <img class="h-10 mt-6" src="./media/alt-turtle.svg" alt="graphic-turtle">
+      <p class="text-primary text-sm leading-7 mt-6 text-center">Ta kontakt, så vi kan finne ut av hva jeg kan
+        bidra med til ditt prosjekt.</p>
+        <button class="mt-6 w-full border-solid border-2 border-text m-3 py-3 rounded-full font-semibold">Github</button>
+        <button class="w-full border-solid border-2 border-text m-3 py-3 rounded-full font-semibold">Instagram</button>
+        <button class="w-full border-solid border-2 border-text m-3 py-3 rounded-full font-semibold">Linkedin</button>
     </div>
   </main>
+
   <div class="px-10 max-w-screen-2xl">
     <h2>Gallery</h2>
     <div>
