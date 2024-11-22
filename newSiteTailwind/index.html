@@ -1,0 +1,415 @@
+<!doctype html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS -->
+    <link href="./src/tailwindOutput.css" rel="stylesheet" />
+    <link href="./src/tailwindInput.css" rel="stylesheet" />
+    <!-- Font - Serif -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=sentient@400,700,201,301,200,501,500,300,401,701&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font - Sans -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Daniels Hjørne</title>
+    <link
+      rel="shortcut icon"
+      href="/newSiteTailwind/media/sea-turtle.svg"
+      type="image/x-icon"
+    />
+    <!-- Fetch Database -->
+    <script src="./script/fetchDatabase.js"></script>
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body class="flex flex-col items-center bg-background font-sans text-text">
+    <nav
+      class="flex h-20 w-full items-center justify-center border-b-2 border-solid border-primary"
+    >
+      <div
+        class="relative flex h-full w-full max-w-screen-2xl items-center justify-center px-10"
+      >
+        <a
+          class="mr-auto font-serif text-2xl font-semibold tracking-wide"
+          href="#"
+          >Daniels hjørne</a
+        >
+        <div
+          class="pointer-events-none absolute top-12 h-16 w-16 rounded-full border-2 border-solid border-primary bg-background bg-[url('/newSiteTailwind/media/sea-turtle.svg')] bg-cover bg-no-repeat bg-origin-content p-3"
+        ></div>
+        <div
+          class="text-normal flex items-center font-normal uppercase tracking-wide"
+        >
+          <a
+            class="w-min-content relative mx-4 transition-all before:absolute before:bottom-0 before:right-0 before:h-0.5 before:w-0 before:bg-text before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full hover:before:bg-accent"
+            href="#galleri"
+            >Galleri</a
+          >
+          <a
+            class="w-min-content relative mx-4 transition-all before:absolute before:bottom-0 before:right-0 before:h-0.5 before:w-0 before:bg-text before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full hover:before:bg-accent"
+            href="#prosjekter"
+            >Prosjekter</a
+          >
+          <a
+            class="w-min-content relative mx-4 transition-all before:absolute before:bottom-0 before:right-0 before:h-0.5 before:w-0 before:bg-text before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full hover:before:bg-accent"
+            href="#artikler"
+            >Artikler</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main
+      class="mt-16 flex h-[24rem] max-w-screen-2xl items-end justify-around px-10"
+    >
+      <div class="flex w-1/4 flex-col">
+        <h1 class="font-serif text-5xl font-semibold text-primary">
+          Utvalgte Prosjekter
+        </h1>
+        <p class="mt-6 text-sm leading-7 text-secondary">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor
+          hendrerit diam nec scelerisque. In rutrum dignissim leo, id accumsan
+          dui consequat eget. Cras fringilla euismod viverra. Vestibulum in
+          mauris laoreet, rutrum nunc a, posuere leo.
+        </p>
+        <button
+          class="group relative mb-3 mt-8 flex h-[60%] w-28 items-center justify-center overflow-hidden rounded-full border-2 border-solid border-text p-2 duration-300 hover:scale-110 hover:border-2"
+        >
+          <div
+            class="z-1 absolute h-[60%] w-[120%] rotate-45 animate-spin-slow rounded-full bg-text content-none"
+          ></div>
+          <div
+            class="z-2 absolute inset-0 rounded-full bg-background duration-200 group-hover:inset-1"
+          ></div>
+          <span class="z-10 p-1 font-semibold">Se mer</span>
+        </button>
+      </div>
+      <header
+        class="relative flex aspect-4/3 h-full items-start justify-center"
+      >
+        <div
+          class="relative h-full max-h-full w-full rounded-lg border-2 border-solid border-primary bg-[url('/newSiteTailwind/media/reference/photos/oldBeach.jpg')] bg-cover"
+        ></div>
+        <p class="absolute top-28 text-lg shadow-xl">Leading title</p>
+        <p
+          class="text-second absolute top-36 font-serif text-3xl font-medium uppercase tracking-widest shadow-md"
+        >
+          IMAGE TITLE
+        </p>
+        <div class="absolute h-full w-full bg-primary mix-blend-color"></div>
+      </header>
+      <div class="flex h-full w-1/4 flex-col items-center justify-end px-12">
+        <div
+          class="h-10 w-10 bg-[url('/newSiteTailwind/media/alt-turtle.svg')] bg-cover"
+        ></div>
+        <p class="my-6 px-4 text-center text-sm leading-7 text-secondary">
+          Ta <span class="underline underline-offset-4">kontakt</span>, så vi
+          kan finne ut av hva jeg kan
+          <span class="underline underline-offset-4">bidra</span> med til ditt
+          prosjekt.
+        </p>
+        <button
+          class="group m-3 flex w-full items-center justify-center rounded-full border-2 border-solid border-text py-3 font-semibold duration-200 hover:scale-110 hover:bg-text hover:shadow-2xl"
+        >
+          <ion-icon
+            class="text-2xl group-hover:text-background"
+            name="logo-linkedin"
+          ></ion-icon>
+          <span
+            class="ml-4 max-w-24 overflow-hidden duration-300 group-hover:ml-0 group-hover:max-w-0"
+            >Linkedin</span
+          >
+        </button>
+        <button
+          class="group m-3 flex w-full items-center justify-center rounded-full border-2 border-solid border-text py-3 font-semibold duration-200 hover:scale-110 hover:bg-text hover:shadow-2xl"
+        >
+          <ion-icon
+            class="text-2xl group-hover:text-background"
+            name="logo-instagram"
+          ></ion-icon>
+          <span
+            class="ml-4 max-w-24 overflow-hidden duration-300 group-hover:ml-0 group-hover:max-w-0"
+            >Instagram</span
+          >
+        </button>
+        <button
+          class="group m-3 flex w-full items-center justify-center rounded-full border-2 border-solid border-text py-3 font-semibold duration-200 hover:scale-110 hover:bg-text hover:shadow-2xl"
+        >
+          <ion-icon
+            class="text-2xl group-hover:text-background"
+            name="logo-github"
+          ></ion-icon>
+          <span
+            class="ml-4 max-w-24 overflow-hidden duration-300 group-hover:ml-0 group-hover:max-w-0"
+            >Github</span
+          >
+        </button>
+      </div>
+    </main>
+
+    <div class="mt-12 flex max-w-screen-2xl flex-col items-center px-10">
+      <h2 id="prosjekter" class="my-8 text-3xl font-bold uppercase">
+        Prosjekter
+      </h2>
+      <div id="projects" class="flex flex-wrap justify-center">
+        <script>
+          (async () => {
+            // Fetch database and template
+            const items = await fetchDatabase(
+              "./databases/projects/projects.csv",
+            );
+            const templateResponse = await fetch(
+              "./databases/projects/project-template.html",
+            );
+            const template = await templateResponse.text();
+
+            // Populate the template with data
+            let imageCount = 0;
+            const imagesContainer = document.querySelector("#projects");
+            items.forEach((item) => {
+              imageCount++;
+              const articleHTML = template
+                .replace("TITLE_PLACEHOLDER", item.name)
+                .replace("DESCRIPTION_PLACEHOLDER", item.description)
+                .replace("IMAGE_LINK_PLACEHOLDER", item.filename)
+                .replace("LINK_PLACEHOLDER", item.file);
+              imagesContainer.innerHTML += articleHTML;
+            });
+          })();
+        </script>
+      </div>
+    </div>
+    <div
+      class="mt-10 flex h-full w-full flex-col items-center bg-primary shadow-[inset_0_0_10px_3px_rgba(0,0,0,0.3)]"
+    >
+      <div
+        class="relative flex h-min max-w-screen-2xl flex-col items-center p-10 shadow-zinc-500"
+      >
+        <h2
+          id="galleri"
+          class="my-8 text-3xl font-bold uppercase text-background"
+        >
+          Galleri
+        </h2>
+        <div class="flex flex-wrap justify-center">
+          <article
+            class="m-8 flex flex-row-reverse items-center justify-center"
+          >
+            <div
+              class="aspect-[4/3] h-full w-full rounded-md bg-[#2b210f] p-3 shadow-2xl"
+            >
+              <div
+                class="h-full w-full rounded-sm border-2 border-solid border-accent p-2"
+              >
+                <div
+                  class="h-full w-full bg-[url('/newSiteTailwind/media/reference/photos/redSunset.jpg')] bg-cover bg-no-repeat shadow-2xl"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="relative m-16 mr-40 flex h-full flex-col items-center justify-center"
+            >
+              <h3
+                class="mt-6 font-serif text-3xl font-semibold uppercase text-background"
+              >
+                Image Title
+              </h3>
+              <p class="mt-4 text-center italic leading-6 text-background">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                porttitor hendrerit diam nec scelerisque.
+              </p>
+              <div class="mt-4 flex">
+                <ion-icon
+                  class="m-2 text-2xl text-background"
+                  name="chevron-back-outline"
+                ></ion-icon>
+                <div class="bottom-8 flex items-center">
+                  <div
+                    class="m-1 h-4 w-4 rounded-full bg-accent shadow-lg"
+                  ></div>
+                  <div
+                    class="m-1 h-4 w-4 rounded-full border-2 border-solid border-accent"
+                  ></div>
+                  <div
+                    class="m-1 h-4 w-4 rounded-full border-2 border-solid border-accent"
+                  ></div>
+                  <div
+                    class="m-1 h-4 w-4 rounded-full border-2 border-solid border-accent"
+                  ></div>
+                </div>
+                <ion-icon
+                  class="m-2 text-2xl text-background"
+                  name="chevron-forward-outline"
+                ></ion-icon>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 flex max-w-screen-2xl flex-col items-center px-10">
+      <h2 id="artikler" class="my-8 mt-12 text-3xl font-bold uppercase">
+        Artikler
+      </h2>
+      <div id="articles" class="flex flex-wrap justify-center">
+        <script>
+          (async () => {
+            // Fetch database and template
+            const items = await fetchDatabase(
+              "./databases/articles/articles.csv",
+            );
+            const templateResponse = await fetch(
+              "./databases/articles/article-template.html",
+            );
+            const template = await templateResponse.text();
+
+            // Populate the template with data
+            let imageCount = 0;
+            const imagesContainer = document.querySelector("#articles");
+            items.forEach((item) => {
+              imageCount++;
+              const articleHTML = template
+                .replace("TITLE_PLACEHOLDER", item.name)
+                .replace("AUTHOR_PLACEHOLDER", item.name)
+                .replace("IMAGE_LINK_PLACEHOLDER", item.filename)
+                .replace("LINK_PLACEHOLDER", item.file);
+              imagesContainer.innerHTML += articleHTML;
+            });
+          })();
+        </script>
+      </div>
+    </div>
+    <div class="w-full shadow-[0_0_10px_3px_rgba(0,0,0,0.3)]">
+      <footer class="w-full max-w-screen-2xl">
+        <div
+          class="m-10 ml-20 mt-12 h-10 w-10 bg-[url('/newSiteTailwind/media/sea-turtle.svg')] bg-cover bg-no-repeat bg-origin-content"
+        ></div>
+        <div class="flex">
+          <div class="mx-20">
+            <h1
+              class="mb-3 text-sm uppercase tracking-wide underline underline-offset-4 opacity-50"
+            >
+              Om meg
+            </h1>
+            <p
+              class="my-1 w-min cursor-pointer whitespace-nowrap underline-offset-1 hover:underline"
+            >
+              Tidligere erfaring
+            </p>
+            <p
+              class="my-1 w-min cursor-pointer whitespace-nowrap underline-offset-1 hover:underline"
+            >
+              FAQ
+            </p>
+            <p
+              class="my-1 w-min cursor-pointer whitespace-nowrap underline-offset-1 hover:underline"
+            >
+              Kontakt meg
+            </p>
+          </div>
+          <div class="mx-20">
+            <h1
+              class="mb-3 text-sm uppercase tracking-wide underline underline-offset-4 opacity-50"
+            >
+              Galleri
+            </h1>
+            <p
+              class="my-1 w-min cursor-pointer whitespace-nowrap underline-offset-1 hover:underline"
+            >
+              Natur
+            </p>
+            <p
+              class="my-1 w-min cursor-pointer whitespace-nowrap underline-offset-1 hover:underline"
+            >
+              Struktur
+            </p>
+            <p
+              class="my-1 w-min cursor-pointer whitespace-nowrap underline-offset-1 hover:underline"
+            >
+              Dynamikk
+            </p>
+          </div>
+          <div class="mx-20">
+            <h1
+              class="mb-3 text-sm uppercase tracking-wide underline underline-offset-4 opacity-50"
+            >
+              Prosjekter
+            </h1>
+            <p
+              class="my-1 w-min cursor-pointer whitespace-nowrap underline-offset-1 hover:underline"
+            >
+              Design
+            </p>
+            <p
+              class="my-1 w-min cursor-pointer underline-offset-1 hover:underline"
+              whitespace-nowrap
+            >
+              Nettverk
+            </p>
+            <p
+              class="my-1 w-min cursor-pointer underline-offset-1 hover:underline"
+              whitespace-nowrap
+            >
+              Utvikling
+            </p>
+            <p
+              class="my-1 w-min cursor-pointer underline-offset-1 hover:underline"
+              whitespace-nowrap
+            >
+              Infrastruktur
+            </p>
+          </div>
+          <div class="mx-20">
+            <h1
+              class="mb-3 text-sm uppercase tracking-wide underline underline-offset-4 opacity-50"
+            >
+              Artikler
+            </h1>
+            <p
+              class="my-1 w-min cursor-pointer underline-offset-1 hover:underline"
+              whitespace-nowrap
+            >
+              Webdesign
+            </p>
+            <p
+              class="my-1 w-min cursor-pointer underline-offset-1 hover:underline"
+              whitespace-nowrap
+            >
+              Nettverk
+            </p>
+            <p
+              class="my-1 w-min cursor-pointer underline-offset-1 hover:underline"
+              whitespace-nowrap
+            >
+              Standarder
+            </p>
+            <p
+              class="my-1 w-min cursor-pointer underline-offset-1 hover:underline"
+              whitespace-nowrap
+            >
+              Kommunikasjon
+            </p>
+          </div>
+        </div>
+        <p class="m-10 ml-20 opacity-50">&copy; Daniel Hansen</p>
+      </footer>
+    </div>
+    <!-- 
+- Ønsker å benytte markdown istedenfor csv pga. lesbarhet for backend-bruker. 
+- Ønsker også et redesign som benytter Tailwind og har bedre fargebruk.
+-->
+  </body>
+</html>

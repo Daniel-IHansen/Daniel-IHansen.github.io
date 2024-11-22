@@ -1,0 +1,24 @@
+#articleImage {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0, .6);
+}
+
+#articleSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 15rem;
+}
+
+#articleSection h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    #articleSection {
+        margin: 3rem 2rem;
+    }
+}

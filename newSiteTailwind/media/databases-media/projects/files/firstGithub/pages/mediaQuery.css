@@ -1,0 +1,31 @@
+
+/* tablet size */
+@media only screen and (max-width: 1550px){
+  #workContainer {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    z-index: -1;
+  }
+  main {
+    width: 90%;
+  }
+}
+
+/* phone size */
+@media only screen and (max-width: 1030px){
+  #workContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .workTitle {
+    font-size: 1.4rem;
+  }
+  
+  .workText {
+    font-size: 1rem;
+  }
+  
+  .workLink {
+    font-size: 1rem;
+  }
+}
