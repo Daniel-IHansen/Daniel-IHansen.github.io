@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Page title-->
+  <title>Daniel's Portofolio</title>
+  <!--Page icon-->
+  <link rel="icon" href="media/icons/mainIcon.svg">
+  <!--Stuff-->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--See style.css-->
+  <link rel="stylesheet" href="basicStyle.css" />
+  <link rel="stylesheet" href="mediaQuery.css" />
+  <!--Google search information-->
+  <meta name="Keywords" content="Daniel Hansen CV">
+  <meta name="description" content="Min egen personlige nettside for å vise fram prosjekter og liknende.">
+  <meta name="Author" content="Daniel Hansen">
+</head>
+
+<body>
+
+  <div id="background">
+    <div id="patternWrapper">
+      <div id="pattern"></div>
+      <div id="gradient"></div>
+    </div>
+  </div>
+  <main>
+    <!-- NAV MENU -->
+    <nav>
+      <!-- logo -->
+      <a id="logo" href="index.html"><img src="media/icons/mainIcon.svg"></a>
+      <!-- left menu (name and text) -->
+      <div class="textWrapper">
+        <p id="websiteTitle">DANIEL HANSEN</p>
+        <p id="websiteSubtitle">My works and projects</p>
+      </div>
+      <!-- right menu -->
+      <ul id="menu">
+        <!-- dissapears on mobile -->
+        <li class="large menuItem active"><a href="index.html">HOME</a></li>
+        <li class="large menuItem"><a href="/pages/portofolio.html">PORTOFOLIO</a></li>
+        <li class="large menuItem"><a href="/pages/photos.html">PHOTOS</a></li>
+        <!-- shows on mobile -->
+        <li id="hamburger" class="menuItem"><a href="#" onclick="showMenu()">☰</a>
+            <!-- nav (hidden by default) -->
+            <ul id="mobileMenu">
+              <li class="mobileItem"><a href="index.html">HOME</a></li>
+            <li class="mobileItem"><a href="/pages/portofolio.html">PORTOFOLIO</a></li>
+            <li class="mobileItem"><a href="/pages/photos.html">PHOTOS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- MAIN IMAGE -->
+    <div id="imgWrapper">
+      <img src="media/bakgrunnsbilde.jpg" id="mainImg" alt="Photo: Edvin Falk">
+      <p id="imgTitle">DANIEL HANSEN</p>
+      <p id="imgSubtitle">DEVELOPER DESIGNER PHOTOGRAPHER</p>
+    </div>
+    <div class="light"></div>
+    <div id="content">
+      <div class="column" id="portofolio">
+        <h2><span class="symbol">◯ </span>LATEST WORK</h2>
+        <hr class="light2">
+        <div class="tapeWrapper"><img id="workImg" src=""></div>
+        <a id="work1" class="text current">My work</a>
+        <a id="work2" class="text">🞄 Work 2</a>
+        <a id="work3" class="text">🞄 Work 3</a>
+        <a id="work4" class="text">🞄 Work 4</a>
+        <a href="pages/portofolio.html" class="text more">More Works <span>></span></a>
+      </div>
+      <div class="column" id="photos">
+        <h2><span class="symbol">◯ </span>PHOTOGRAPHS</h2>
+        <hr class="light2">
+        <div class="tapeWrapper"><img id="photo1" src=""></div>
+        <div id="photoCollection">
+          <img id="photo2" src="" alt="" class="collectionImg">
+          <img id="photo3" src="" alt="" class="collectionImg">
+          <img id="photo4" src="" alt="" class="collectionImg">
+          <img id="photo5" src="" alt="" class="collectionImg">
+          <img id="photo6" src="" alt="" class="collectionImg">
+          <img id="photo7" src="" alt="" class="collectionImg">
+          <img id="photo8" src="" alt="" class="collectionImg">
+          <img id="photo9" src="" alt="" class="collectionImg">
+          <img id="photo10" src="" alt="" class="collectionImg">
+        </div>
+        <a href="pages/photos.html" class="photoButton text more">More<span>></span></a>
+      </div>
+      <div class="column" id="updates">
+        <h2><span class="symbol">◯ </span>UPDATES</h2>
+        <hr class="light2">
+        <h4 class="updateTitle" id="title1"></h4>
+        <hr>
+        <p class="updateText" id="text1"></p>
+        <a href="pages/updates.html" class="text more">More<span>></span></a>
+      </div>
+      <div class="column" id="social">
+        <h2><span class="symbol">◯ </span>CONTACT</h2>
+        <hr class="light2">
+        <img src="media/meSmall.jpg" id="contactImg">
+        <div class="contact">
+          <img src="media/icons/email-icon.svg">
+          <p>Email</p>
+        </div>
+        <div class="contact">
+          <img src="media/icons/linkedin-icon.svg">
+          <p>LinkedIn</p>
+        </div>
+        <div class="contact">
+          <img src="media/icons/github-icon.svg">
+          <p>Github</p>
+        </div>
+      </div>
+    </div>
+  <footer></footer>
+  </main>
+  <script src="collections/collections.js"></script>
+  <script src="../JS/mobileMenu.js"></script>
+  <script src="JS/home.js"></script>
+</body>

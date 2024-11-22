@@ -1,0 +1,91 @@
+#tableWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#tableBackground {
+    background-image: url("/collection/portfolio/files/travelAppJS//media/plannerBanner.jpg");
+    background-size: cover;
+    filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    scale: 1.1;
+}
+
+#planner {
+    background-color: white;
+    position: absolute;
+    padding: 1rem;
+    box-shadow: 0 5px 15px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+#planner tr td {
+    border: none;
+    padding: .5rem;
+}
+
+#planner tr th {
+    font-weight: 500;
+    color: #F1EFE9;
+    background-color: #695B95;
+    text-align: left;
+    padding: .5rem;
+}
+
+@media (max-width: 700px) {
+
+    
+    #tableWrapper {
+        align-items: flex-start;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    #tableBackground {
+        background-image: none;
+        background-color: #695B95;
+        height: 100%;
+        position: absolute;
+    }
+
+    #planner {
+        width: 70%;
+        margin: 2rem;
+        position: relative;
+    }
+
+    tr:nth-of-type(2n) {
+        background-color: #dfddd7;
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        display: block;
+        padding: .5rem 1rem;
+    }
+
+    td::before {
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    #planner tr td:first-child {
+        padding-top: 1.5rem;
+    }
+
+    #planner tr td:last-child {
+        padding-bottom: 1.5rem;
+    }
+}

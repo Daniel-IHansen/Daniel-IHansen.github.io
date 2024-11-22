@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verden Videre</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Ionicons icon pack -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- favicon -->
+    <link rel="icon" href="/collection/portfolio/files/travelAppJS/media/logo/verdenVidere.svg">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swapp" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="banner">
+            <img class="slide" src="./media/banner0.jpg" style="opacity: 1;">
+            <img class="slide" src="./media/banner1.jpg">
+            <img class="slide" src="./media/banner2.jpg">
+            <img class="slide" src="./media/banner3.jpg">
+            <h1>utforsk <span style="color: #849159;">verden</span><br> ett steg av gangen</h1>
+        </section>
+        
+        <div class="buttons">   
+            <button id="buttonLeft" class="active">aktuelt</button>
+            <button id="buttonRight" class="">nytt</button>   
+        </div>
+        <section id="articles">
+            <script src="./js/fetchDatabase.js"></script>
+            <script>
+                fetchDatabase("./csv/articles.csv")
+                //  run only once database is fetched
+                const dataInsert = setInterval(() => {
+                    if (database.length != 0) {
+                        database.forEach(article => {
+                            document.getElementById("articles").innerHTML += `
+                            <div class="article">
+                                <img src="./media/img/articles/${article.image}">
+                                <p>${article.title}</p>
+                            </div>`
+                        });
+                        //  stop checking once variable is not null
+                        clearInterval(dataInsert);
+                    }
+                }, 10);
+            </script>
+        </section>
+        <footer>
+            <div id="footerText">
+                <h3>Oslofjorden VGS</h3>
+                <p>Oppdag ditt ultimate reiseplanleggingsverktøy for drømmereiser. Utforsk destinasjoner, lag skreddersydde reiseruter etter dine preferanser. Bli med oss i dag og skap uforglemmelige øyeblikk.</p>
+            </div>
+            <div id="social">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-tiktok"></ion-icon>
+                <ion-icon name="logo-reddit"></ion-icon>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="./js/slideshow.js"></script>
+    <script src="./js/nav.js"></script>
+</body>
+</html>

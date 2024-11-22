@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Portfolio</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Ionicons icon pack -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="././media/favicon.png">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <!-- generates the header from header.index -->
+    <div id="headerContainer"></div>
+    <script src="./js/fetchTemplate.js"></script>
+    <script>
+        fetchTemplate("./templates/header.html");
+    </script>
+
+    <main id="main">     
+         <div class="vignette hide"></div>
+        <img class="background9" src="./media/parallax/0_background.png">
+        <img class="parallax background8" src="./media/parallax/1_moon.png" data-speedx=".18" data-speedy=".15" data-speedz=".4" data-rotation=".2" data-distance="400">
+        <img class="parallax background7" src="./media/parallax/2_mountain.png" data-speedx=".1" data-speedy=".16" data-speedz=".2" data-rotation=".3" data-distance="800">
+        <div class="parallax text" data-speedx=".04" data-speedy=".07" data-speedz="0" data-rotation=".1" data-distance="600">
+            <h2>Daniel</h2>
+            <h1>Hansen</h1>
+        </div>
+        <img class="parallax background6" src="./media/parallax/3_mountain.png" data-speedx=".08" data-speedy=".1" data-speedz=".2" data-rotation=".25" data-distance="1200">
+        <img class="parallax background5" src="./media/parallax/4_background.png" data-speedx=".07" data-speedy=".10" data-speedz=".15" data-rotation=".15" data-distance="1600">
+        <img class="parallax background4" src="./media/parallax/5_cloud.png" data-speedx=".05" data-speedy=".08" data-speedz=".1" data-rotation=".1" data-distance="2000">
+        <img class="parallax background2" src="./media/parallax/7_cloud.png" data-speedx=".04" data-speedy=".08" data-speedz=".1" data-rotation=".04" data-distance="2400">
+        <img class="parallax background1" src="./media/parallax/8_balloon.png" data-speedx=".03" data-speedy=".04" data-speedz=".08" data-rotation=".02" data-distance="2800">
+        <img class="parallax background0" src="./media/parallax/9_balloon.png" data-speedx=".02" data-speedy=".03" data-speedz=".05" data-rotation="0" data-distance="3200">
+        
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/dropmenu.js"></script>
+</body>
+</html>

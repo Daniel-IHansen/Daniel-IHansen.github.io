@@ -1,0 +1,35 @@
+
+/* tablet size */
+@media only screen and (max-width: 1150px){
+    #content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* phone size */
+@media only screen and (max-width: 768px){
+  #content {
+      grid-template-columns: 1fr;
+  }
+  #imgTitle {
+    letter-spacing: 10px;
+  }
+  #imgSubtitle {
+    top: 90%;
+  }
+  .large {
+    display: none;
+  }
+  #menu {
+    padding: 0;
+    height: fit-content;
+    transform: translateY(20%);
+  }
+}
+
+/* larger than phone size */
+@media only screen and (min-width: 769px){
+  #hamburger {
+    display: none;
+  }
+}

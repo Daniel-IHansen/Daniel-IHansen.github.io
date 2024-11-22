@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verden Videre</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/collection/portfolio/files/travelAppJS/css/main.css">
+    <link rel="stylesheet" href="/collection/portfolio/files/travelAppJS/css/stories.css">
+    <!-- Ionicons icon pack -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/collection/portfolio/files/travelAppJS/media/logo/verdenVidere.svg">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swapp" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1 id="pageTitle">Reisehistorier</h1>
+        <hr id="sectionDivider">
+        <section  id="resources">
+            <script src="/collection/portfolio/files/travelAppJS/js/fetchDatabase.js"></script>
+            <script>
+                fetchDatabase("/collection/portfolio/files/travelAppJS/csv/articles.csv")
+                //  run only once database is fetched
+                const dataInsert = setInterval(() => {
+                    if (database.length != 0) {
+                        database.forEach(article => {
+                            document.getElementById("resources").innerHTML += `
+                            <article>
+                                <div class="articleText">
+                                    <a href="story.html?articleId=${article.id}"><h2>${article.title}</h2></a>
+                                    <p>${article.intro}</p>
+                                </div>
+                                <img src="/collection/portfolio/files/travelAppJS/media/img/articles/${article.image}" alt="">
+                            </article>`
+                        });
+                        //  stop checking once variable is not null
+                        clearInterval(dataInsert);
+                    }
+                }, 10);
+            </script>
+        </section>
+    </main>
+    <script src="/collection/portfolio/files/travelAppJS/js/nav.js"></script>
+</body>
+</html>

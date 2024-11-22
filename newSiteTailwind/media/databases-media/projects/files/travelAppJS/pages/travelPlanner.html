@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verden Videre</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/collection/portfolio/files/travelAppJS/css/main.css">
+    <link rel="stylesheet" href="/collection/portfolio/files/travelAppJS/css/travelPlanner.css">
+    <!-- Ionicons icon pack -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/collection/portfolio/files/travelAppJS/media/logo/verdenVidere.svg">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swapp" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section id="tableWrapper">
+            <div id="tableBackground"></div>
+            <table id="planner">
+                <tr>
+                    <th>Reiselokasjon</th>
+                    <th>Oppholdstid</th>
+                    <th>Budsjett</th>
+                    <th>Tidssone</th>
+                    <th>Spisesteder</th>
+                    <th>Attraksjoner</th>
+                    <th>Transport</th>
+                    <th>Andre notater</th>
+                </tr>
+                <script src="/collection/portfolio/files/travelAppJS/js/fetchDatabase.js"></script>
+                <script>
+                    fetchDatabase("/collection/portfolio/files/travelAppJS/csv/planner.csv")
+                    //  run only once database is fetched
+                    const dataInsert = setInterval(() => {
+                        if (database.length != 0) {
+                            database.forEach(article => {
+                                document.getElementById("planner").innerHTML += `
+                            <tr>
+                                <td data-cell="location">${article.location}</td>
+                                <td data-cell="stayTime">${article.stayTime}</td>
+                                <td data-cell="budget">${article.budget}</td>
+                                <td data-cell="timeZone">${article.timeZone}</td>
+                                <td data-cell="placesToEat">${article.placesToEat}</td>
+                                <td data-cell="attractions">${article.attractions}</td>
+                                <td data-cell="transport">${article.transport}</td>
+                                <td data-cell="otherNotes">${article.otherNotes}</td>
+                            </tr>`
+                            });
+                            //  stop checking once variable is not null
+                            clearInterval(dataInsert);
+                        }
+                    }, 10);
+                </script>
+            </table>
+        </section>
+    </main>
+    <script src="/collection/portfolio/files/travelAppJS/js/nav.js"></script>
+</body>
+</html>
