@@ -196,7 +196,7 @@
       class="mt-10 flex h-full w-full flex-col items-center bg-primary shadow-[inset_0_0_10px_3px_rgba(0,0,0,0.3)]"
     >
       <div
-        class="relative flex h-min max-w-screen-2xl flex-col items-center p-10 shadow-zinc-500"
+        class="shadow-zinc-500 relative flex h-full w-full max-w-screen-2xl flex-col items-center p-10"
       >
         <h2
           id="galleri"
@@ -204,37 +204,43 @@
         >
           Galleri
         </h2>
-        <div class="flex flex-wrap justify-center">
+        <div class="flex w-full flex-wrap justify-center">
           <article
-            class="m-8 flex flex-row-reverse items-center justify-center"
+            class="m-8 flex w-full flex-row-reverse items-center justify-center"
           >
             <div
-              class="aspect-[4/3] h-full w-full rounded-md bg-[#2b210f] p-3 shadow-2xl"
+              class="aspect-[4/3] h-full rounded-md bg-[#2b210f] p-3 shadow-2xl"
             >
               <div
                 class="h-full w-full rounded-sm border-2 border-solid border-accent p-2"
               >
                 <div
                   class="h-full w-full bg-[url('/newSiteTailwind/media/reference/photos/redSunset.jpg')] bg-cover bg-no-repeat shadow-2xl"
+                  id="imageSrc"
                 ></div>
               </div>
             </div>
             <div
-              class="relative m-16 mr-40 flex h-full flex-col items-center justify-center"
+              class="relative m-8 mr-48 flex h-full flex-col items-center justify-center"
             >
               <h3
-                class="mt-6 font-serif text-3xl font-semibold uppercase text-background"
+                class="mt-6 h-20 w-56 text-center font-serif text-3xl font-semibold uppercase text-background duration-200"
+                id="imageTitle"
               >
                 Image Title
               </h3>
-              <p class="mt-4 text-center italic leading-6 text-background">
+              <p
+                class="h-28 text-center align-bottom italic leading-6 text-background duration-200"
+                id="imageDesc"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 porttitor hendrerit diam nec scelerisque.
               </p>
               <div class="mt-4 flex">
                 <ion-icon
-                  class="m-2 text-2xl text-background"
+                  class="m-2 cursor-pointer text-2xl text-background shadow-2xl duration-200 hover:scale-150"
                   name="chevron-back-outline"
+                  onclick="gallerySlide(-1)"
                 ></ion-icon>
                 <div class="bottom-8 flex items-center">
                   <div
@@ -251,8 +257,9 @@
                   ></div>
                 </div>
                 <ion-icon
-                  class="m-2 text-2xl text-background"
+                  class="m-2 cursor-pointer text-2xl text-background shadow-2xl duration-200 hover:scale-150"
                   name="chevron-forward-outline"
+                  onclick="gallerySlide(1)"
                 ></ion-icon>
               </div>
             </div>
@@ -260,6 +267,41 @@
         </div>
       </div>
     </div>
+    <script>
+      let items;
+
+      (async () => {
+        // Fetch database and template
+        items = await fetchDatabase("./databases/gallery/gallery.csv");
+      })();
+      let selectedImage = 0;
+
+      function gallerySlide(pointerNum) {
+        selectedImage += pointerNum;
+
+        if (selectedImage == -1) {
+          selectedImage = items.length - 1;
+        }
+        if (selectedImage == items.length) {
+          selectedImage = 0;
+        }
+        console.log(items[selectedImage].name);
+        document.querySelector("#imageTitle").style.opacity = 0;
+        document.querySelector("#imageDesc").style.opacity = 0;
+        setTimeout(() => {
+          document.querySelector("#imageTitle").textContent =
+            items[selectedImage].name;
+          document.querySelector("#imageDesc").textContent =
+            items[selectedImage].date;
+          document.querySelector("#imageTitle").style.opacity = 1;
+          document.querySelector("#imageDesc").style.opacity = 1;
+        }, 200);
+      }
+
+      setTimeout(() => {
+        gallerySlide(0);
+      }, 200);
+    </script>
     <div class="mt-12 flex max-w-screen-2xl flex-col items-center px-10">
       <h2 id="artikler" class="my-8 mt-12 text-3xl font-bold uppercase">
         Artikler
@@ -300,7 +342,7 @@
         <div class="flex">
           <div class="mx-20">
             <h1
-              class="mb-3 text-sm uppercase tracking-wide underline underline-offset-4 opacity-50"
+              class="mb-3 uppercase tracking-wide underline underline-offset-4 opacity-50"
             >
               Om meg
             </h1>
@@ -322,7 +364,7 @@
           </div>
           <div class="mx-20">
             <h1
-              class="mb-3 text-sm uppercase tracking-wide underline underline-offset-4 opacity-50"
+              class="mb-3 uppercase tracking-wide underline underline-offset-4 opacity-50"
             >
               Galleri
             </h1>
@@ -344,7 +386,7 @@
           </div>
           <div class="mx-20">
             <h1
-              class="mb-3 text-sm uppercase tracking-wide underline underline-offset-4 opacity-50"
+              class="mb-3 uppercase tracking-wide underline underline-offset-4 opacity-50"
             >
               Prosjekter
             </h1>
@@ -374,7 +416,7 @@
           </div>
           <div class="mx-20">
             <h1
-              class="mb-3 text-sm uppercase tracking-wide underline underline-offset-4 opacity-50"
+              class="mb-3 uppercase tracking-wide underline underline-offset-4 opacity-50"
             >
               Artikler
             </h1>
